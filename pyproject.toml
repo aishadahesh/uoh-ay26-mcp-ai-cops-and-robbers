@@ -1,0 +1,40 @@
+[project]
+name = "uoh-ay26-mcp-ai-cops-and-robbers"
+version = "0.1.0"
+description = "Dual AI-agent cops and robber orchestration game with MCP server interfaces."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "mcp>=1.9.0",
+  "pydantic>=2.7.0",
+  "google-genai>=1.0.0",
+  "openai>=1.0.0",
+  "imageio>=2.34.0",
+  "imageio-ffmpeg>=0.5.0",
+  "pillow>=10.0.0",
+  "tzdata>=2024.1",
+]
+
+[project.optional-dependencies]
+email = [
+  "google-api-python-client>=2.130.0",
+  "google-auth-oauthlib>=1.2.0",
+]
+dev = [
+  "pytest>=8.2.0",
+  "ruff>=0.5.0",
+]
+
+[project.scripts]
+cops-robbers = "cops_robbers_ai.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
