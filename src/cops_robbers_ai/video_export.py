@@ -32,7 +32,6 @@ def export_replay_video(
         raise ValueError("No frames were recorded for this game.")
     try:
         import imageio.v3 as iio
-        from PIL import Image, ImageDraw, ImageFont
     except ImportError as exc:
         raise RuntimeError(
             "Install video dependencies with: pip install -e \".[dev,email]\""
@@ -40,9 +39,7 @@ def export_replay_video(
 
     path = Path(output_path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    rendered = []
-    for frame in _expand_presentation_frames(frames):
-        rendered.append(_render_frame(frame, width, height, Image, ImageDraw, ImageFont))
+    rendered = _render_replay_frames(frames, width, height)
     try:
         iio.imwrite(path, rendered, fps=1.8)
         return path
@@ -50,6 +47,42 @@ def export_replay_video(
         gif_path = path.with_suffix(".gif")
         iio.imwrite(gif_path, rendered, duration=620, loop=0)
         return gif_path
+
+
+def export_replay_gif(
+    frames: list[dict[str, object]],
+    width: int,
+    height: int,
+    output_path: str | Path = "reports/shadowgrid_replay_readme.gif",
+) -> Path:
+    if not frames:
+        raise ValueError("No frames were recorded for this game.")
+    try:
+        import imageio.v3 as iio
+    except ImportError as exc:
+        raise RuntimeError(
+            "Install video dependencies with: pip install -e \".[dev,email]\""
+        ) from exc
+
+    path = Path(output_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    rendered = _render_replay_frames(frames, width, height)
+    iio.imwrite(path, rendered, duration=620, loop=0)
+    return path
+
+
+def _render_replay_frames(frames: list[dict[str, object]], width: int, height: int):
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+    except ImportError as exc:
+        raise RuntimeError(
+            "Install video dependencies with: pip install -e \".[dev,email]\""
+        ) from exc
+
+    rendered = []
+    for frame in _expand_presentation_frames(frames):
+        rendered.append(_render_frame(frame, width, height, Image, ImageDraw, ImageFont))
+    return rendered
 
 
 def _expand_presentation_frames(frames: list[dict[str, object]]) -> list[dict[str, object]]:

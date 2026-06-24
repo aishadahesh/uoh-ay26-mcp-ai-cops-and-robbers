@@ -129,6 +129,21 @@ Current CLI result:
 | Totals | `cop=120`, `thief=30` |
 | Validation | no `stay` moves, no robber barriers, no sub-game above 25 move pairs |
 
+### Visual Replay Gallery
+
+These GIF previews are generated from the saved MP4 files so the replay evidence is visible directly
+inside GitHub's README view. The MP4 files are still kept as the full video artifacts.
+
+| Preview | Full Video | Movement JSON |
+| --- | --- | --- |
+| <img src="reports/shadowgrid_replay_20260622_230818_readme.gif" width="260" alt="ShadowGrid replay preview 20260622 230818"> | [`MP4`](reports/shadowgrid_replay_20260622_230818.mp4) | [`JSON`](reports/shadowgrid_replay_20260622_230818_movements.json) |
+| <img src="reports/shadowgrid_replay_20260622_230957_readme.gif" width="260" alt="ShadowGrid replay preview 20260622 230957"> | [`MP4`](reports/shadowgrid_replay_20260622_230957.mp4) | [`JSON`](reports/shadowgrid_replay_20260622_230957_movements.json) |
+| <img src="reports/shadowgrid_replay_20260622_231534_readme.gif" width="260" alt="ShadowGrid replay preview 20260622 231534"> | [`MP4`](reports/shadowgrid_replay_20260622_231534.mp4) | [`JSON`](reports/shadowgrid_replay_20260622_231534_movements.json) |
+| <img src="reports/shadowgrid_replay_20260622_231701_readme.gif" width="260" alt="ShadowGrid replay preview 20260622 231701"> | [`MP4`](reports/shadowgrid_replay_20260622_231701.mp4) | [`JSON`](reports/shadowgrid_replay_20260622_231701_movements.json) |
+| <img src="reports/shadowgrid_replay_20260624_134355_readme.gif" width="260" alt="ShadowGrid replay preview 20260624 134355"> | [`MP4`](reports/shadowgrid_replay_20260624_134355.mp4) | [`JSON`](reports/shadowgrid_replay_20260624_134355_movements.json) |
+| <img src="reports/shadowgrid_replay_20260624_134450_readme.gif" width="260" alt="ShadowGrid replay preview 20260624 134450"> | [`MP4`](reports/shadowgrid_replay_20260624_134450.mp4) | [`JSON`](reports/shadowgrid_replay_20260624_134450_movements.json) |
+| <img src="reports/shadowgrid_replay_20260624_134504_readme.gif" width="260" alt="ShadowGrid replay preview 20260624 134504"> | [`MP4`](reports/shadowgrid_replay_20260624_134504.mp4) | [`JSON`](reports/shadowgrid_replay_20260624_134504_movements.json) |
+
 Saved GUI replay evidence:
 
 | Video | Movement JSON | Mode | Result | Moves |
@@ -142,7 +157,8 @@ Saved GUI replay evidence:
 | [`shadowgrid_replay_20260624_134504.mp4`](reports/shadowgrid_replay_20260624_134504.mp4) | [`shadowgrid_replay_20260624_134504_movements.json`](reports/shadowgrid_replay_20260624_134504_movements.json) | Cop user, robber agent | Cop wins | 6 |
 
 The saved replay includes the start presentation, player matchup, board states, and final winner
-frame. The movement JSON allows the replay to be audited programmatically.
+frame. The movement JSON allows the replay to be audited programmatically. Future GUI saves create
+both the MP4 replay and a matching `_readme.gif` preview.
 
 ## Architecture
 
@@ -159,7 +175,7 @@ ShadowGrid is split into focused modules:
 - `reporting.py`: InternalGameJSON creation and report writing.
 - `gmail_client.py`: optional Gmail JSON sender.
 - `gui.py`: playable GUI and replay capture.
-- `video_export.py`: MP4/GIF replay rendering.
+- `video_export.py`: MP4 replay rendering plus README GIF preview rendering.
 
 ## Formal Model
 

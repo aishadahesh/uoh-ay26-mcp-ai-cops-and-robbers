@@ -72,7 +72,7 @@ The GUI is the demonstration surface. It includes:
 - animated game-start curtain;
 - winner overlay;
 - timestamped `Save Game`;
-- matching MP4 and movement JSON exports.
+- matching MP4, README GIF preview, and movement JSON exports.
 
 Each saved GUI replay can be paired with its `*_movements.json` file in `reports/`.
 

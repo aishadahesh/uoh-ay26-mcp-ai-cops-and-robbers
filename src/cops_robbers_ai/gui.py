@@ -12,7 +12,7 @@ from .engine import GameEngine
 from .env_loader import load_dotenv
 from .llm_agent import GeminiAgent
 from .models import Action, Move, Position, Role
-from .video_export import export_replay_video
+from .video_export import export_replay_gif, export_replay_video
 
 CELL = 86
 PAD = 30
@@ -797,7 +797,13 @@ class PlayApp:
                 self.state.height,
                 f"reports/shadowgrid_replay_{stamp}.mp4",
             )
-            json_path = self._save_movement_json(path)
+            gif_path = export_replay_gif(
+                self.replay_frames,
+                self.state.width,
+                self.state.height,
+                f"reports/shadowgrid_replay_{stamp}_readme.gif",
+            )
+            json_path = self._save_movement_json(path, gif_path)
         except Exception as exc:
             messagebox.showerror("Could not save game", str(exc))
             return
@@ -805,6 +811,7 @@ class PlayApp:
             "Game saved",
             (
                 f"Saved final game replay:\n{path.resolve()}\n\n"
+                f"Saved README GIF preview:\n{gif_path.resolve()}\n\n"
                 f"Saved movement JSON:\n{json_path.resolve()}"
             ),
         )
@@ -822,7 +829,9 @@ class PlayApp:
             "state": self.engine.snapshot(self.state),
         })
 
-    def _save_movement_json(self, replay_path: Path) -> Path:
+    def _save_movement_json(
+        self, replay_path: Path, readme_gif_path: Path | None = None
+    ) -> Path:
         path = replay_path.with_name(f"{replay_path.stem}_movements.json")
         payload = {
             "game_name": f"{GAME_NAME}: {GAME_SUBTITLE}",
@@ -834,6 +843,7 @@ class PlayApp:
             "moves": self.movement_log,
             "final_state": self.engine.snapshot(self.state),
             "replay_video": str(replay_path),
+            "readme_gif": str(readme_gif_path) if readme_gif_path else None,
         }
         path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         return path

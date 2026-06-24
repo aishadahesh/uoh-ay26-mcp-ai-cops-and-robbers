@@ -13,21 +13,22 @@ The latest report was generated at `2026-06-24T13:10:37.050200+03:00`. The run c
 
 ## Saved GUI Replays
 
-Each saved GUI game produces two files:
+Each saved GUI game produces three evidence files:
 
 - an MP4 replay;
 - a matching movement JSON file with every move, actor type, message, state snapshot, result, and
   replay path.
+- a lightweight `_readme.gif` preview generated from the MP4 so the replay is visible in GitHub.
 
-| Video | Movement JSON | Mode | Result | Moves |
-| --- | --- | --- | --- | --- |
-| [`shadowgrid_replay_20260622_230818.mp4`](shadowgrid_replay_20260622_230818.mp4) | [`shadowgrid_replay_20260622_230818_movements.json`](shadowgrid_replay_20260622_230818_movements.json) | Cop agent, robber user | Cop wins | 6 |
-| [`shadowgrid_replay_20260622_230957.mp4`](shadowgrid_replay_20260622_230957.mp4) | [`shadowgrid_replay_20260622_230957_movements.json`](shadowgrid_replay_20260622_230957_movements.json) | Cop OpenAI, robber Gemini | Robber wins | 50 |
-| [`shadowgrid_replay_20260622_231534.mp4`](shadowgrid_replay_20260622_231534.mp4) | [`shadowgrid_replay_20260622_231534_movements.json`](shadowgrid_replay_20260622_231534_movements.json) | Cop OpenAI, robber Gemini | Cop wins | 6 |
-| [`shadowgrid_replay_20260622_231701.mp4`](shadowgrid_replay_20260622_231701.mp4) | [`shadowgrid_replay_20260622_231701_movements.json`](shadowgrid_replay_20260622_231701_movements.json) | Cop agent, robber user | Robber wins | 50 |
-| [`shadowgrid_replay_20260624_134355.mp4`](shadowgrid_replay_20260624_134355.mp4) | [`shadowgrid_replay_20260624_134355_movements.json`](shadowgrid_replay_20260624_134355_movements.json) | Cop OpenAI, robber Gemini | Cop wins | 6 |
-| [`shadowgrid_replay_20260624_134450.mp4`](shadowgrid_replay_20260624_134450.mp4) | [`shadowgrid_replay_20260624_134450_movements.json`](shadowgrid_replay_20260624_134450_movements.json) | Cop agent, robber user | Cop wins | 14 |
-| [`shadowgrid_replay_20260624_134504.mp4`](shadowgrid_replay_20260624_134504.mp4) | [`shadowgrid_replay_20260624_134504_movements.json`](shadowgrid_replay_20260624_134504_movements.json) | Cop user, robber agent | Cop wins | 6 |
+| GIF Preview | Video | Movement JSON | Mode | Result | Moves |
+| --- | --- | --- | --- | --- | --- |
+| <img src="shadowgrid_replay_20260622_230818_readme.gif" width="220" alt="Replay preview 20260622 230818"> | [`MP4`](shadowgrid_replay_20260622_230818.mp4) | [`JSON`](shadowgrid_replay_20260622_230818_movements.json) | Cop agent, robber user | Cop wins | 6 |
+| <img src="shadowgrid_replay_20260622_230957_readme.gif" width="220" alt="Replay preview 20260622 230957"> | [`MP4`](shadowgrid_replay_20260622_230957.mp4) | [`JSON`](shadowgrid_replay_20260622_230957_movements.json) | Cop OpenAI, robber Gemini | Robber wins | 50 |
+| <img src="shadowgrid_replay_20260622_231534_readme.gif" width="220" alt="Replay preview 20260622 231534"> | [`MP4`](shadowgrid_replay_20260622_231534.mp4) | [`JSON`](shadowgrid_replay_20260622_231534_movements.json) | Cop OpenAI, robber Gemini | Cop wins | 6 |
+| <img src="shadowgrid_replay_20260622_231701_readme.gif" width="220" alt="Replay preview 20260622 231701"> | [`MP4`](shadowgrid_replay_20260622_231701.mp4) | [`JSON`](shadowgrid_replay_20260622_231701_movements.json) | Cop agent, robber user | Robber wins | 50 |
+| <img src="shadowgrid_replay_20260624_134355_readme.gif" width="220" alt="Replay preview 20260624 134355"> | [`MP4`](shadowgrid_replay_20260624_134355.mp4) | [`JSON`](shadowgrid_replay_20260624_134355_movements.json) | Cop OpenAI, robber Gemini | Cop wins | 6 |
+| <img src="shadowgrid_replay_20260624_134450_readme.gif" width="220" alt="Replay preview 20260624 134450"> | [`MP4`](shadowgrid_replay_20260624_134450.mp4) | [`JSON`](shadowgrid_replay_20260624_134450_movements.json) | Cop agent, robber user | Cop wins | 14 |
+| <img src="shadowgrid_replay_20260624_134504_readme.gif" width="220" alt="Replay preview 20260624 134504"> | [`MP4`](shadowgrid_replay_20260624_134504.mp4) | [`JSON`](shadowgrid_replay_20260624_134504_movements.json) | Cop user, robber agent | Cop wins | 6 |
 
 ## How To Regenerate Evidence
 
@@ -44,4 +45,5 @@ Play a GUI game and export replay evidence:
 ```
 
 After the GUI game ends, click `Save Game`. New files are timestamped, so previous videos and JSON
-logs are preserved.
+logs are preserved. The save flow keeps the MP4 replay and also writes a `_readme.gif` preview for
+documentation.
