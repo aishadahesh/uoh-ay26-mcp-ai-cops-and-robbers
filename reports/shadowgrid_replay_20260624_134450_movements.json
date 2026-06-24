@@ -1,0 +1,307 @@
+{
+  "game_name": "ShadowGrid: Agent Chase Protocol",
+  "mode": "cop_agent_robber_user",
+  "players": "Robber: User  |  Cop: AI Agent",
+  "result": "cop_wins",
+  "winner": "cop",
+  "grid_size": [
+    5,
+    5
+  ],
+  "moves": [
+    {
+      "turn": 1,
+      "role": "thief",
+      "actor_type": "user",
+      "move": "nw",
+      "message": "The human thief is at (4,2) and chooses nw.",
+      "state": {
+        "cop": {
+          "x": 1,
+          "y": 1
+        },
+        "thief": {
+          "x": 3,
+          "y": 1
+        },
+        "barriers": [],
+        "turn_index": 1,
+        "captured": false
+      }
+    },
+    {
+      "turn": 2,
+      "role": "cop",
+      "actor_type": "agent",
+      "move": "e",
+      "message": "I can see pressure near (3,1); I am at (1,1) moving e.",
+      "state": {
+        "cop": {
+          "x": 2,
+          "y": 1
+        },
+        "thief": {
+          "x": 3,
+          "y": 1
+        },
+        "barriers": [],
+        "turn_index": 2,
+        "captured": false
+      }
+    },
+    {
+      "turn": 3,
+      "role": "thief",
+      "actor_type": "user",
+      "move": "se",
+      "message": "The human thief is at (3,1) and chooses se.",
+      "state": {
+        "cop": {
+          "x": 2,
+          "y": 1
+        },
+        "thief": {
+          "x": 4,
+          "y": 2
+        },
+        "barriers": [],
+        "turn_index": 3,
+        "captured": false
+      }
+    },
+    {
+      "turn": 4,
+      "role": "cop",
+      "actor_type": "agent",
+      "move": "e",
+      "message": "I can see pressure near (4,2); I am at (2,1) moving se. Tactical correction: closing distance with e.",
+      "state": {
+        "cop": {
+          "x": 3,
+          "y": 1
+        },
+        "thief": {
+          "x": 4,
+          "y": 2
+        },
+        "barriers": [],
+        "turn_index": 4,
+        "captured": false
+      }
+    },
+    {
+      "turn": 5,
+      "role": "thief",
+      "actor_type": "user",
+      "move": "sw",
+      "message": "The human thief is at (4,2) and chooses sw.",
+      "state": {
+        "cop": {
+          "x": 3,
+          "y": 1
+        },
+        "thief": {
+          "x": 3,
+          "y": 3
+        },
+        "barriers": [],
+        "turn_index": 5,
+        "captured": false
+      }
+    },
+    {
+      "turn": 6,
+      "role": "cop",
+      "actor_type": "agent",
+      "move": "s",
+      "message": "I can see pressure near (3,3); I am at (3,1) moving s.",
+      "state": {
+        "cop": {
+          "x": 3,
+          "y": 2
+        },
+        "thief": {
+          "x": 3,
+          "y": 3
+        },
+        "barriers": [],
+        "turn_index": 6,
+        "captured": false
+      }
+    },
+    {
+      "turn": 7,
+      "role": "thief",
+      "actor_type": "user",
+      "move": "sw",
+      "message": "The human thief is at (3,3) and chooses sw.",
+      "state": {
+        "cop": {
+          "x": 3,
+          "y": 2
+        },
+        "thief": {
+          "x": 2,
+          "y": 4
+        },
+        "barriers": [],
+        "turn_index": 7,
+        "captured": false
+      }
+    },
+    {
+      "turn": 8,
+      "role": "cop",
+      "actor_type": "agent",
+      "move": "s",
+      "message": "I can see pressure near (2,4); I am at (3,2) moving sw. Tactical correction: closing distance with s.",
+      "state": {
+        "cop": {
+          "x": 3,
+          "y": 3
+        },
+        "thief": {
+          "x": 2,
+          "y": 4
+        },
+        "barriers": [],
+        "turn_index": 8,
+        "captured": false
+      }
+    },
+    {
+      "turn": 9,
+      "role": "thief",
+      "actor_type": "user",
+      "move": "nw",
+      "message": "The human thief is at (2,4) and chooses nw.",
+      "state": {
+        "cop": {
+          "x": 3,
+          "y": 3
+        },
+        "thief": {
+          "x": 1,
+          "y": 3
+        },
+        "barriers": [],
+        "turn_index": 9,
+        "captured": false
+      }
+    },
+    {
+      "turn": 10,
+      "role": "cop",
+      "actor_type": "agent",
+      "move": "nw",
+      "message": "I can see pressure near (1,3); I am at (3,3) moving w. Tactical correction: closing distance with nw.",
+      "state": {
+        "cop": {
+          "x": 2,
+          "y": 2
+        },
+        "thief": {
+          "x": 1,
+          "y": 3
+        },
+        "barriers": [],
+        "turn_index": 10,
+        "captured": false
+      }
+    },
+    {
+      "turn": 11,
+      "role": "thief",
+      "actor_type": "user",
+      "move": "se",
+      "message": "The human thief is at (1,3) and chooses se.",
+      "state": {
+        "cop": {
+          "x": 2,
+          "y": 2
+        },
+        "thief": {
+          "x": 2,
+          "y": 4
+        },
+        "barriers": [],
+        "turn_index": 11,
+        "captured": false
+      }
+    },
+    {
+      "turn": 12,
+      "role": "cop",
+      "actor_type": "agent",
+      "move": "s",
+      "message": "I can see pressure near (2,4); I am at (2,2) moving s.",
+      "state": {
+        "cop": {
+          "x": 2,
+          "y": 3
+        },
+        "thief": {
+          "x": 2,
+          "y": 4
+        },
+        "barriers": [],
+        "turn_index": 12,
+        "captured": false
+      }
+    },
+    {
+      "turn": 13,
+      "role": "thief",
+      "actor_type": "user",
+      "move": "e",
+      "message": "The human thief is at (2,4) and chooses e.",
+      "state": {
+        "cop": {
+          "x": 2,
+          "y": 3
+        },
+        "thief": {
+          "x": 3,
+          "y": 4
+        },
+        "barriers": [],
+        "turn_index": 13,
+        "captured": false
+      }
+    },
+    {
+      "turn": 14,
+      "role": "cop",
+      "actor_type": "agent",
+      "move": "se",
+      "message": "I can see pressure near (3,4); I am at (2,3) moving se.",
+      "state": {
+        "cop": {
+          "x": 3,
+          "y": 4
+        },
+        "thief": {
+          "x": 3,
+          "y": 4
+        },
+        "barriers": [],
+        "turn_index": 14,
+        "captured": true
+      }
+    }
+  ],
+  "final_state": {
+    "cop": {
+      "x": 3,
+      "y": 4
+    },
+    "thief": {
+      "x": 3,
+      "y": 4
+    },
+    "barriers": [],
+    "turn_index": 14,
+    "captured": true
+  },
+  "replay_video": "reports\\shadowgrid_replay_20260624_134450.mp4"
+}

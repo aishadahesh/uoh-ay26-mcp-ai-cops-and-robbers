@@ -1,0 +1,147 @@
+{
+  "game_name": "ShadowGrid: Agent Chase Protocol",
+  "mode": "cop_openai_robber_gemini",
+  "players": "Robber: Gemini Agent  |  Cop: OpenAI Agent",
+  "result": "cop_wins",
+  "winner": "cop",
+  "grid_size": [
+    5,
+    5
+  ],
+  "moves": [
+    {
+      "turn": 1,
+      "role": "thief",
+      "actor_type": "agent",
+      "move": "n",
+      "message": "My local view is quiet from (4,2); I choose ne and keep scouting. I must move, so I choose n.",
+      "state": {
+        "cop": {
+          "x": 1,
+          "y": 1
+        },
+        "thief": {
+          "x": 4,
+          "y": 1
+        },
+        "barriers": [],
+        "turn_index": 1,
+        "captured": false
+      }
+    },
+    {
+      "turn": 2,
+      "role": "cop",
+      "actor_type": "agent",
+      "move": "e",
+      "message": "I see you are scouting, so I'll move east to maintain pressure and keep an eye on your position.",
+      "state": {
+        "cop": {
+          "x": 2,
+          "y": 1
+        },
+        "thief": {
+          "x": 4,
+          "y": 1
+        },
+        "barriers": [],
+        "turn_index": 2,
+        "captured": false
+      }
+    },
+    {
+      "turn": 3,
+      "role": "thief",
+      "actor_type": "agent",
+      "move": "n",
+      "message": "I can see pressure near (2,1); I am at (4,1) moving e. I must move, so I choose n.",
+      "state": {
+        "cop": {
+          "x": 2,
+          "y": 1
+        },
+        "thief": {
+          "x": 4,
+          "y": 0
+        },
+        "barriers": [],
+        "turn_index": 3,
+        "captured": false
+      }
+    },
+    {
+      "turn": 4,
+      "role": "cop",
+      "actor_type": "agent",
+      "move": "e",
+      "message": "I see you moving north, but I'll head northeast to close the distance and keep you in sight. Tactical correction: closing distance with e.",
+      "state": {
+        "cop": {
+          "x": 3,
+          "y": 1
+        },
+        "thief": {
+          "x": 4,
+          "y": 0
+        },
+        "barriers": [],
+        "turn_index": 4,
+        "captured": false
+      }
+    },
+    {
+      "turn": 5,
+      "role": "thief",
+      "actor_type": "agent",
+      "move": "s",
+      "message": "I can see pressure near (3,1); I am at (4,0) moving ne. I must move, so I choose s.",
+      "state": {
+        "cop": {
+          "x": 3,
+          "y": 1
+        },
+        "thief": {
+          "x": 4,
+          "y": 1
+        },
+        "barriers": [],
+        "turn_index": 5,
+        "captured": false
+      }
+    },
+    {
+      "turn": 6,
+      "role": "cop",
+      "actor_type": "agent",
+      "move": "e",
+      "message": "I see you moving south, but I will stay close to your position to keep the pressure on. Tactical correction: closing distance with e.",
+      "state": {
+        "cop": {
+          "x": 4,
+          "y": 1
+        },
+        "thief": {
+          "x": 4,
+          "y": 1
+        },
+        "barriers": [],
+        "turn_index": 6,
+        "captured": true
+      }
+    }
+  ],
+  "final_state": {
+    "cop": {
+      "x": 4,
+      "y": 1
+    },
+    "thief": {
+      "x": 4,
+      "y": 1
+    },
+    "barriers": [],
+    "turn_index": 6,
+    "captured": true
+  },
+  "replay_video": "reports\\shadowgrid_replay_20260622_231534.mp4"
+}

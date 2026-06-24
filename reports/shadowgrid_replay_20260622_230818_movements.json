@@ -1,0 +1,147 @@
+{
+  "game_name": "ShadowGrid: Agent Chase Protocol",
+  "mode": "cop_agent_robber_user",
+  "players": "Robber: User  |  Cop: AI Agent",
+  "result": "cop_wins",
+  "winner": "cop",
+  "grid_size": [
+    5,
+    5
+  ],
+  "moves": [
+    {
+      "turn": 1,
+      "role": "thief",
+      "actor_type": "user",
+      "move": "sw",
+      "message": "The human thief is at (4,2) and chooses sw.",
+      "state": {
+        "cop": {
+          "x": 1,
+          "y": 1
+        },
+        "thief": {
+          "x": 3,
+          "y": 3
+        },
+        "barriers": [],
+        "turn_index": 1,
+        "captured": false
+      }
+    },
+    {
+      "turn": 2,
+      "role": "cop",
+      "actor_type": "agent",
+      "move": "se",
+      "message": "I can see pressure near (3,3); I am at (1,1) moving se.",
+      "state": {
+        "cop": {
+          "x": 2,
+          "y": 2
+        },
+        "thief": {
+          "x": 3,
+          "y": 3
+        },
+        "barriers": [],
+        "turn_index": 2,
+        "captured": false
+      }
+    },
+    {
+      "turn": 3,
+      "role": "thief",
+      "actor_type": "user",
+      "move": "se",
+      "message": "The human thief is at (3,3) and chooses se.",
+      "state": {
+        "cop": {
+          "x": 2,
+          "y": 2
+        },
+        "thief": {
+          "x": 4,
+          "y": 4
+        },
+        "barriers": [],
+        "turn_index": 3,
+        "captured": false
+      }
+    },
+    {
+      "turn": 4,
+      "role": "cop",
+      "actor_type": "agent",
+      "move": "se",
+      "message": "I can see pressure near (4,4); I am at (2,2) moving se.",
+      "state": {
+        "cop": {
+          "x": 3,
+          "y": 3
+        },
+        "thief": {
+          "x": 4,
+          "y": 4
+        },
+        "barriers": [],
+        "turn_index": 4,
+        "captured": false
+      }
+    },
+    {
+      "turn": 5,
+      "role": "thief",
+      "actor_type": "user",
+      "move": "n",
+      "message": "The human thief is at (4,4) and chooses n.",
+      "state": {
+        "cop": {
+          "x": 3,
+          "y": 3
+        },
+        "thief": {
+          "x": 4,
+          "y": 3
+        },
+        "barriers": [],
+        "turn_index": 5,
+        "captured": false
+      }
+    },
+    {
+      "turn": 6,
+      "role": "cop",
+      "actor_type": "agent",
+      "move": "e",
+      "message": "I can see pressure near (4,3); I am at (3,3) moving e.",
+      "state": {
+        "cop": {
+          "x": 4,
+          "y": 3
+        },
+        "thief": {
+          "x": 4,
+          "y": 3
+        },
+        "barriers": [],
+        "turn_index": 6,
+        "captured": true
+      }
+    }
+  ],
+  "final_state": {
+    "cop": {
+      "x": 4,
+      "y": 3
+    },
+    "thief": {
+      "x": 4,
+      "y": 3
+    },
+    "barriers": [],
+    "turn_index": 6,
+    "captured": true
+  },
+  "replay_video": "reports\\shadowgrid_replay_20260622_230818.mp4"
+}
