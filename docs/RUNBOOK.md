@@ -15,6 +15,9 @@ Copy-Item .env.example .env
 notepad .env
 ```
 
+Do not commit `.env`. The project is designed to run without API keys, so missing keys are not a
+setup failure; they simply activate deterministic fallback agents.
+
 ## Local Game Series
 
 ```powershell
@@ -44,6 +47,18 @@ python -m cops_robbers_ai.cli --config config.json --bonus-config bonus_config.j
 This runs the six-game inter-group bonus series and writes `reports/bonus_game_report.json`.
 With the current Gmail OAuth tokens in place, the same command sends the updated JSON attachment
 from both group accounts.
+
+Before running the bonus series, confirm these local-only files exist:
+
+```text
+bonus_config.json
+credentials.json
+token_group_1_aisha.json
+token_group_2_yanal.json
+```
+
+Only `bonus_config.example.json` should be committed. The real `bonus_config.json` contains partner
+URLs and tokens and is intentionally ignored.
 
 Latest verified bonus run:
 
@@ -88,6 +103,19 @@ $env:PYTHONPATH="src"; python -m cops_robbers_ai.thief_server
 The local orchestrator uses the same agent interface in-process for repeatable tests. The bonus
 orchestrator connects to the deployed MCP URLs in `bonus_config.json`.
 
+For local HTTP testing, set:
+
+```powershell
+$env:MCP_TRANSPORT="streamable-http"
+$env:MCP_HOST="127.0.0.1"
+$env:MCP_PORT="8001"
+$env:MCP_AUTH_TOKEN="local-test-token"
+python -m cops_robbers_ai.cop_server
+```
+
+Use a different port for the thief server. In cloud mode, use HTTPS URLs and keep the bearer token
+private.
+
 ## Gmail Report
 
 Set `email.enabled` to `true` in `config.json`, place Google OAuth `credentials.json` in the repo
@@ -96,3 +124,23 @@ root, and run the local series. The email body is exactly the JSON report, as re
 For the bonus flow, email is configured in `bonus_config.json`. It attaches only
 `bonus_game_report.json` and sends one email from `aishadahesh11@gmail.com` and one from
 `yanalserhan3@gmail.com`.
+
+If Gmail OAuth blocks the app, add both sender accounts as test users in the Google Cloud OAuth
+consent screen. The generated token files are sensitive and ignored by Git.
+
+## Final Verification Checklist
+
+Run these before submission:
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest
+.\.venv\Scripts\python.exe -m ruff check src tests
+git status --short --ignored
+```
+
+Expected result:
+
+- tests pass;
+- Ruff reports no issues;
+- `.env`, OAuth tokens, `bonus_config.json`, and `ngrok.yml` appear only as ignored files;
+- `README.md`, `reports/README.md`, and the two JSON reports are committed.

@@ -34,6 +34,17 @@
 - Optional `GEMINI_API_KEY` and `OPENAI_API_KEY` in `.env`.
 - `pypdf` is included for local assignment PDF review and verification.
 
+## Agent Requirements
+
+- Agents must produce natural-language messages, not only machine commands.
+- Agents must work under partial observability; they cannot assume the opponent is always visible.
+- Agents may use LLM providers, but the game must remain runnable without API keys.
+- Agent actions must be validated by shared code before becoming report evidence.
+- The cop may place barriers; the thief may not place barriers.
+
+The implementation satisfies these requirements with `GeminiAgent`, deterministic fallback
+strategy, and `action_policy.sanitize_action`.
+
 ## GUI Requirements
 
 - The GUI shall start centered.
@@ -52,6 +63,9 @@
 - Bonus report path: `reports/bonus_game_report.json`.
 - Bonus email sends the final JSON report as the only attachment from both group Gmail accounts.
 
+The reports are considered authoritative. Videos and screenshots are explanatory evidence, but the
+grader can validate the game from JSON alone: every turn includes role, move, message, and state.
+
 ## Configuration Requirements
 
 - No API keys in source code.
@@ -59,3 +73,14 @@
 - Rule settings only in `config.json`.
 - Bonus partner URLs and tokens live in `bonus_config.json`.
 - `credentials.json` and Gmail OAuth token files are ignored by git.
+
+## Security Requirements
+
+- `.env` files must stay local.
+- Gmail OAuth files must stay local.
+- `bonus_config.json` must stay local because it can contain partner tokens.
+- `ngrok.yml` must stay local because it can contain tunnel or domain settings.
+- Example files must contain placeholders only.
+
+These rules are enforced in `.gitignore`. The committed `bonus_config.example.json` documents the
+shape without exposing private values.

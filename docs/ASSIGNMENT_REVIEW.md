@@ -72,6 +72,33 @@ This review is based on the reference PDFs in `ref/`.
   table requires `cop_win=20`, so six cop wins total 120. One nearby text line appears to
   mention 90 as a maximum. This implementation follows the explicit config table.
 
+## Requirement Interpretation
+
+The PDF distinguishes the MCP server from the MCP client. This project interprets that as follows:
+MCP servers expose tools and role-specific behavior, while the orchestrator owns the conversation,
+turn sequence, legality, scoring, and report generation. This is why `cop_server.py` and
+`thief_server.py` are intentionally small entry points and the richer match logic lives in the
+orchestrator layer.
+
+The README requirement asks for a scientific report, not only run instructions. The final README
+therefore includes the formal tuple, partial observation definition, strategy discussion, visual
+evidence, tools, challenges, results, self-scoring, and bonus agreement. The screenshots and GIFs
+are supporting evidence, while the JSON reports are the authoritative audit trail.
+
+## Evidence Quality
+
+The strongest evidence files are:
+
+- `reports/internal_game_report.json`: proves the mandatory local series.
+- `reports/bonus_game_report.json`: proves the six-game inter-group bonus.
+- `reports/*_movements.json`: proves replay-level GUI movement history.
+- `assets/email_sent.png`: shows the bonus JSON attachment was sent by Gmail.
+- `README.md`: ties the artifacts into a human-readable scientific report.
+
+Known limitations are documented openly. The project does not claim a trained Q-table policy; it
+uses a transparent heuristic plus optional LLM reasoning. This matches the development-priority
+table in the assignment, where heuristic or Q-table strategy are both acceptable paths.
+
 ## Recommended Final Submission Steps
 
 1. Fill `students` and `github_repo` in `config.json`.

@@ -23,6 +23,44 @@ bonus flow.
   capture, and timestamped save flow.
 - `video_export.py` renders saved GUI frames into MP4, with GIF fallback when needed.
 
+## Runtime Flow
+
+The local and bonus modes follow the same control pattern. The orchestrator creates a fresh
+`GameState`, decides whose turn it is from `turn_index`, asks that role for an action, sanitizes the
+action, applies it through `GameEngine`, and appends the resulting snapshot to the report. This
+keeps the game deterministic and auditable: agents can propose actions, but they do not own the
+truth of the board.
+
+For local games, `LocalOrchestrator` calls the in-process `GeminiAgent` instances directly. For
+bonus games, `BonusMcpOrchestrator` calls remote MCP tools. In both cases the final report shape is
+the same kind of evidence: a list of sub-games, turns, messages, states, and scores.
+
+```text
+config.json
+   -> orchestrator
+      -> observation/message
+         -> agent or remote MCP tool
+            -> proposed action
+               -> action_policy.sanitize_action
+                  -> GameEngine.apply
+                     -> JSON report
+```
+
+## Turn Lifecycle
+
+1. The thief moves first, as required by the assignment.
+2. The active role receives a partial observation.
+3. The active role also receives the last natural-language message sent by the opponent.
+4. The role chooses a move or, for the cop, possibly a barrier action.
+5. The action policy rejects illegal final actions such as `stay`, off-board moves, thief barriers,
+   or blocked moves.
+6. The game engine applies the legal action and checks capture or survival.
+7. The orchestrator records the message, move, state snapshot, and score-relevant outcome.
+
+The important engineering decision is that every path, including GUI, local CLI, and remote MCP,
+passes through the same rule engine. This prevents the demo and the submitted report from drifting
+into different games.
+
 ## Dec-POMDP Model
 
 The game is modeled as `<n, S, {A_i}, P, R, {Omega_i}, O, gamma>`.
@@ -44,6 +82,26 @@ The game is modeled as `<n, S, {A_i}, P, R, {Omega_i}, O, gamma>`.
 The bonus runner uses one authoritative orchestrator for board state, legality, barriers, scoring,
 and reporting. Remote MCP servers only provide role decisions. The verified bonus report contains
 six autonomous games against `yanell11`, with final totals `uoh-ay26=85` and `yanell11=45`.
+
+The six bonus games are split exactly as the PDF describes:
+
+- games 1-3: `uoh-ay26` cop against `yanell11` thief;
+- games 4-6: `yanell11` cop against `uoh-ay26` thief.
+
+The orchestrator sends `update_state`, `receive_message`, and `choose_action` calls to each remote
+agent. Tokens are configured locally and ignored by Git. The committed repository contains the
+example config and final JSON evidence, but not the private tokens.
+
+## Failure Handling
+
+LLM and network calls are the least deterministic parts of the project. The implementation reduces
+that risk in four ways:
+
+- provider calls fall back to deterministic behavior when API keys or quotas fail;
+- remote MCP output is sanitized before it becomes part of the official game;
+- reports store all turns, making questionable behavior visible rather than hidden;
+- private operational files such as OAuth tokens, `.env`, `bonus_config.json`, and `ngrok.yml` are
+  ignored by Git.
 
 ## Evidence Artifacts
 
