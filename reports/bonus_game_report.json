@@ -11,9 +11,15 @@
   "mcp_url_group_2_cop": "https://cop-mcp-server-m74q.onrender.com/mcp",
   "mcp_url_group_2_thief": "https://thief-mcp-server-lo1o.onrender.com/mcp",
   "timezone": "Asia/Jerusalem",
-  "generated_at": "2026-06-25T23:35:25.525810+03:00",
-  "students_group_1": [],
-  "students_group_2": [],
+  "generated_at": "2026-06-26T01:38:11.804738+03:00",
+  "students_group_1": [
+    "Aisha Abu Dahesh",
+    "Yosef Asadi"
+  ],
+  "students_group_2": [
+    "Yanal Serhan",
+    "Nell Khoury"
+  ],
   "sub_games": [
     {
       "sub_game_id": 1,
