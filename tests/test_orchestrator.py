@@ -1,5 +1,5 @@
-from cops_robbers_ai.config import load_config
 from cops_robbers_ai import orchestrator
+from cops_robbers_ai.config import load_config
 from cops_robbers_ai.orchestrator import LocalOrchestrator
 
 

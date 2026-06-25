@@ -94,3 +94,48 @@ def send_report_email(config: GameConfig, report: dict[str, object]) -> bool:
 
     send_json_email(config.email.to, report, config.email.credentials_path, config.email.token_path)
     return True
+
+
+def send_bonus_report_emails(
+    bonus_config: dict[str, object],
+    report: dict[str, object],
+    attachment_path: str | Path,
+) -> list[str]:
+    email_config = bonus_config.get("email", {})
+    if not isinstance(email_config, dict) or not email_config.get("enabled", False):
+        return []
+
+    from .gmail_client import send_json_attachment_email
+
+    to_address = str(email_config.get("to", "rmisegal+uoh26b@gmail.com"))
+    subject = str(
+        email_config.get(
+            "subject",
+            "Assignment 06 Bonus - Agreed MCP Cops and Robbers JSON Report",
+        )
+    )
+    credentials_path = str(email_config.get("credentials_path", "credentials.json"))
+    attachment_name = Path(attachment_path).name
+    sent_from: list[str] = []
+
+    senders = email_config.get("senders", [])
+    if not isinstance(senders, list):
+        raise ValueError("bonus_config email.senders must be a list.")
+
+    for sender in senders:
+        if not isinstance(sender, dict):
+            raise ValueError("Each bonus email sender must be an object.")
+        address = str(sender["address"])
+        token_path = str(sender["token_path"])
+        sender_credentials = str(sender.get("credentials_path", credentials_path))
+        sender_subject = str(sender.get("subject", subject))
+        send_json_attachment_email(
+            to_address=to_address,
+            report=report,
+            credentials=sender_credentials,
+            token=token_path,
+            subject=sender_subject,
+            attachment_name=attachment_name,
+        )
+        sent_from.append(address)
+    return sent_from

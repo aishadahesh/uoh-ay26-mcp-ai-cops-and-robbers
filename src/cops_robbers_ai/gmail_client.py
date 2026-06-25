@@ -13,14 +13,42 @@ def send_json_email(
     report: dict[str, object],
     credentials: str,
     token: str,
+    subject: str = "InternalGameJSON",
 ) -> None:
     creds = _load_credentials(credentials, token)
     from googleapiclient.discovery import build
 
     message = EmailMessage()
     message["To"] = to_address
-    message["Subject"] = "InternalGameJSON"
+    message["Subject"] = subject
     message.set_content(json.dumps(report, ensure_ascii=False))
+    encoded = base64.urlsafe_b64encode(message.as_bytes()).decode("ascii")
+    build("gmail", "v1", credentials=creds).users().messages().send(
+        userId="me", body={"raw": encoded}
+    ).execute()
+
+
+def send_json_attachment_email(
+    to_address: str,
+    report: dict[str, object],
+    credentials: str,
+    token: str,
+    subject: str,
+    attachment_name: str = "bonus_game_report.json",
+) -> None:
+    creds = _load_credentials(credentials, token)
+    from googleapiclient.discovery import build
+
+    message = EmailMessage()
+    message["To"] = to_address
+    message["Subject"] = subject
+    message.set_content("")
+    message.add_attachment(
+        json.dumps(report, ensure_ascii=False, indent=2).encode("utf-8"),
+        maintype="application",
+        subtype="json",
+        filename=attachment_name,
+    )
     encoded = base64.urlsafe_b64encode(message.as_bytes()).decode("ascii")
     build("gmail", "v1", credentials=creds).users().messages().send(
         userId="me", body={"raw": encoded}

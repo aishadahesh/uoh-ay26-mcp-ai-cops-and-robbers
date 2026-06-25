@@ -1,5 +1,5 @@
-from cops_robbers_ai.config import load_config
 from cops_robbers_ai import orchestrator
+from cops_robbers_ai.config import load_config
 from cops_robbers_ai.orchestrator import BonusMcpOrchestrator
 from cops_robbers_ai.reporting import build_bonus_report
 
@@ -38,8 +38,12 @@ def test_bonus_report_maps_role_scores_to_groups() -> None:
 
 
 def test_bonus_orchestrator_mirrors_seed_offsets_for_role_swap(monkeypatch) -> None:
-    monkeypatch.setattr(orchestrator, "write_bonus_report", lambda report: None)
-    monkeypatch.setattr(orchestrator, "send_report_email", lambda config, report: None)
+    monkeypatch.setattr(orchestrator, "write_bonus_report", lambda report: "reports/bonus.json")
+    monkeypatch.setattr(
+        orchestrator,
+        "send_bonus_report_emails",
+        lambda bonus_config, report, attachment_path: [],
+    )
     config = load_config("config.json")
     bonus_config = {
         "group_1": "Team-A",
