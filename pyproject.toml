@@ -12,6 +12,7 @@ dependencies = [
   "imageio>=2.34.0",
   "imageio-ffmpeg>=0.5.0",
   "pillow>=10.0.0",
+  "pypdf>=4.0.0",
   "tzdata>=2024.1",
 ]
 
@@ -27,6 +28,9 @@ dev = [
 
 [project.scripts]
 cops-robbers = "cops_robbers_ai.cli:main"
+
+[tool.setuptools.package-data]
+cops_robbers_ai = ["*_source.txt"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
