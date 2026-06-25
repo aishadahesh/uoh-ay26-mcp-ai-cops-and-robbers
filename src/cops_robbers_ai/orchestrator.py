@@ -228,6 +228,7 @@ class BonusMcpOrchestrator:
             sub_games.append(
                 await self._run_one(
                     index=index,
+                    seed_offset=index,
                     cop_group=self.group_1,
                     thief_group=self.group_2,
                     cop_url=str(self.bonus_config["mcp_url_group_1_cop"]),
@@ -242,6 +243,7 @@ class BonusMcpOrchestrator:
             sub_games.append(
                 await self._run_one(
                     index=offset + local_index,
+                    seed_offset=local_index,
                     cop_group=self.group_2,
                     thief_group=self.group_1,
                     cop_url=str(self.bonus_config["mcp_url_group_2_cop"]),
@@ -262,6 +264,7 @@ class BonusMcpOrchestrator:
     async def _run_one(
         self,
         index: int,
+        seed_offset: int,
         cop_group: str,
         thief_group: str,
         cop_url: str,
@@ -269,7 +272,7 @@ class BonusMcpOrchestrator:
         cop_token: str,
         thief_token: str,
     ) -> dict[str, object]:
-        engine = GameEngine(self.config, seed_offset=index)
+        engine = GameEngine(self.config, seed_offset=seed_offset)
         state = engine.new_state()
         inbox = {"cop": "", "thief": ""}
         turns: list[dict[str, object]] = []
