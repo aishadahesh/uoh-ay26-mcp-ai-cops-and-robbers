@@ -1,1 +1,2 @@
 -e .[dev,email]
+# pypdf is included in pyproject.toml for local assignment PDF verification.
