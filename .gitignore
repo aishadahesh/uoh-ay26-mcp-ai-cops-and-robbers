@@ -1,12 +1,39 @@
 .venv/
 __pycache__/
+**/__pycache__/
 .pytest_cache/
 .ruff_cache/
+
+# Local secrets and API keys.
 .env
+.env.*
+!.env.example
+*.env
+
+# Google/Gmail OAuth credentials and generated tokens.
+credentials.json
+credentials*.json
+client_secret*.json
+token.json
+token*.json
+*token*.json
+oauth*.json
+
+# Local bonus/private coordination config.
+bonus_config.json
+ngrok.yml
+.ngrok*.yml
+
 dist/
 build/
 *.egg-info/
 reports/*.log
-credentials.json
-token.json
+
+# Local proof screenshots and temporary exports.
+email_sent.png
+!assets/email_sent.png
+*.tmp
+*.bak
+*.local
+
 /ref

@@ -12,5 +12,23 @@
   "students_group_1": [],
   "students_group_2": [],
   "games_per_pairing": 3,
-  "mutual_agreement": true
+  "mutual_agreement": true,
+  "email": {
+    "enabled": false,
+    "to": "rmisegal+uoh26b@gmail.com",
+    "subject": "Assignment 06 Bonus - Agreed MCP Cops and Robbers JSON Report",
+    "credentials_path": "credentials.json",
+    "senders": [
+      {
+        "group": "Team-AI-Cops-Robbers",
+        "address": "group1@gmail.com",
+        "token_path": "token_group_1.json"
+      },
+      {
+        "group": "Partner-Team",
+        "address": "group2@gmail.com",
+        "token_path": "token_group_2.json"
+      }
+    ]
+  }
 }
