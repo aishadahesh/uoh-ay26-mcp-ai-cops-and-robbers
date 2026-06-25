@@ -50,7 +50,6 @@ class AgentServerState:
 
     def receive(self, message: str) -> str:
         self.last_message = message
-        self.brain.observe_message(message)
         return f"{self.role} understood: {message}"
 
     def update_state(

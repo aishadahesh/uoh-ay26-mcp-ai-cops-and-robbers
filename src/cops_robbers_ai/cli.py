@@ -2,22 +2,36 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
 from .config import load_config
 from .env_loader import load_dotenv
-from .orchestrator import LocalOrchestrator
+from .orchestrator import LocalOrchestrator, RemoteMcpOrchestrator
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run the AI cops and robber game series.")
     parser.add_argument("--config", default="config.json", help="Path to the JSON configuration.")
     parser.add_argument("--print-report", action="store_true", help="Print the final JSON report.")
+    parser.add_argument(
+        "--remote-mcp",
+        action="store_true",
+        help="Run against cop_mcp_url and thief_mcp_url from the config.",
+    )
     args = parser.parse_args()
 
     load_dotenv()
     config = load_config(args.config)
-    report = LocalOrchestrator(config).run_series()
+    if args.remote_mcp:
+        shared_token = os.environ.get("MCP_AUTH_TOKEN", "")
+        report = RemoteMcpOrchestrator(
+            config,
+            cop_token=os.environ.get("COP_MCP_AUTH_TOKEN", shared_token),
+            thief_token=os.environ.get("THIEF_MCP_AUTH_TOKEN", shared_token),
+        ).run_series()
+    else:
+        report = LocalOrchestrator(config).run_series()
     report_path = Path("reports/internal_game_report.json").resolve()
     if args.print_report:
         print(json.dumps(report, ensure_ascii=False, indent=2))

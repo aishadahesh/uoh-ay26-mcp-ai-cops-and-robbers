@@ -2,10 +2,10 @@
   "group_name": "Team-AI-Cops-Robbers",
   "students": [],
   "github_repo": "https://github.com/your-team/uoh-ay26-mcp-ai-cops-and-robbers",
-  "cop_mcp_url": "http://localhost:8001",
-  "thief_mcp_url": "http://localhost:8002",
+  "cop_mcp_url": "https://shadowgrid-cop-mcp.onrender.com/mcp",
+  "thief_mcp_url": "https://shadowgrid-thief-mcp.onrender.com/mcp",
   "timezone": "Asia/Jerusalem",
-  "generated_at": "2026-06-24T13:53:38.358495+03:00",
+  "generated_at": "2026-06-25T15:00:33.311836+03:00",
   "sub_games": [
     {
       "sub_game_id": 1,
