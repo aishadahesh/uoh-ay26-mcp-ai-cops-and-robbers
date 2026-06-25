@@ -45,12 +45,13 @@ class GameEngine:
             "cop": asdict(state.cop),
             "thief": asdict(state.thief),
             "barriers": [asdict(p) for p in sorted(state.barriers, key=lambda p: (p.y, p.x))],
+            "cop_barriers_left": state.cop_barriers_left,
             "turn_index": state.turn_index,
             "captured": state.captured,
         }
 
     def _place_barrier(self, state: GameState) -> None:
-        if state.cop_barriers_left <= 0 or state.cop == state.thief:
+        if state.cop_barriers_left <= 0 or state.cop == state.thief or state.cop in state.barriers:
             return
         state.barriers.add(state.cop)
         state.cop_barriers_left -= 1

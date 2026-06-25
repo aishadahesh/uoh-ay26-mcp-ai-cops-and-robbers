@@ -77,5 +77,6 @@ class GameState:
             "nearby_barriers": [
                 {"x": p.x, "y": p.y} for p in sorted(nearby, key=lambda p: (p.y, p.x))
             ],
+            "cop_barriers_left": self.cop_barriers_left,
             "turn_index": self.turn_index,
         }

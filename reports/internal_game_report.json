@@ -1,11 +1,11 @@
 {
   "group_name": "Team-AI-Cops-Robbers",
   "students": [],
-  "github_repo": "https://github.com/your-team/uoh-ay26-mcp-ai-cops-and-robbers",
-  "cop_mcp_url": "https://shadowgrid-cop-mcp.onrender.com/mcp",
+  "github_repo": "https://github.com/aishadahesh/uoh-ay26-mcp-ai-cops-and-robbers.git",
+  "cop_mcp_url": "https://bd01-132-75-176-132.ngrok-free.app/sse",
   "thief_mcp_url": "https://shadowgrid-thief-mcp.onrender.com/mcp",
   "timezone": "Asia/Jerusalem",
-  "generated_at": "2026-06-25T15:00:33.311836+03:00",
+  "generated_at": "2026-06-25T17:18:24.738007+03:00",
   "sub_games": [
     {
       "sub_game_id": 1,
@@ -30,6 +30,7 @@
               "y": 0
             },
             "barriers": [],
+            "cop_barriers_left": 5,
             "turn_index": 1,
             "captured": false
           }
@@ -37,7 +38,7 @@
         {
           "role": "cop",
           "move": "nw",
-          "message": "I can see pressure near (1,0); I am at (3,2) moving nw.",
+          "message": "I suspect the other agent is around (2,1); I will move nw.",
           "state": {
             "cop": {
               "x": 2,
@@ -48,6 +49,7 @@
               "y": 0
             },
             "barriers": [],
+            "cop_barriers_left": 5,
             "turn_index": 2,
             "captured": false
           }
@@ -66,6 +68,7 @@
               "y": 0
             },
             "barriers": [],
+            "cop_barriers_left": 5,
             "turn_index": 3,
             "captured": false
           }
@@ -73,7 +76,7 @@
         {
           "role": "cop",
           "move": "nw",
-          "message": "I can see pressure near (0,0); I am at (2,1) moving nw.",
+          "message": "I suspect the other agent is around (1,0); I will move nw.",
           "state": {
             "cop": {
               "x": 1,
@@ -84,6 +87,7 @@
               "y": 0
             },
             "barriers": [],
+            "cop_barriers_left": 5,
             "turn_index": 4,
             "captured": false
           }
@@ -102,6 +106,7 @@
               "y": 1
             },
             "barriers": [],
+            "cop_barriers_left": 5,
             "turn_index": 5,
             "captured": false
           }
@@ -120,6 +125,7 @@
               "y": 1
             },
             "barriers": [],
+            "cop_barriers_left": 5,
             "turn_index": 6,
             "captured": true
           }
@@ -129,7 +135,7 @@
     {
       "sub_game_id": 2,
       "result": "cop_wins",
-      "moves": 8,
+      "moves": 4,
       "score": {
         "cop": 20,
         "thief": 5
@@ -149,6 +155,7 @@
               "y": 3
             },
             "barriers": [],
+            "cop_barriers_left": 5,
             "turn_index": 1,
             "captured": false
           }
@@ -167,115 +174,46 @@
               "y": 3
             },
             "barriers": [],
+            "cop_barriers_left": 5,
             "turn_index": 2,
             "captured": false
           }
         },
         {
           "role": "thief",
-          "move": "se",
-          "message": "I can see pressure near (1,2); I am at (3,3) moving se.",
+          "move": "nw",
+          "message": "I suspect the other agent is around (4,4); I will move nw.",
           "state": {
             "cop": {
               "x": 1,
               "y": 2
             },
             "thief": {
-              "x": 4,
-              "y": 4
+              "x": 2,
+              "y": 2
             },
             "barriers": [],
+            "cop_barriers_left": 5,
             "turn_index": 3,
             "captured": false
           }
         },
         {
           "role": "cop",
-          "move": "se",
-          "message": "I suspect the other agent is around (3,3); I will move se.",
-          "state": {
-            "cop": {
-              "x": 2,
-              "y": 3
-            },
-            "thief": {
-              "x": 4,
-              "y": 4
-            },
-            "barriers": [],
-            "turn_index": 4,
-            "captured": false
-          }
-        },
-        {
-          "role": "thief",
-          "move": "n",
-          "message": "I can see pressure near (2,3); I am at (4,4) moving se. Adjusted to legal move n.",
-          "state": {
-            "cop": {
-              "x": 2,
-              "y": 3
-            },
-            "thief": {
-              "x": 4,
-              "y": 3
-            },
-            "barriers": [],
-            "turn_index": 5,
-            "captured": false
-          }
-        },
-        {
-          "role": "cop",
           "move": "e",
-          "message": "I can see pressure near (4,3); I am at (2,3) moving e.",
+          "message": "I can see pressure near (2,2); I am at (1,2) moving e.",
           "state": {
             "cop": {
-              "x": 3,
-              "y": 3
+              "x": 2,
+              "y": 2
             },
             "thief": {
-              "x": 4,
-              "y": 3
+              "x": 2,
+              "y": 2
             },
             "barriers": [],
-            "turn_index": 6,
-            "captured": false
-          }
-        },
-        {
-          "role": "thief",
-          "move": "s",
-          "message": "I can see pressure near (3,3); I am at (4,3) moving e. Adjusted to legal move s.",
-          "state": {
-            "cop": {
-              "x": 3,
-              "y": 3
-            },
-            "thief": {
-              "x": 4,
-              "y": 4
-            },
-            "barriers": [],
-            "turn_index": 7,
-            "captured": false
-          }
-        },
-        {
-          "role": "cop",
-          "move": "se",
-          "message": "I can see pressure near (4,4); I am at (3,3) moving se.",
-          "state": {
-            "cop": {
-              "x": 4,
-              "y": 4
-            },
-            "thief": {
-              "x": 4,
-              "y": 4
-            },
-            "barriers": [],
-            "turn_index": 8,
+            "cop_barriers_left": 5,
+            "turn_index": 4,
             "captured": true
           }
         }
@@ -284,7 +222,7 @@
     {
       "sub_game_id": 3,
       "result": "cop_wins",
-      "moves": 8,
+      "moves": 4,
       "score": {
         "cop": 20,
         "thief": 5
@@ -304,6 +242,7 @@
               "y": 3
             },
             "barriers": [],
+            "cop_barriers_left": 5,
             "turn_index": 1,
             "captured": false
           }
@@ -322,244 +261,7 @@
               "y": 3
             },
             "barriers": [],
-            "turn_index": 2,
-            "captured": false
-          }
-        },
-        {
-          "role": "thief",
-          "move": "s",
-          "message": "I can see pressure near (3,1); I am at (3,3) moving s.",
-          "state": {
-            "cop": {
-              "x": 3,
-              "y": 1
-            },
-            "thief": {
-              "x": 3,
-              "y": 4
-            },
-            "barriers": [],
-            "turn_index": 3,
-            "captured": false
-          }
-        },
-        {
-          "role": "cop",
-          "move": "s",
-          "message": "I suspect the other agent is around (3,3); I will move s.",
-          "state": {
-            "cop": {
-              "x": 3,
-              "y": 2
-            },
-            "thief": {
-              "x": 3,
-              "y": 4
-            },
-            "barriers": [],
-            "turn_index": 4,
-            "captured": false
-          }
-        },
-        {
-          "role": "thief",
-          "move": "e",
-          "message": "I can see pressure near (3,2); I am at (3,4) moving s. Adjusted to legal move e.",
-          "state": {
-            "cop": {
-              "x": 3,
-              "y": 2
-            },
-            "thief": {
-              "x": 4,
-              "y": 4
-            },
-            "barriers": [],
-            "turn_index": 5,
-            "captured": false
-          }
-        },
-        {
-          "role": "cop",
-          "move": "se",
-          "message": "I can see pressure near (4,4); I am at (3,2) moving se.",
-          "state": {
-            "cop": {
-              "x": 4,
-              "y": 3
-            },
-            "thief": {
-              "x": 4,
-              "y": 4
-            },
-            "barriers": [],
-            "turn_index": 6,
-            "captured": false
-          }
-        },
-        {
-          "role": "thief",
-          "move": "w",
-          "message": "I can see pressure near (4,3); I am at (4,4) moving s. Adjusted to legal move w.",
-          "state": {
-            "cop": {
-              "x": 4,
-              "y": 3
-            },
-            "thief": {
-              "x": 3,
-              "y": 4
-            },
-            "barriers": [],
-            "turn_index": 7,
-            "captured": false
-          }
-        },
-        {
-          "role": "cop",
-          "move": "sw",
-          "message": "I can see pressure near (3,4); I am at (4,3) moving sw.",
-          "state": {
-            "cop": {
-              "x": 3,
-              "y": 4
-            },
-            "thief": {
-              "x": 3,
-              "y": 4
-            },
-            "barriers": [],
-            "turn_index": 8,
-            "captured": true
-          }
-        }
-      ]
-    },
-    {
-      "sub_game_id": 4,
-      "result": "cop_wins",
-      "moves": 4,
-      "score": {
-        "cop": 20,
-        "thief": 5
-      },
-      "turns": [
-        {
-          "role": "thief",
-          "move": "w",
-          "message": "I can see pressure near (4,2); I am at (4,0) moving n. Adjusted to legal move w.",
-          "state": {
-            "cop": {
-              "x": 4,
-              "y": 2
-            },
-            "thief": {
-              "x": 3,
-              "y": 0
-            },
-            "barriers": [],
-            "turn_index": 1,
-            "captured": false
-          }
-        },
-        {
-          "role": "cop",
-          "move": "nw",
-          "message": "I can see pressure near (3,0); I am at (4,2) moving nw.",
-          "state": {
-            "cop": {
-              "x": 3,
-              "y": 1
-            },
-            "thief": {
-              "x": 3,
-              "y": 0
-            },
-            "barriers": [],
-            "turn_index": 2,
-            "captured": false
-          }
-        },
-        {
-          "role": "thief",
-          "move": "e",
-          "message": "I can see pressure near (3,1); I am at (3,0) moving n. Adjusted to legal move e.",
-          "state": {
-            "cop": {
-              "x": 3,
-              "y": 1
-            },
-            "thief": {
-              "x": 4,
-              "y": 0
-            },
-            "barriers": [],
-            "turn_index": 3,
-            "captured": false
-          }
-        },
-        {
-          "role": "cop",
-          "move": "ne",
-          "message": "I can see pressure near (4,0); I am at (3,1) moving ne.",
-          "state": {
-            "cop": {
-              "x": 4,
-              "y": 0
-            },
-            "thief": {
-              "x": 4,
-              "y": 0
-            },
-            "barriers": [],
-            "turn_index": 4,
-            "captured": true
-          }
-        }
-      ]
-    },
-    {
-      "sub_game_id": 5,
-      "result": "cop_wins",
-      "moves": 8,
-      "score": {
-        "cop": 20,
-        "thief": 5
-      },
-      "turns": [
-        {
-          "role": "thief",
-          "move": "se",
-          "message": "My local view is quiet from (1,0); I choose se and keep scouting.",
-          "state": {
-            "cop": {
-              "x": 0,
-              "y": 3
-            },
-            "thief": {
-              "x": 2,
-              "y": 1
-            },
-            "barriers": [],
-            "turn_index": 1,
-            "captured": false
-          }
-        },
-        {
-          "role": "cop",
-          "move": "ne",
-          "message": "I can see pressure near (2,1); I am at (0,3) moving ne.",
-          "state": {
-            "cop": {
-              "x": 1,
-              "y": 2
-            },
-            "thief": {
-              "x": 2,
-              "y": 1
-            },
-            "barriers": [],
+            "cop_barriers_left": 5,
             "turn_index": 2,
             "captured": false
           }
@@ -567,172 +269,18 @@
         {
           "role": "thief",
           "move": "ne",
-          "message": "I can see pressure near (1,2); I am at (2,1) moving ne.",
+          "message": "I suspect the other agent is around (2,4); I will move ne.",
           "state": {
             "cop": {
-              "x": 1,
+              "x": 3,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
               "y": 2
             },
-            "thief": {
-              "x": 3,
-              "y": 0
-            },
             "barriers": [],
-            "turn_index": 3,
-            "captured": false
-          }
-        },
-        {
-          "role": "cop",
-          "move": "ne",
-          "message": "I can see pressure near (3,0); I am at (1,2) moving ne.",
-          "state": {
-            "cop": {
-              "x": 2,
-              "y": 1
-            },
-            "thief": {
-              "x": 3,
-              "y": 0
-            },
-            "barriers": [],
-            "turn_index": 4,
-            "captured": false
-          }
-        },
-        {
-          "role": "thief",
-          "move": "e",
-          "message": "I can see pressure near (2,1); I am at (3,0) moving ne. Adjusted to legal move e.",
-          "state": {
-            "cop": {
-              "x": 2,
-              "y": 1
-            },
-            "thief": {
-              "x": 4,
-              "y": 0
-            },
-            "barriers": [],
-            "turn_index": 5,
-            "captured": false
-          }
-        },
-        {
-          "role": "cop",
-          "move": "ne",
-          "message": "I can see pressure near (4,0); I am at (2,1) moving ne.",
-          "state": {
-            "cop": {
-              "x": 3,
-              "y": 0
-            },
-            "thief": {
-              "x": 4,
-              "y": 0
-            },
-            "barriers": [],
-            "turn_index": 6,
-            "captured": false
-          }
-        },
-        {
-          "role": "thief",
-          "move": "s",
-          "message": "I can see pressure near (3,0); I am at (4,0) moving e. Adjusted to legal move s.",
-          "state": {
-            "cop": {
-              "x": 3,
-              "y": 0
-            },
-            "thief": {
-              "x": 4,
-              "y": 1
-            },
-            "barriers": [],
-            "turn_index": 7,
-            "captured": false
-          }
-        },
-        {
-          "role": "cop",
-          "move": "se",
-          "message": "I can see pressure near (4,1); I am at (3,0) moving se.",
-          "state": {
-            "cop": {
-              "x": 4,
-              "y": 1
-            },
-            "thief": {
-              "x": 4,
-              "y": 1
-            },
-            "barriers": [],
-            "turn_index": 8,
-            "captured": true
-          }
-        }
-      ]
-    },
-    {
-      "sub_game_id": 6,
-      "result": "cop_wins",
-      "moves": 8,
-      "score": {
-        "cop": 20,
-        "thief": 5
-      },
-      "turns": [
-        {
-          "role": "thief",
-          "move": "se",
-          "message": "I can see pressure near (0,1); I am at (1,2) moving se.",
-          "state": {
-            "cop": {
-              "x": 0,
-              "y": 1
-            },
-            "thief": {
-              "x": 2,
-              "y": 3
-            },
-            "barriers": [],
-            "turn_index": 1,
-            "captured": false
-          }
-        },
-        {
-          "role": "cop",
-          "move": "se",
-          "message": "I can see pressure near (2,3); I am at (0,1) moving se.",
-          "state": {
-            "cop": {
-              "x": 1,
-              "y": 2
-            },
-            "thief": {
-              "x": 2,
-              "y": 3
-            },
-            "barriers": [],
-            "turn_index": 2,
-            "captured": false
-          }
-        },
-        {
-          "role": "thief",
-          "move": "se",
-          "message": "I can see pressure near (1,2); I am at (2,3) moving se.",
-          "state": {
-            "cop": {
-              "x": 1,
-              "y": 2
-            },
-            "thief": {
-              "x": 3,
-              "y": 4
-            },
-            "barriers": [],
+            "cop_barriers_left": 5,
             "turn_index": 3,
             "captured": false
           }
@@ -740,90 +288,19 @@
         {
           "role": "cop",
           "move": "se",
-          "message": "I can see pressure near (3,4); I am at (1,2) moving se.",
+          "message": "I can see pressure near (4,2); I am at (3,1) moving se.",
           "state": {
             "cop": {
-              "x": 2,
-              "y": 3
+              "x": 4,
+              "y": 2
             },
             "thief": {
-              "x": 3,
-              "y": 4
+              "x": 4,
+              "y": 2
             },
             "barriers": [],
+            "cop_barriers_left": 5,
             "turn_index": 4,
-            "captured": false
-          }
-        },
-        {
-          "role": "thief",
-          "move": "e",
-          "message": "I can see pressure near (2,3); I am at (3,4) moving se. Adjusted to legal move e.",
-          "state": {
-            "cop": {
-              "x": 2,
-              "y": 3
-            },
-            "thief": {
-              "x": 4,
-              "y": 4
-            },
-            "barriers": [],
-            "turn_index": 5,
-            "captured": false
-          }
-        },
-        {
-          "role": "cop",
-          "move": "se",
-          "message": "I can see pressure near (4,4); I am at (2,3) moving se.",
-          "state": {
-            "cop": {
-              "x": 3,
-              "y": 4
-            },
-            "thief": {
-              "x": 4,
-              "y": 4
-            },
-            "barriers": [],
-            "turn_index": 6,
-            "captured": false
-          }
-        },
-        {
-          "role": "thief",
-          "move": "n",
-          "message": "I can see pressure near (3,4); I am at (4,4) moving e. Adjusted to legal move n.",
-          "state": {
-            "cop": {
-              "x": 3,
-              "y": 4
-            },
-            "thief": {
-              "x": 4,
-              "y": 3
-            },
-            "barriers": [],
-            "turn_index": 7,
-            "captured": false
-          }
-        },
-        {
-          "role": "cop",
-          "move": "ne",
-          "message": "I can see pressure near (4,3); I am at (3,4) moving ne.",
-          "state": {
-            "cop": {
-              "x": 4,
-              "y": 3
-            },
-            "thief": {
-              "x": 4,
-              "y": 3
-            },
-            "barriers": [],
-            "turn_index": 8,
             "captured": true
           }
         }
@@ -831,7 +308,7 @@
     }
   ],
   "totals": {
-    "cop": 120,
-    "thief": 30
+    "cop": 60,
+    "thief": 15
   }
 }

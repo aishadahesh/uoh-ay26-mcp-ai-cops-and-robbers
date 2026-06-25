@@ -6,10 +6,10 @@ operating in a partially observable grid world. Agents communicate through natur
 messages, infer opponent state from limited observations, translate decisions into physical moves,
 and produce the required InternalGameJSON report.
 
-The current implementation is a complete non-bonus local submission package: playable GUI, saved
-game replay export, movement JSON export, MCP server entry points, Gemini/OpenAI API support,
-deterministic fallback agents, legality guards for AI actions, verified tests, lint-clean source
-code, and professional submission documentation.
+The current implementation is a complete submission package: playable GUI, saved game replay export,
+movement JSON export, MCP server entry points, Gemini/OpenAI API support, deterministic fallback
+agents, legality guards for AI actions, verified tests, lint-clean source code, professional
+submission documentation, and an ngrok-ready inter-group bonus runner.
 
 ## Project Goals
 
@@ -18,8 +18,7 @@ code, and professional submission documentation.
 - Support local execution without API keys, while allowing Gemini/OpenAI-backed agents when keys
   exist.
 - Produce concrete evidence artifacts: JSON report, saved game video, and movement log.
-- Match the assignment's non-bonus requirements and leave advanced bonus/cloud deployment as future
-  work.
+- Match the assignment's local requirements and support the inter-group ngrok/cloud bonus flow.
 
 ## Main Features
 
@@ -32,6 +31,7 @@ code, and professional submission documentation.
 - Natural-language messages between agents.
 - Shared action validation for CLI, MCP, and GUI execution paths.
 - Separate MCP server modules for cop and robber.
+- Ngrok-ready bonus mode with token-protected public MCP URLs and bonus JSON output.
 - Gemini and OpenAI provider support with deterministic fallback.
 - Centered GUI with four play modes:
   - Cop agent, robber user
@@ -91,6 +91,23 @@ reports/internal_game_report.json
 
 The report contains group metadata, students, GitHub URL, MCP URLs, timezone, all sub-games, move
 traces, scores, and totals.
+
+## Running The Ngrok Bonus Series
+
+Start the two local HTTP MCP servers and ngrok tunnels using the steps in
+[`docs/CLOUD_BONUS.md`](docs/CLOUD_BONUS.md). After exchanging URLs and tokens with the other group,
+copy and edit the bonus config:
+
+```powershell
+Copy-Item bonus_config.example.json bonus_config.json
+python -m cops_robbers_ai.cli --bonus-config bonus_config.json --print-report
+```
+
+This writes:
+
+```text
+reports/bonus_game_report.json
+```
 
 ## Running The GUI
 

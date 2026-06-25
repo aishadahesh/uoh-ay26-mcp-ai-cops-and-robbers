@@ -1,0 +1,16 @@
+{
+  "group_1": "Team-AI-Cops-Robbers",
+  "group_2": "Partner-Team",
+  "github_repo_group_1": "https://github.com/aishadahesh/uoh-ay26-mcp-ai-cops-and-robbers.git",
+  "github_repo_group_2": "https://github.com/partner/team-repo.git",
+  "mcp_url_group_1_cop": "https://your-cop.ngrok-free.app/mcp",
+  "mcp_url_group_1_thief": "https://your-thief.ngrok-free.app/mcp",
+  "mcp_url_group_2_cop": "https://partner-cop.example.com/mcp",
+  "mcp_url_group_2_thief": "https://partner-thief.example.com/mcp",
+  "mcp_token_group_1": "replace-with-your-token",
+  "mcp_token_group_2": "replace-with-partner-token",
+  "students_group_1": [],
+  "students_group_2": [],
+  "games_per_pairing": 3,
+  "mutual_agreement": true
+}

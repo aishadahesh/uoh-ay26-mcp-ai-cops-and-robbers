@@ -1,4 +1,4 @@
-# Cloud Bonus Deployment
+# Cloud / Ngrok Bonus Deployment
 
 This guide is for the inter-group bonus in `ex06`: deploy one public MCP server for the cop agent
 and one public MCP server for the thief agent, then exchange URLs with another group.
@@ -12,8 +12,8 @@ Deploy two separate web services from this same repository:
 | Cop MCP | `python -m cops_robbers_ai.cop_server` | `/mcp` |
 | Thief MCP | `python -m cops_robbers_ai.thief_server` | `/mcp` |
 
-The services use FastMCP `streamable-http` transport in cloud mode. Keep local development on the
-default stdio transport unless you explicitly set `MCP_TRANSPORT`.
+The services use FastMCP `streamable-http` transport in ngrok/cloud mode. Keep local development on
+the default stdio transport unless you explicitly set `MCP_TRANSPORT`.
 
 ## Required Environment Variables
 
@@ -33,6 +33,61 @@ cloud URL.
 
 `GEMINI_API_KEY` and `OPENAI_API_KEY` are optional for basic operation because the code can fall
 back to deterministic agents, but API-backed agents are better for the assignment story.
+
+## Ngrok Deployment
+
+This is the fastest way to expose your local MCP servers for the bonus.
+
+1. Install ngrok and authenticate it:
+
+```powershell
+ngrok config add-authtoken <your-ngrok-authtoken>
+```
+
+2. Copy the example tunnel config:
+
+```powershell
+Copy-Item ngrok.example.yml ngrok.yml
+```
+
+If you used `ngrok config add-authtoken`, you may remove the `agent.authtoken` line from
+`ngrok.yml`. If you have paid/reserved ngrok domains, add `domain: your-domain.ngrok-free.app` under
+each tunnel.
+
+3. Start both ngrok tunnels in terminal 1:
+
+```powershell
+.\scripts\run_ngrok_bonus.ps1
+```
+
+Copy the two HTTPS forwarding URLs from the ngrok terminal. If you use reserved domains, use those
+reserved URLs.
+
+4. Start the local cop MCP server in terminal 2:
+
+```powershell
+$env:MCP_AUTH_TOKEN="use-a-long-random-secret"
+$env:MCP_PUBLIC_URL="https://your-cop.ngrok-free.app"
+.\scripts\run_cop_mcp_http.ps1
+```
+
+5. Start the local thief MCP server in terminal 3:
+
+```powershell
+$env:MCP_AUTH_TOKEN="use-a-long-random-secret"
+$env:MCP_PUBLIC_URL="https://your-thief.ngrok-free.app"
+.\scripts\run_thief_mcp_http.ps1
+```
+
+The public MCP URLs to exchange are:
+
+```text
+https://your-cop.ngrok-free.app/mcp
+https://your-thief.ngrok-free.app/mcp
+```
+
+If ngrok assigned random URLs, use those URLs for `MCP_PUBLIC_URL` and append `/mcp` when exchanging
+the MCP endpoint with the other group.
 
 ## Render Deployment
 
@@ -107,9 +162,28 @@ the final JSON report. The MCP servers should only return agent decisions.
 Before each decision, the orchestrator should call the remote agent's `update_state` tool, then
 `receive_message`, then `choose_action`.
 
+Create a working bonus config:
+
+```powershell
+Copy-Item bonus_config.example.json bonus_config.json
+notepad bonus_config.json
+```
+
+Set the four public MCP URLs and the group tokens. Then run the six-game bonus series:
+
+```powershell
+python -m cops_robbers_ai.cli --bonus-config bonus_config.json --print-report
+```
+
+The runner writes:
+
+```text
+reports/bonus_game_report.json
+```
+
 ## Report Fields
 
-The bonus report must include four public MCP URLs:
+The bonus report includes the four public MCP URLs required by the PDF:
 
 ```json
 {

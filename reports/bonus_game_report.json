@@ -1,0 +1,3554 @@
+{
+  "report_type": "bonus_game",
+  "groups": {
+    "group_1": "uoh-ay26",
+    "group_2": "yanell11"
+  },
+  "github_repo_group_1": "https://github.com/aishadahesh/uoh-ay26-mcp-ai-cops-and-robbers.git",
+  "github_repo_group_2": "https://github.com/Nell-Kh/HW06-Dual-AI-agent-race-via-MCP-servers",
+  "mcp_url_group_1_cop": "https://shadowgrid-cop-mcp.onrender.com/mcp",
+  "mcp_url_group_1_thief": "https://shadowgrid-thief-mcp.onrender.com/mcp",
+  "mcp_url_group_2_cop": "https://cop-mcp-server-m74q.onrender.com/mcp",
+  "mcp_url_group_2_thief": "https://thief-mcp-server-lo1o.onrender.com/mcp",
+  "timezone": "Asia/Jerusalem",
+  "generated_at": "2026-06-25T20:17:49.822650+03:00",
+  "students_group_1": [],
+  "students_group_2": [],
+  "sub_games": [
+    {
+      "sub_game_id": 1,
+      "pairing": {
+        "cop_group": "uoh-ay26",
+        "thief_group": "yanell11",
+        "cop_mcp_url": "https://shadowgrid-cop-mcp.onrender.com/mcp",
+        "thief_mcp_url": "https://thief-mcp-server-lo1o.onrender.com/mcp"
+      },
+      "result": "cop_wins",
+      "moves": 4,
+      "score": {
+        "cop": 20,
+        "thief": 5
+      },
+      "group_scores": {
+        "uoh-ay26": 20,
+        "yanell11": 5
+      },
+      "turns": [
+        {
+          "role": "thief",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 2
+            },
+            "thief": {
+              "x": 2,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 1,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "uoh-ay26",
+          "move": "nw",
+          "message": "I can see pressure near (2,0); I am at (3,2) moving nw.",
+          "state": {
+            "cop": {
+              "x": 2,
+              "y": 1
+            },
+            "thief": {
+              "x": 2,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 2,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "yanell11",
+          "move": "e",
+          "message": "some message Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 2,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 3,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "uoh-ay26",
+          "move": "ne",
+          "message": "I can see pressure near (3,0); I am at (2,1) moving ne.",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 4,
+            "captured": true
+          }
+        }
+      ]
+    },
+    {
+      "sub_game_id": 2,
+      "pairing": {
+        "cop_group": "uoh-ay26",
+        "thief_group": "yanell11",
+        "cop_mcp_url": "https://shadowgrid-cop-mcp.onrender.com/mcp",
+        "thief_mcp_url": "https://thief-mcp-server-lo1o.onrender.com/mcp"
+      },
+      "result": "cop_wins",
+      "moves": 10,
+      "score": {
+        "cop": 20,
+        "thief": 5
+      },
+      "group_scores": {
+        "uoh-ay26": 20,
+        "yanell11": 5
+      },
+      "turns": [
+        {
+          "role": "thief",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 3
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 1,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "uoh-ay26",
+          "move": "se",
+          "message": "I suspect the other agent is around (4,4); I will move se.",
+          "state": {
+            "cop": {
+              "x": 1,
+              "y": 2
+            },
+            "thief": {
+              "x": 4,
+              "y": 3
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 2,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 1,
+              "y": 2
+            },
+            "thief": {
+              "x": 4,
+              "y": 2
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 3,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "uoh-ay26",
+          "move": "se",
+          "message": "I suspect the other agent is around (4,4); I will move se.",
+          "state": {
+            "cop": {
+              "x": 2,
+              "y": 3
+            },
+            "thief": {
+              "x": 4,
+              "y": 2
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 4,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 2,
+              "y": 3
+            },
+            "thief": {
+              "x": 4,
+              "y": 1
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 5,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "uoh-ay26",
+          "move": "ne",
+          "message": "I can see pressure near (4,1); I am at (2,3) moving ne.",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 2
+            },
+            "thief": {
+              "x": 4,
+              "y": 1
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 6,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 2
+            },
+            "thief": {
+              "x": 4,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 7,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "uoh-ay26",
+          "move": "ne",
+          "message": "I can see pressure near (4,0); I am at (3,2) moving ne.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 8,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "yanell11",
+          "move": "w",
+          "message": "some message Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 9,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "uoh-ay26",
+          "move": "nw",
+          "message": "I can see pressure near (3,0); I am at (4,1) moving nw.",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 10,
+            "captured": true
+          }
+        }
+      ]
+    },
+    {
+      "sub_game_id": 3,
+      "pairing": {
+        "cop_group": "uoh-ay26",
+        "thief_group": "yanell11",
+        "cop_mcp_url": "https://shadowgrid-cop-mcp.onrender.com/mcp",
+        "thief_mcp_url": "https://thief-mcp-server-lo1o.onrender.com/mcp"
+      },
+      "result": "cop_wins",
+      "moves": 6,
+      "score": {
+        "cop": 20,
+        "thief": 5
+      },
+      "group_scores": {
+        "uoh-ay26": 20,
+        "yanell11": 5
+      },
+      "turns": [
+        {
+          "role": "thief",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 2,
+              "y": 3
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 1,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "uoh-ay26",
+          "move": "s",
+          "message": "I suspect the other agent is around (4,4); I will move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 2,
+              "y": 3
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 2,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 2,
+              "y": 2
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 3,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "uoh-ay26",
+          "move": "sw",
+          "message": "I can see pressure near (2,2); I am at (4,1) moving sw.",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 2
+            },
+            "thief": {
+              "x": 2,
+              "y": 2
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 4,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 2
+            },
+            "thief": {
+              "x": 2,
+              "y": 1
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 5,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "uoh-ay26",
+          "move": "nw",
+          "message": "I can see pressure near (2,1); I am at (3,2) moving nw.",
+          "state": {
+            "cop": {
+              "x": 2,
+              "y": 1
+            },
+            "thief": {
+              "x": 2,
+              "y": 1
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 6,
+            "captured": true
+          }
+        }
+      ]
+    },
+    {
+      "sub_game_id": 4,
+      "pairing": {
+        "cop_group": "yanell11",
+        "thief_group": "uoh-ay26",
+        "cop_mcp_url": "https://cop-mcp-server-m74q.onrender.com/mcp",
+        "thief_mcp_url": "https://shadowgrid-thief-mcp.onrender.com/mcp"
+      },
+      "result": "thief_wins",
+      "moves": 50,
+      "score": {
+        "cop": 5,
+        "thief": 10
+      },
+      "group_scores": {
+        "yanell11": 5,
+        "uoh-ay26": 10
+      },
+      "turns": [
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I can see pressure near (4,2); I am at (4,0) moving n. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 2
+            },
+            "thief": {
+              "x": 3,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 1,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 2,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I can see pressure near (4,1); I am at (3,0) moving nw. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 2,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 3,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 2,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 4,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I can see pressure near (4,0); I am at (2,0) moving w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 1,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 5,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "w",
+          "message": "some message Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 0
+            },
+            "thief": {
+              "x": 1,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 6,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I can see pressure near (3,0); I am at (1,0) moving w.",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 7,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "w",
+          "message": "some message Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 2,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 8,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "s",
+          "message": "I can see pressure near (2,0); I am at (0,0) moving w. Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 2,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 1
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 9,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "w",
+          "message": "some message Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 1,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 1
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 10,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "s",
+          "message": "I can see pressure near (1,0); I am at (0,1) moving sw. Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 1,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 2
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 11,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "sw",
+          "message": "some message Adjusted to legal move sw.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 0,
+              "y": 2
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 12,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "s",
+          "message": "I can see pressure near (0,1); I am at (0,2) moving s.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 0,
+              "y": 3
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 13,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 3
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 14,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "s",
+          "message": "I suspect the other agent is around (2,3); I will move w. Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 15,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 16,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 17,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 18,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 19,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 20,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 21,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 22,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 23,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 24,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 25,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 26,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 27,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 28,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 29,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 30,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 31,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 32,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 33,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 34,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 35,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 36,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 37,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 38,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 39,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 40,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 41,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 42,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 43,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 44,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 45,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 46,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 47,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 0,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 48,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move sw. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 49,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 1,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 50,
+            "captured": false
+          }
+        }
+      ]
+    },
+    {
+      "sub_game_id": 5,
+      "pairing": {
+        "cop_group": "yanell11",
+        "thief_group": "uoh-ay26",
+        "cop_mcp_url": "https://cop-mcp-server-m74q.onrender.com/mcp",
+        "thief_mcp_url": "https://shadowgrid-thief-mcp.onrender.com/mcp"
+      },
+      "result": "thief_wins",
+      "moves": 50,
+      "score": {
+        "cop": 5,
+        "thief": 10
+      },
+      "group_scores": {
+        "yanell11": 5,
+        "uoh-ay26": 10
+      },
+      "turns": [
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move nw. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 3
+            },
+            "thief": {
+              "x": 0,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 1,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 2
+            },
+            "thief": {
+              "x": 0,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 2,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I can see pressure near (0,2); I am at (0,0) moving n. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 2
+            },
+            "thief": {
+              "x": 1,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 3,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 1,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 4,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I can see pressure near (0,1); I am at (1,0) moving ne. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 2,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 5,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 2,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 6,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I can see pressure near (0,0); I am at (2,0) moving e.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 7,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "e",
+          "message": "some message Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 1,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 8,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I can see pressure near (1,0); I am at (3,0) moving e.",
+          "state": {
+            "cop": {
+              "x": 1,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 9,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "e",
+          "message": "some message Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 2,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 0
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 10,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "s",
+          "message": "I can see pressure near (2,0); I am at (4,0) moving e. Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 2,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 1
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 11,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "e",
+          "message": "some message Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 1
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 12,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "s",
+          "message": "I can see pressure near (3,0); I am at (4,1) moving se. Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 2
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 13,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "se",
+          "message": "some message Adjusted to legal move se.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 2
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 14,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "s",
+          "message": "I can see pressure near (4,1); I am at (4,2) moving s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 3
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 15,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 3
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 16,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "s",
+          "message": "I suspect the other agent is around (2,3); I will move e. Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 17,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 18,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 19,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 20,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 21,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 22,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 23,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 24,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 25,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 26,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 27,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 28,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 29,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 30,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 31,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 32,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 33,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 34,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 35,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 36,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 37,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 38,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 39,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 40,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 41,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 42,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 43,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 44,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 45,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 46,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 47,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 48,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 49,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 50,
+            "captured": false
+          }
+        }
+      ]
+    },
+    {
+      "sub_game_id": 6,
+      "pairing": {
+        "cop_group": "yanell11",
+        "thief_group": "uoh-ay26",
+        "cop_mcp_url": "https://cop-mcp-server-m74q.onrender.com/mcp",
+        "thief_mcp_url": "https://shadowgrid-thief-mcp.onrender.com/mcp"
+      },
+      "result": "thief_wins",
+      "moves": 50,
+      "score": {
+        "cop": 5,
+        "thief": 10
+      },
+      "group_scores": {
+        "yanell11": 5,
+        "uoh-ay26": 10
+      },
+      "turns": [
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "se",
+          "message": "I can see pressure near (0,1); I am at (1,2) moving se.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 2,
+              "y": 3
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 1,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 2,
+              "y": 3
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 2,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "se",
+          "message": "I suspect the other agent is around (2,3); I will move se.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 3,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 4,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 5,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 6,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "n",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move n.",
+          "state": {
+            "cop": {
+              "x": 0,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 3
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 7,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "e",
+          "message": "some message Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 1,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 3
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 8,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "s",
+          "message": "I suspect the other agent is around (2,3); I will move e. Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 1,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 9,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "se",
+          "message": "some message Adjusted to legal move se.",
+          "state": {
+            "cop": {
+              "x": 2,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 10,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 2,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 11,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 2,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 12,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 2,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 13,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "se",
+          "message": "some message Adjusted to legal move se.",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 14,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 15,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 16,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 3,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 17,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "se",
+          "message": "some message Adjusted to legal move se.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 18,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 19,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 20,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 21,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 22,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 23,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 24,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 25,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 26,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 27,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 28,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 29,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 30,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 31,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 32,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 33,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 34,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 35,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 36,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 37,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 38,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 39,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 40,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 41,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 42,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 43,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 44,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 45,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 46,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "w",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move w.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 47,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "n",
+          "message": "some message",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 3,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 48,
+            "captured": false
+          }
+        },
+        {
+          "role": "thief",
+          "group": "uoh-ay26",
+          "move": "e",
+          "message": "I suspect the other agent is around (2,3); I will move se. Adjusted to legal move e.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 0
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 49,
+            "captured": false
+          }
+        },
+        {
+          "role": "cop",
+          "group": "yanell11",
+          "move": "s",
+          "message": "some message Adjusted to legal move s.",
+          "state": {
+            "cop": {
+              "x": 4,
+              "y": 1
+            },
+            "thief": {
+              "x": 4,
+              "y": 4
+            },
+            "barriers": [],
+            "cop_barriers_left": 5,
+            "turn_index": 50,
+            "captured": false
+          }
+        }
+      ]
+    }
+  ],
+  "totals_by_group": {
+    "uoh-ay26": 90,
+    "yanell11": 30
+  },
+  "bonus_claim": {
+    "uoh-ay26": 10,
+    "yanell11": 7
+  },
+  "mutual_agreement": true
+}

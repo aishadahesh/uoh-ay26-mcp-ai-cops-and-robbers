@@ -1,0 +1,20 @@
+{
+    "group_1":  "uoh-ay26",
+    "group_2":  "yanell11",
+    "github_repo_group_1":  "https://github.com/aishadahesh/uoh-ay26-mcp-ai-cops-and-robbers.git",
+    "github_repo_group_2":  "https://github.com/Nell-Kh/HW06-Dual-AI-agent-race-via-MCP-servers",
+    "mcp_url_group_1_cop":  "https://shadowgrid-cop-mcp.onrender.com/mcp",
+    "mcp_url_group_1_thief":  "https://shadowgrid-thief-mcp.onrender.com/mcp",
+    "mcp_url_group_2_cop":  "https://cop-mcp-server-m74q.onrender.com/mcp",
+    "mcp_url_group_2_thief":  "https://thief-mcp-server-lo1o.onrender.com/mcp",
+    "mcp_token_group_1":  "8b7f2f4c9a1e4d3b9c0a7f6e2d1c5b8a",
+    "mcp_token_group_2":  "rnd_9LoXWx6bTFFDwvM75wASkcSn0oYk",
+    "students_group_1":  [
+
+                         ],
+    "students_group_2":  [
+
+                         ],
+    "games_per_pairing":  3,
+    "mutual_agreement":  true
+}

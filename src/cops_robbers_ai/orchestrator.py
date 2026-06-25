@@ -8,7 +8,13 @@ from .config import GameConfig
 from .engine import GameEngine
 from .llm_agent import GeminiAgent
 from .models import Action, Move, Role
-from .reporting import build_report, send_report_email, write_report
+from .reporting import (
+    build_bonus_report,
+    build_report,
+    send_report_email,
+    write_bonus_report,
+    write_report,
+)
 
 
 class LocalOrchestrator:
@@ -68,11 +74,18 @@ class RemoteMcpAgent:
 
     async def __aenter__(self) -> RemoteMcpAgent:
         from mcp import ClientSession
+        from mcp.client.sse import sse_client
         from mcp.client.streamable_http import streamablehttp_client
 
-        headers = {"Authorization": f"Bearer {self.token}"} if self.token else None
-        self._client_context = streamablehttp_client(self.url, headers=headers)
-        read, write, _ = await self._client_context.__aenter__()
+        headers = {"ngrok-skip-browser-warning": "true"}
+        if self.token:
+            headers["Authorization"] = f"Bearer {self.token}"
+        if self.url.rstrip("/").endswith("/sse"):
+            self._client_context = sse_client(self.url, headers=headers)
+        else:
+            self._client_context = streamablehttp_client(self.url, headers=headers)
+        streams = await self._client_context.__aenter__()
+        read, write = streams[0], streams[1]
         self._session_context = ClientSession(read, write)
         self._session = await self._session_context.__aenter__()
         await self._session.initialize()
@@ -194,5 +207,115 @@ class RemoteMcpOrchestrator:
             "result": result,
             "moves": len(turns),
             "score": engine.score(result),
+            "turns": turns,
+        }
+
+
+class BonusMcpOrchestrator:
+    def __init__(self, config: GameConfig, bonus_config: dict[str, object]) -> None:
+        self.config = config
+        self.bonus_config = bonus_config
+        self.group_1 = str(bonus_config["group_1"])
+        self.group_2 = str(bonus_config["group_2"])
+        self.games_per_pairing = int(bonus_config.get("games_per_pairing", 3))
+
+    def run_series(self) -> dict[str, object]:
+        return asyncio.run(self._run_series())
+
+    async def _run_series(self) -> dict[str, object]:
+        sub_games: list[dict[str, object]] = []
+        for index in range(1, self.games_per_pairing + 1):
+            sub_games.append(
+                await self._run_one(
+                    index=index,
+                    cop_group=self.group_1,
+                    thief_group=self.group_2,
+                    cop_url=str(self.bonus_config["mcp_url_group_1_cop"]),
+                    thief_url=str(self.bonus_config["mcp_url_group_2_thief"]),
+                    cop_token=self._token("mcp_token_group_1_cop", "mcp_token_group_1"),
+                    thief_token=self._token("mcp_token_group_2_thief", "mcp_token_group_2"),
+                )
+            )
+
+        offset = self.games_per_pairing
+        for local_index in range(1, self.games_per_pairing + 1):
+            sub_games.append(
+                await self._run_one(
+                    index=offset + local_index,
+                    cop_group=self.group_2,
+                    thief_group=self.group_1,
+                    cop_url=str(self.bonus_config["mcp_url_group_2_cop"]),
+                    thief_url=str(self.bonus_config["mcp_url_group_1_thief"]),
+                    cop_token=self._token("mcp_token_group_2_cop", "mcp_token_group_2"),
+                    thief_token=self._token("mcp_token_group_1_thief", "mcp_token_group_1"),
+                )
+            )
+
+        report = build_bonus_report(self.config, self.bonus_config, sub_games)
+        write_bonus_report(report)
+        send_report_email(self.config, report)
+        return report
+
+    def _token(self, role_key: str, group_key: str) -> str:
+        return str(self.bonus_config.get(role_key) or self.bonus_config.get(group_key) or "")
+
+    async def _run_one(
+        self,
+        index: int,
+        cop_group: str,
+        thief_group: str,
+        cop_url: str,
+        thief_url: str,
+        cop_token: str,
+        thief_token: str,
+    ) -> dict[str, object]:
+        engine = GameEngine(self.config, seed_offset=index)
+        state = engine.new_state()
+        inbox = {"cop": "", "thief": ""}
+        turns: list[dict[str, object]] = []
+
+        async with (
+            RemoteMcpAgent("cop", cop_url, cop_token) as cop,
+            RemoteMcpAgent("thief", thief_url, thief_token) as thief,
+        ):
+            await cop.reset(state.cop.x, state.cop.y, state.thief.x, state.thief.y)
+            await thief.reset(state.cop.x, state.cop.y, state.thief.x, state.thief.y)
+
+            while not engine.result_for(state):
+                role = "thief" if state.turn_index % 2 == 0 else "cop"
+                agent = thief if role == "thief" else cop
+                await agent.update_state(state)
+                await agent.receive_message(inbox[role])
+                action = await agent.choose_action()
+                action = sanitize_action(state, action)
+                engine.apply(state, action)
+                inbox["cop" if role == "thief" else "thief"] = action.message
+                turns.append(
+                    {
+                        "role": role,
+                        "group": thief_group if role == "thief" else cop_group,
+                        "move": action.move.value,
+                        "message": action.message,
+                        "state": engine.snapshot(state),
+                    }
+                )
+
+        result = engine.result_for(state) or "technical_loss"
+        score = engine.score(result)
+        return {
+            "sub_game_id": index,
+            "pairing": {
+                "cop_group": cop_group,
+                "thief_group": thief_group,
+                "cop_mcp_url": cop_url,
+                "thief_mcp_url": thief_url,
+            },
+            "result": result,
+            "moves": len(turns),
+            "score": score,
+            "group_scores": {
+                cop_group: score["cop"],
+                thief_group: score["thief"],
+            },
             "turns": turns,
         }

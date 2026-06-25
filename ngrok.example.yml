@@ -1,0 +1,10 @@
+version: "3"
+agent:
+  authtoken: "replace-with-your-ngrok-authtoken"
+tunnels:
+  cop-mcp:
+    proto: http
+    addr: 8001
+  thief-mcp:
+    proto: http
+    addr: 8002
