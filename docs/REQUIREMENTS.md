@@ -19,8 +19,12 @@
 | Config file | `config.json` | Done |
 | `.env-example` | `.env.example` | Done |
 | Secrets excluded | `.gitignore` | Done |
-| Professional docs | `docs/` | In progress |
-| Bonus inter-group play | Out of current scope | Deferred |
+| Professional docs | `docs/` | Done |
+| Bonus inter-group play | `BonusMcpOrchestrator`, `bonus_config.json` | Done |
+| Bonus email confirmation | `bonus_config.json`, Gmail OAuth token files | Done |
+| Scientific README model | Dec-POMDP tuple, strategy analysis, evidence map | Done |
+| Self-scoring section | README `Self-Scoring` | Done |
+| Python file size limit | all `.py` files are at or below 150 lines | Done |
 
 ## Runtime Requirements
 
@@ -28,6 +32,7 @@
 - Python virtual environment under `.venv`.
 - `pip install -e ".[dev,email]"`.
 - Optional `GEMINI_API_KEY` and `OPENAI_API_KEY` in `.env`.
+- `pypdf` is included for local assignment PDF review and verification.
 
 ## GUI Requirements
 
@@ -44,10 +49,13 @@
 - GUI movement path: matching `reports/shadowgrid_replay_<timestamp>_movements.json`.
 - Reports index path: `reports/README.md`.
 - Email body, when enabled, must be JSON only.
+- Bonus report path: `reports/bonus_game_report.json`.
+- Bonus email sends the final JSON report as the only attachment from both group Gmail accounts.
 
 ## Configuration Requirements
 
 - No API keys in source code.
 - API keys only in `.env`.
 - Rule settings only in `config.json`.
-- Report URLs are editable placeholders until deployment.
+- Bonus partner URLs and tokens live in `bonus_config.json`.
+- `credentials.json` and Gmail OAuth token files are ignored by git.

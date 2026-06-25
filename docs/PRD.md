@@ -4,7 +4,9 @@
 
 ShadowGrid Agent Chase Protocol is a multi-agent cops-and-robber game built for the Orchestration of AI Agents course. The system demonstrates two autonomous agents that communicate in natural language, reason under partial observation, convert messages into physical moves on a grid, and report a complete six-sub-game series in the required InternalGameJSON format.
 
-The project also includes an interactive GUI for demonstration, replay recording, and optional provider-backed agents using Gemini and OpenAI API keys.
+The project also includes an interactive GUI for demonstration, replay recording, optional
+provider-backed agents using Gemini and OpenAI API keys, and a bonus runner for inter-group MCP
+competition.
 
 ## 2. Problem Statement
 
@@ -20,12 +22,12 @@ The assignment requires more than a path-finding game. Its main goal is to prove
 - Produce InternalGameJSON for the assignment report.
 - Provide a GUI demonstration with user/agent and agent/agent modes.
 - Save a final game replay video after GUI game completion.
+- Run the six-game inter-group bonus series through remote MCP URLs.
+- Send the agreed bonus JSON attachment from both group Gmail accounts.
 - Keep secrets out of source control through `.env` and `.env.example`.
 
 ## 4. Non-Goals
 
-- Inter-group bonus play is intentionally out of scope for this stage.
-- Cloud deployment is documented as a next phase, not required for the current local baseline.
 - Reinforcement learning is not mandatory and remains an extension path.
 
 ## 5. Personas
@@ -52,6 +54,10 @@ The assignment requires more than a path-finding game. Its main goal is to prove
 - FR-014: GUI shall support OpenAI-cop/Gemini-robber mode.
 - FR-015: GUI shall allow click-to-move on highlighted legal squares.
 - FR-016: GUI shall allow final replay export after game completion.
+- FR-017: Bonus mode shall run three games per role pairing against a partner group.
+- FR-018: Bonus mode shall write `reports/bonus_game_report.json`.
+- FR-019: Bonus mode shall send the agreed JSON report as an attachment from both group accounts
+  when Gmail OAuth tokens are configured.
 
 ## 7. Non-Functional Requirements
 
@@ -69,6 +75,7 @@ The assignment requires more than a path-finding game. Its main goal is to prove
 - GUI game can be completed and saved.
 - Tests pass for capture, barrier blocking, and report shape.
 - Documentation covers setup, execution, architecture, requirements, and compliance.
+- Bonus report contains six completed inter-group MCP games and matching score agreement.
 
 ## 9. Acceptance Criteria
 
@@ -79,6 +86,8 @@ The assignment requires more than a path-finding game. Its main goal is to prove
 - AC-005: The saved replay stops on the final board.
 - AC-006: `.env.example` includes Gemini and OpenAI key placeholders.
 - AC-007: README contains setup, run commands, report evidence, and feature summary.
+- AC-008: `python -m cops_robbers_ai.cli --bonus-config bonus_config.json --print-report`
+  writes the agreed six-game bonus report.
 
 ## 10. Dependencies
 
@@ -94,12 +103,10 @@ The assignment requires more than a path-finding game. Its main goal is to prove
 - API quota or key problems can break provider-backed agents. Mitigation: deterministic fallback.
 - MP4 encoding may fail on some systems. Mitigation: GIF fallback.
 - GUI layout can vary across Windows display scaling. Mitigation: centered window and visible top controls.
-- Cloud MCP URLs are placeholders until deployment. Mitigation: clearly document local/non-bonus scope.
+- Remote MCP servers may be slow or asleep. Mitigation: use longer command timeouts and keep
+  deterministic legality correction inside the orchestrator.
 
 ## 12. Future Extensions
 
-- Cloud deploy both MCP servers.
-- Add token-based authentication to public MCP endpoints.
 - Add Q-learning strategy module.
-- Add inter-group bonus match runner.
 - Add richer analytics and charts.

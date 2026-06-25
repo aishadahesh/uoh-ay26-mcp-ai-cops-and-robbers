@@ -2,903 +2,905 @@
 
 This backlog contains 900 tracked tasks for hardening ShadowGrid into a professional course submission.
 
-- [ ] T001 [Architecture] Refine component boundaries for submission pass 1.
-- [ ] T002 [Architecture] Document data ownership for submission pass 1.
-- [ ] T003 [Architecture] Review module size for submission pass 1.
-- [ ] T004 [Architecture] Validate package imports for submission pass 1.
-- [ ] T005 [Architecture] Check extension points for submission pass 1.
-- [ ] T006 [Game Rules] Validate movement behavior for submission pass 1.
-- [ ] T007 [Game Rules] Test barrier behavior for submission pass 1.
-- [ ] T008 [Game Rules] Check scoring behavior for submission pass 1.
-- [ ] T009 [Game Rules] Review grid configuration for submission pass 1.
-- [ ] T010 [Game Rules] Audit turn order for submission pass 1.
-- [ ] T011 [Agents] Improve natural-language message for submission pass 1.
-- [ ] T012 [Agents] Review inference behavior for submission pass 1.
-- [ ] T013 [Agents] Tune heuristic fallback for submission pass 1.
-- [ ] T014 [Agents] Validate provider fallback for submission pass 1.
-- [ ] T015 [Agents] Check prompt constraints for submission pass 1.
-- [ ] T016 [MCP] Test cop server tool for submission pass 1.
-- [ ] T017 [MCP] Test thief server tool for submission pass 1.
-- [ ] T018 [MCP] Review tool schemas for submission pass 1.
-- [ ] T019 [MCP] Prepare cloud URL for submission pass 1.
-- [ ] T020 [MCP] Add auth note for submission pass 1.
-- [ ] T021 [GUI] Improve visual feedback for submission pass 1.
-- [ ] T022 [GUI] Test click movement for submission pass 1.
-- [ ] T023 [GUI] Test keyboard movement for submission pass 1.
-- [ ] T024 [GUI] Review start animation for submission pass 1.
-- [ ] T025 [GUI] Review end animation for submission pass 1.
-- [ ] T026 [Replay] Check frame recording for submission pass 1.
-- [ ] T027 [Replay] Verify final frame for submission pass 1.
-- [ ] T028 [Replay] Test MP4 export for submission pass 1.
-- [ ] T029 [Replay] Test GIF fallback for submission pass 1.
-- [ ] T030 [Replay] Document saved artifact for submission pass 1.
-- [ ] T031 [Reporting] Validate JSON schema for submission pass 1.
-- [ ] T032 [Reporting] Check totals for submission pass 1.
-- [ ] T033 [Reporting] Review report metadata for submission pass 1.
-- [ ] T034 [Reporting] Test report writing for submission pass 1.
-- [ ] T035 [Reporting] Prepare email body for submission pass 1.
-- [ ] T036 [Security] Check .env exclusion for submission pass 1.
-- [ ] T037 [Security] Rotate API keys for submission pass 1.
-- [ ] T038 [Security] Review placeholder values for submission pass 1.
-- [ ] T039 [Security] Avoid secrets in logs for submission pass 1.
-- [ ] T040 [Security] Document key setup for submission pass 1.
-- [ ] T041 [Testing] Add edge-case test for submission pass 1.
-- [ ] T042 [Testing] Add integration test for submission pass 1.
-- [ ] T043 [Testing] Measure coverage for submission pass 1.
-- [ ] T044 [Testing] Run ruff for submission pass 1.
-- [ ] T045 [Testing] Record results for submission pass 1.
-- [ ] T046 [Documentation] Improve README for submission pass 1.
-- [ ] T047 [Documentation] Update PRD for submission pass 1.
-- [ ] T048 [Documentation] Update requirements for submission pass 1.
-- [ ] T049 [Documentation] Update runbook for submission pass 1.
-- [ ] T050 [Documentation] Add evidence for submission pass 1.
-- [ ] T051 [Submission] Fill student names for submission pass 2.
-- [ ] T052 [Submission] Fill GitHub URL for submission pass 2.
-- [ ] T053 [Submission] Run final CLI for submission pass 2.
-- [ ] T054 [Submission] Save GUI replay for submission pass 2.
-- [ ] T055 [Submission] Review checklist for submission pass 2.
-- [ ] T056 [Architecture] Refine component boundaries for submission pass 2.
-- [ ] T057 [Architecture] Document data ownership for submission pass 2.
-- [ ] T058 [Architecture] Review module size for submission pass 2.
-- [ ] T059 [Architecture] Validate package imports for submission pass 2.
-- [ ] T060 [Architecture] Check extension points for submission pass 2.
-- [ ] T061 [Game Rules] Validate movement behavior for submission pass 2.
-- [ ] T062 [Game Rules] Test barrier behavior for submission pass 2.
-- [ ] T063 [Game Rules] Check scoring behavior for submission pass 2.
-- [ ] T064 [Game Rules] Review grid configuration for submission pass 2.
-- [ ] T065 [Game Rules] Audit turn order for submission pass 2.
-- [ ] T066 [Agents] Improve natural-language message for submission pass 2.
-- [ ] T067 [Agents] Review inference behavior for submission pass 2.
-- [ ] T068 [Agents] Tune heuristic fallback for submission pass 2.
-- [ ] T069 [Agents] Validate provider fallback for submission pass 2.
-- [ ] T070 [Agents] Check prompt constraints for submission pass 2.
-- [ ] T071 [MCP] Test cop server tool for submission pass 2.
-- [ ] T072 [MCP] Test thief server tool for submission pass 2.
-- [ ] T073 [MCP] Review tool schemas for submission pass 2.
-- [ ] T074 [MCP] Prepare cloud URL for submission pass 2.
-- [ ] T075 [MCP] Add auth note for submission pass 2.
-- [ ] T076 [GUI] Improve visual feedback for submission pass 2.
-- [ ] T077 [GUI] Test click movement for submission pass 2.
-- [ ] T078 [GUI] Test keyboard movement for submission pass 2.
-- [ ] T079 [GUI] Review start animation for submission pass 2.
-- [ ] T080 [GUI] Review end animation for submission pass 2.
-- [ ] T081 [Replay] Check frame recording for submission pass 2.
-- [ ] T082 [Replay] Verify final frame for submission pass 2.
-- [ ] T083 [Replay] Test MP4 export for submission pass 2.
-- [ ] T084 [Replay] Test GIF fallback for submission pass 2.
-- [ ] T085 [Replay] Document saved artifact for submission pass 2.
-- [ ] T086 [Reporting] Validate JSON schema for submission pass 2.
-- [ ] T087 [Reporting] Check totals for submission pass 2.
-- [ ] T088 [Reporting] Review report metadata for submission pass 2.
-- [ ] T089 [Reporting] Test report writing for submission pass 2.
-- [ ] T090 [Reporting] Prepare email body for submission pass 2.
-- [ ] T091 [Security] Check .env exclusion for submission pass 2.
-- [ ] T092 [Security] Rotate API keys for submission pass 2.
-- [ ] T093 [Security] Review placeholder values for submission pass 2.
-- [ ] T094 [Security] Avoid secrets in logs for submission pass 2.
-- [ ] T095 [Security] Document key setup for submission pass 2.
-- [ ] T096 [Testing] Add edge-case test for submission pass 2.
-- [ ] T097 [Testing] Add integration test for submission pass 2.
-- [ ] T098 [Testing] Measure coverage for submission pass 2.
-- [ ] T099 [Testing] Run ruff for submission pass 2.
-- [ ] T100 [Testing] Record results for submission pass 2.
-- [ ] T101 [Documentation] Improve README for submission pass 3.
-- [ ] T102 [Documentation] Update PRD for submission pass 3.
-- [ ] T103 [Documentation] Update requirements for submission pass 3.
-- [ ] T104 [Documentation] Update runbook for submission pass 3.
-- [ ] T105 [Documentation] Add evidence for submission pass 3.
-- [ ] T106 [Submission] Fill student names for submission pass 3.
-- [ ] T107 [Submission] Fill GitHub URL for submission pass 3.
-- [ ] T108 [Submission] Run final CLI for submission pass 3.
-- [ ] T109 [Submission] Save GUI replay for submission pass 3.
-- [ ] T110 [Submission] Review checklist for submission pass 3.
-- [ ] T111 [Architecture] Refine component boundaries for submission pass 3.
-- [ ] T112 [Architecture] Document data ownership for submission pass 3.
-- [ ] T113 [Architecture] Review module size for submission pass 3.
-- [ ] T114 [Architecture] Validate package imports for submission pass 3.
-- [ ] T115 [Architecture] Check extension points for submission pass 3.
-- [ ] T116 [Game Rules] Validate movement behavior for submission pass 3.
-- [ ] T117 [Game Rules] Test barrier behavior for submission pass 3.
-- [ ] T118 [Game Rules] Check scoring behavior for submission pass 3.
-- [ ] T119 [Game Rules] Review grid configuration for submission pass 3.
-- [ ] T120 [Game Rules] Audit turn order for submission pass 3.
-- [ ] T121 [Agents] Improve natural-language message for submission pass 3.
-- [ ] T122 [Agents] Review inference behavior for submission pass 3.
-- [ ] T123 [Agents] Tune heuristic fallback for submission pass 3.
-- [ ] T124 [Agents] Validate provider fallback for submission pass 3.
-- [ ] T125 [Agents] Check prompt constraints for submission pass 3.
-- [ ] T126 [MCP] Test cop server tool for submission pass 3.
-- [ ] T127 [MCP] Test thief server tool for submission pass 3.
-- [ ] T128 [MCP] Review tool schemas for submission pass 3.
-- [ ] T129 [MCP] Prepare cloud URL for submission pass 3.
-- [ ] T130 [MCP] Add auth note for submission pass 3.
-- [ ] T131 [GUI] Improve visual feedback for submission pass 3.
-- [ ] T132 [GUI] Test click movement for submission pass 3.
-- [ ] T133 [GUI] Test keyboard movement for submission pass 3.
-- [ ] T134 [GUI] Review start animation for submission pass 3.
-- [ ] T135 [GUI] Review end animation for submission pass 3.
-- [ ] T136 [Replay] Check frame recording for submission pass 3.
-- [ ] T137 [Replay] Verify final frame for submission pass 3.
-- [ ] T138 [Replay] Test MP4 export for submission pass 3.
-- [ ] T139 [Replay] Test GIF fallback for submission pass 3.
-- [ ] T140 [Replay] Document saved artifact for submission pass 3.
-- [ ] T141 [Reporting] Validate JSON schema for submission pass 3.
-- [ ] T142 [Reporting] Check totals for submission pass 3.
-- [ ] T143 [Reporting] Review report metadata for submission pass 3.
-- [ ] T144 [Reporting] Test report writing for submission pass 3.
-- [ ] T145 [Reporting] Prepare email body for submission pass 3.
-- [ ] T146 [Security] Check .env exclusion for submission pass 3.
-- [ ] T147 [Security] Rotate API keys for submission pass 3.
-- [ ] T148 [Security] Review placeholder values for submission pass 3.
-- [ ] T149 [Security] Avoid secrets in logs for submission pass 3.
-- [ ] T150 [Security] Document key setup for submission pass 3.
-- [ ] T151 [Testing] Add edge-case test for submission pass 4.
-- [ ] T152 [Testing] Add integration test for submission pass 4.
-- [ ] T153 [Testing] Measure coverage for submission pass 4.
-- [ ] T154 [Testing] Run ruff for submission pass 4.
-- [ ] T155 [Testing] Record results for submission pass 4.
-- [ ] T156 [Documentation] Improve README for submission pass 4.
-- [ ] T157 [Documentation] Update PRD for submission pass 4.
-- [ ] T158 [Documentation] Update requirements for submission pass 4.
-- [ ] T159 [Documentation] Update runbook for submission pass 4.
-- [ ] T160 [Documentation] Add evidence for submission pass 4.
-- [ ] T161 [Submission] Fill student names for submission pass 4.
-- [ ] T162 [Submission] Fill GitHub URL for submission pass 4.
-- [ ] T163 [Submission] Run final CLI for submission pass 4.
-- [ ] T164 [Submission] Save GUI replay for submission pass 4.
-- [ ] T165 [Submission] Review checklist for submission pass 4.
-- [ ] T166 [Architecture] Refine component boundaries for submission pass 4.
-- [ ] T167 [Architecture] Document data ownership for submission pass 4.
-- [ ] T168 [Architecture] Review module size for submission pass 4.
-- [ ] T169 [Architecture] Validate package imports for submission pass 4.
-- [ ] T170 [Architecture] Check extension points for submission pass 4.
-- [ ] T171 [Game Rules] Validate movement behavior for submission pass 4.
-- [ ] T172 [Game Rules] Test barrier behavior for submission pass 4.
-- [ ] T173 [Game Rules] Check scoring behavior for submission pass 4.
-- [ ] T174 [Game Rules] Review grid configuration for submission pass 4.
-- [ ] T175 [Game Rules] Audit turn order for submission pass 4.
-- [ ] T176 [Agents] Improve natural-language message for submission pass 4.
-- [ ] T177 [Agents] Review inference behavior for submission pass 4.
-- [ ] T178 [Agents] Tune heuristic fallback for submission pass 4.
-- [ ] T179 [Agents] Validate provider fallback for submission pass 4.
-- [ ] T180 [Agents] Check prompt constraints for submission pass 4.
-- [ ] T181 [MCP] Test cop server tool for submission pass 4.
-- [ ] T182 [MCP] Test thief server tool for submission pass 4.
-- [ ] T183 [MCP] Review tool schemas for submission pass 4.
-- [ ] T184 [MCP] Prepare cloud URL for submission pass 4.
-- [ ] T185 [MCP] Add auth note for submission pass 4.
-- [ ] T186 [GUI] Improve visual feedback for submission pass 4.
-- [ ] T187 [GUI] Test click movement for submission pass 4.
-- [ ] T188 [GUI] Test keyboard movement for submission pass 4.
-- [ ] T189 [GUI] Review start animation for submission pass 4.
-- [ ] T190 [GUI] Review end animation for submission pass 4.
-- [ ] T191 [Replay] Check frame recording for submission pass 4.
-- [ ] T192 [Replay] Verify final frame for submission pass 4.
-- [ ] T193 [Replay] Test MP4 export for submission pass 4.
-- [ ] T194 [Replay] Test GIF fallback for submission pass 4.
-- [ ] T195 [Replay] Document saved artifact for submission pass 4.
-- [ ] T196 [Reporting] Validate JSON schema for submission pass 4.
-- [ ] T197 [Reporting] Check totals for submission pass 4.
-- [ ] T198 [Reporting] Review report metadata for submission pass 4.
-- [ ] T199 [Reporting] Test report writing for submission pass 4.
-- [ ] T200 [Reporting] Prepare email body for submission pass 4.
-- [ ] T201 [Security] Check .env exclusion for submission pass 5.
-- [ ] T202 [Security] Rotate API keys for submission pass 5.
-- [ ] T203 [Security] Review placeholder values for submission pass 5.
-- [ ] T204 [Security] Avoid secrets in logs for submission pass 5.
-- [ ] T205 [Security] Document key setup for submission pass 5.
-- [ ] T206 [Testing] Add edge-case test for submission pass 5.
-- [ ] T207 [Testing] Add integration test for submission pass 5.
-- [ ] T208 [Testing] Measure coverage for submission pass 5.
-- [ ] T209 [Testing] Run ruff for submission pass 5.
-- [ ] T210 [Testing] Record results for submission pass 5.
-- [ ] T211 [Documentation] Improve README for submission pass 5.
-- [ ] T212 [Documentation] Update PRD for submission pass 5.
-- [ ] T213 [Documentation] Update requirements for submission pass 5.
-- [ ] T214 [Documentation] Update runbook for submission pass 5.
-- [ ] T215 [Documentation] Add evidence for submission pass 5.
-- [ ] T216 [Submission] Fill student names for submission pass 5.
-- [ ] T217 [Submission] Fill GitHub URL for submission pass 5.
-- [ ] T218 [Submission] Run final CLI for submission pass 5.
-- [ ] T219 [Submission] Save GUI replay for submission pass 5.
-- [ ] T220 [Submission] Review checklist for submission pass 5.
-- [ ] T221 [Architecture] Refine component boundaries for submission pass 5.
-- [ ] T222 [Architecture] Document data ownership for submission pass 5.
-- [ ] T223 [Architecture] Review module size for submission pass 5.
-- [ ] T224 [Architecture] Validate package imports for submission pass 5.
-- [ ] T225 [Architecture] Check extension points for submission pass 5.
-- [ ] T226 [Game Rules] Validate movement behavior for submission pass 5.
-- [ ] T227 [Game Rules] Test barrier behavior for submission pass 5.
-- [ ] T228 [Game Rules] Check scoring behavior for submission pass 5.
-- [ ] T229 [Game Rules] Review grid configuration for submission pass 5.
-- [ ] T230 [Game Rules] Audit turn order for submission pass 5.
-- [ ] T231 [Agents] Improve natural-language message for submission pass 5.
-- [ ] T232 [Agents] Review inference behavior for submission pass 5.
-- [ ] T233 [Agents] Tune heuristic fallback for submission pass 5.
-- [ ] T234 [Agents] Validate provider fallback for submission pass 5.
-- [ ] T235 [Agents] Check prompt constraints for submission pass 5.
-- [ ] T236 [MCP] Test cop server tool for submission pass 5.
-- [ ] T237 [MCP] Test thief server tool for submission pass 5.
-- [ ] T238 [MCP] Review tool schemas for submission pass 5.
-- [ ] T239 [MCP] Prepare cloud URL for submission pass 5.
-- [ ] T240 [MCP] Add auth note for submission pass 5.
-- [ ] T241 [GUI] Improve visual feedback for submission pass 5.
-- [ ] T242 [GUI] Test click movement for submission pass 5.
-- [ ] T243 [GUI] Test keyboard movement for submission pass 5.
-- [ ] T244 [GUI] Review start animation for submission pass 5.
-- [ ] T245 [GUI] Review end animation for submission pass 5.
-- [ ] T246 [Replay] Check frame recording for submission pass 5.
-- [ ] T247 [Replay] Verify final frame for submission pass 5.
-- [ ] T248 [Replay] Test MP4 export for submission pass 5.
-- [ ] T249 [Replay] Test GIF fallback for submission pass 5.
-- [ ] T250 [Replay] Document saved artifact for submission pass 5.
-- [ ] T251 [Reporting] Validate JSON schema for submission pass 6.
-- [ ] T252 [Reporting] Check totals for submission pass 6.
-- [ ] T253 [Reporting] Review report metadata for submission pass 6.
-- [ ] T254 [Reporting] Test report writing for submission pass 6.
-- [ ] T255 [Reporting] Prepare email body for submission pass 6.
-- [ ] T256 [Security] Check .env exclusion for submission pass 6.
-- [ ] T257 [Security] Rotate API keys for submission pass 6.
-- [ ] T258 [Security] Review placeholder values for submission pass 6.
-- [ ] T259 [Security] Avoid secrets in logs for submission pass 6.
-- [ ] T260 [Security] Document key setup for submission pass 6.
-- [ ] T261 [Testing] Add edge-case test for submission pass 6.
-- [ ] T262 [Testing] Add integration test for submission pass 6.
-- [ ] T263 [Testing] Measure coverage for submission pass 6.
-- [ ] T264 [Testing] Run ruff for submission pass 6.
-- [ ] T265 [Testing] Record results for submission pass 6.
-- [ ] T266 [Documentation] Improve README for submission pass 6.
-- [ ] T267 [Documentation] Update PRD for submission pass 6.
-- [ ] T268 [Documentation] Update requirements for submission pass 6.
-- [ ] T269 [Documentation] Update runbook for submission pass 6.
-- [ ] T270 [Documentation] Add evidence for submission pass 6.
-- [ ] T271 [Submission] Fill student names for submission pass 6.
-- [ ] T272 [Submission] Fill GitHub URL for submission pass 6.
-- [ ] T273 [Submission] Run final CLI for submission pass 6.
-- [ ] T274 [Submission] Save GUI replay for submission pass 6.
-- [ ] T275 [Submission] Review checklist for submission pass 6.
-- [ ] T276 [Architecture] Refine component boundaries for submission pass 6.
-- [ ] T277 [Architecture] Document data ownership for submission pass 6.
-- [ ] T278 [Architecture] Review module size for submission pass 6.
-- [ ] T279 [Architecture] Validate package imports for submission pass 6.
-- [ ] T280 [Architecture] Check extension points for submission pass 6.
-- [ ] T281 [Game Rules] Validate movement behavior for submission pass 6.
-- [ ] T282 [Game Rules] Test barrier behavior for submission pass 6.
-- [ ] T283 [Game Rules] Check scoring behavior for submission pass 6.
-- [ ] T284 [Game Rules] Review grid configuration for submission pass 6.
-- [ ] T285 [Game Rules] Audit turn order for submission pass 6.
-- [ ] T286 [Agents] Improve natural-language message for submission pass 6.
-- [ ] T287 [Agents] Review inference behavior for submission pass 6.
-- [ ] T288 [Agents] Tune heuristic fallback for submission pass 6.
-- [ ] T289 [Agents] Validate provider fallback for submission pass 6.
-- [ ] T290 [Agents] Check prompt constraints for submission pass 6.
-- [ ] T291 [MCP] Test cop server tool for submission pass 6.
-- [ ] T292 [MCP] Test thief server tool for submission pass 6.
-- [ ] T293 [MCP] Review tool schemas for submission pass 6.
-- [ ] T294 [MCP] Prepare cloud URL for submission pass 6.
-- [ ] T295 [MCP] Add auth note for submission pass 6.
-- [ ] T296 [GUI] Improve visual feedback for submission pass 6.
-- [ ] T297 [GUI] Test click movement for submission pass 6.
-- [ ] T298 [GUI] Test keyboard movement for submission pass 6.
-- [ ] T299 [GUI] Review start animation for submission pass 6.
-- [ ] T300 [GUI] Review end animation for submission pass 6.
-- [ ] T301 [Replay] Check frame recording for submission pass 7.
-- [ ] T302 [Replay] Verify final frame for submission pass 7.
-- [ ] T303 [Replay] Test MP4 export for submission pass 7.
-- [ ] T304 [Replay] Test GIF fallback for submission pass 7.
-- [ ] T305 [Replay] Document saved artifact for submission pass 7.
-- [ ] T306 [Reporting] Validate JSON schema for submission pass 7.
-- [ ] T307 [Reporting] Check totals for submission pass 7.
-- [ ] T308 [Reporting] Review report metadata for submission pass 7.
-- [ ] T309 [Reporting] Test report writing for submission pass 7.
-- [ ] T310 [Reporting] Prepare email body for submission pass 7.
-- [ ] T311 [Security] Check .env exclusion for submission pass 7.
-- [ ] T312 [Security] Rotate API keys for submission pass 7.
-- [ ] T313 [Security] Review placeholder values for submission pass 7.
-- [ ] T314 [Security] Avoid secrets in logs for submission pass 7.
-- [ ] T315 [Security] Document key setup for submission pass 7.
-- [ ] T316 [Testing] Add edge-case test for submission pass 7.
-- [ ] T317 [Testing] Add integration test for submission pass 7.
-- [ ] T318 [Testing] Measure coverage for submission pass 7.
-- [ ] T319 [Testing] Run ruff for submission pass 7.
-- [ ] T320 [Testing] Record results for submission pass 7.
-- [ ] T321 [Documentation] Improve README for submission pass 7.
-- [ ] T322 [Documentation] Update PRD for submission pass 7.
-- [ ] T323 [Documentation] Update requirements for submission pass 7.
-- [ ] T324 [Documentation] Update runbook for submission pass 7.
-- [ ] T325 [Documentation] Add evidence for submission pass 7.
-- [ ] T326 [Submission] Fill student names for submission pass 7.
-- [ ] T327 [Submission] Fill GitHub URL for submission pass 7.
-- [ ] T328 [Submission] Run final CLI for submission pass 7.
-- [ ] T329 [Submission] Save GUI replay for submission pass 7.
-- [ ] T330 [Submission] Review checklist for submission pass 7.
-- [ ] T331 [Architecture] Refine component boundaries for submission pass 7.
-- [ ] T332 [Architecture] Document data ownership for submission pass 7.
-- [ ] T333 [Architecture] Review module size for submission pass 7.
-- [ ] T334 [Architecture] Validate package imports for submission pass 7.
-- [ ] T335 [Architecture] Check extension points for submission pass 7.
-- [ ] T336 [Game Rules] Validate movement behavior for submission pass 7.
-- [ ] T337 [Game Rules] Test barrier behavior for submission pass 7.
-- [ ] T338 [Game Rules] Check scoring behavior for submission pass 7.
-- [ ] T339 [Game Rules] Review grid configuration for submission pass 7.
-- [ ] T340 [Game Rules] Audit turn order for submission pass 7.
-- [ ] T341 [Agents] Improve natural-language message for submission pass 7.
-- [ ] T342 [Agents] Review inference behavior for submission pass 7.
-- [ ] T343 [Agents] Tune heuristic fallback for submission pass 7.
-- [ ] T344 [Agents] Validate provider fallback for submission pass 7.
-- [ ] T345 [Agents] Check prompt constraints for submission pass 7.
-- [ ] T346 [MCP] Test cop server tool for submission pass 7.
-- [ ] T347 [MCP] Test thief server tool for submission pass 7.
-- [ ] T348 [MCP] Review tool schemas for submission pass 7.
-- [ ] T349 [MCP] Prepare cloud URL for submission pass 7.
-- [ ] T350 [MCP] Add auth note for submission pass 7.
-- [ ] T351 [GUI] Improve visual feedback for submission pass 8.
-- [ ] T352 [GUI] Test click movement for submission pass 8.
-- [ ] T353 [GUI] Test keyboard movement for submission pass 8.
-- [ ] T354 [GUI] Review start animation for submission pass 8.
-- [ ] T355 [GUI] Review end animation for submission pass 8.
-- [ ] T356 [Replay] Check frame recording for submission pass 8.
-- [ ] T357 [Replay] Verify final frame for submission pass 8.
-- [ ] T358 [Replay] Test MP4 export for submission pass 8.
-- [ ] T359 [Replay] Test GIF fallback for submission pass 8.
-- [ ] T360 [Replay] Document saved artifact for submission pass 8.
-- [ ] T361 [Reporting] Validate JSON schema for submission pass 8.
-- [ ] T362 [Reporting] Check totals for submission pass 8.
-- [ ] T363 [Reporting] Review report metadata for submission pass 8.
-- [ ] T364 [Reporting] Test report writing for submission pass 8.
-- [ ] T365 [Reporting] Prepare email body for submission pass 8.
-- [ ] T366 [Security] Check .env exclusion for submission pass 8.
-- [ ] T367 [Security] Rotate API keys for submission pass 8.
-- [ ] T368 [Security] Review placeholder values for submission pass 8.
-- [ ] T369 [Security] Avoid secrets in logs for submission pass 8.
-- [ ] T370 [Security] Document key setup for submission pass 8.
-- [ ] T371 [Testing] Add edge-case test for submission pass 8.
-- [ ] T372 [Testing] Add integration test for submission pass 8.
-- [ ] T373 [Testing] Measure coverage for submission pass 8.
-- [ ] T374 [Testing] Run ruff for submission pass 8.
-- [ ] T375 [Testing] Record results for submission pass 8.
-- [ ] T376 [Documentation] Improve README for submission pass 8.
-- [ ] T377 [Documentation] Update PRD for submission pass 8.
-- [ ] T378 [Documentation] Update requirements for submission pass 8.
-- [ ] T379 [Documentation] Update runbook for submission pass 8.
-- [ ] T380 [Documentation] Add evidence for submission pass 8.
-- [ ] T381 [Submission] Fill student names for submission pass 8.
-- [ ] T382 [Submission] Fill GitHub URL for submission pass 8.
-- [ ] T383 [Submission] Run final CLI for submission pass 8.
-- [ ] T384 [Submission] Save GUI replay for submission pass 8.
-- [ ] T385 [Submission] Review checklist for submission pass 8.
-- [ ] T386 [Architecture] Refine component boundaries for submission pass 8.
-- [ ] T387 [Architecture] Document data ownership for submission pass 8.
-- [ ] T388 [Architecture] Review module size for submission pass 8.
-- [ ] T389 [Architecture] Validate package imports for submission pass 8.
-- [ ] T390 [Architecture] Check extension points for submission pass 8.
-- [ ] T391 [Game Rules] Validate movement behavior for submission pass 8.
-- [ ] T392 [Game Rules] Test barrier behavior for submission pass 8.
-- [ ] T393 [Game Rules] Check scoring behavior for submission pass 8.
-- [ ] T394 [Game Rules] Review grid configuration for submission pass 8.
-- [ ] T395 [Game Rules] Audit turn order for submission pass 8.
-- [ ] T396 [Agents] Improve natural-language message for submission pass 8.
-- [ ] T397 [Agents] Review inference behavior for submission pass 8.
-- [ ] T398 [Agents] Tune heuristic fallback for submission pass 8.
-- [ ] T399 [Agents] Validate provider fallback for submission pass 8.
-- [ ] T400 [Agents] Check prompt constraints for submission pass 8.
-- [ ] T401 [MCP] Test cop server tool for submission pass 9.
-- [ ] T402 [MCP] Test thief server tool for submission pass 9.
-- [ ] T403 [MCP] Review tool schemas for submission pass 9.
-- [ ] T404 [MCP] Prepare cloud URL for submission pass 9.
-- [ ] T405 [MCP] Add auth note for submission pass 9.
-- [ ] T406 [GUI] Improve visual feedback for submission pass 9.
-- [ ] T407 [GUI] Test click movement for submission pass 9.
-- [ ] T408 [GUI] Test keyboard movement for submission pass 9.
-- [ ] T409 [GUI] Review start animation for submission pass 9.
-- [ ] T410 [GUI] Review end animation for submission pass 9.
-- [ ] T411 [Replay] Check frame recording for submission pass 9.
-- [ ] T412 [Replay] Verify final frame for submission pass 9.
-- [ ] T413 [Replay] Test MP4 export for submission pass 9.
-- [ ] T414 [Replay] Test GIF fallback for submission pass 9.
-- [ ] T415 [Replay] Document saved artifact for submission pass 9.
-- [ ] T416 [Reporting] Validate JSON schema for submission pass 9.
-- [ ] T417 [Reporting] Check totals for submission pass 9.
-- [ ] T418 [Reporting] Review report metadata for submission pass 9.
-- [ ] T419 [Reporting] Test report writing for submission pass 9.
-- [ ] T420 [Reporting] Prepare email body for submission pass 9.
-- [ ] T421 [Security] Check .env exclusion for submission pass 9.
-- [ ] T422 [Security] Rotate API keys for submission pass 9.
-- [ ] T423 [Security] Review placeholder values for submission pass 9.
-- [ ] T424 [Security] Avoid secrets in logs for submission pass 9.
-- [ ] T425 [Security] Document key setup for submission pass 9.
-- [ ] T426 [Testing] Add edge-case test for submission pass 9.
-- [ ] T427 [Testing] Add integration test for submission pass 9.
-- [ ] T428 [Testing] Measure coverage for submission pass 9.
-- [ ] T429 [Testing] Run ruff for submission pass 9.
-- [ ] T430 [Testing] Record results for submission pass 9.
-- [ ] T431 [Documentation] Improve README for submission pass 9.
-- [ ] T432 [Documentation] Update PRD for submission pass 9.
-- [ ] T433 [Documentation] Update requirements for submission pass 9.
-- [ ] T434 [Documentation] Update runbook for submission pass 9.
-- [ ] T435 [Documentation] Add evidence for submission pass 9.
-- [ ] T436 [Submission] Fill student names for submission pass 9.
-- [ ] T437 [Submission] Fill GitHub URL for submission pass 9.
-- [ ] T438 [Submission] Run final CLI for submission pass 9.
-- [ ] T439 [Submission] Save GUI replay for submission pass 9.
-- [ ] T440 [Submission] Review checklist for submission pass 9.
-- [ ] T441 [Architecture] Refine component boundaries for submission pass 9.
-- [ ] T442 [Architecture] Document data ownership for submission pass 9.
-- [ ] T443 [Architecture] Review module size for submission pass 9.
-- [ ] T444 [Architecture] Validate package imports for submission pass 9.
-- [ ] T445 [Architecture] Check extension points for submission pass 9.
-- [ ] T446 [Game Rules] Validate movement behavior for submission pass 9.
-- [ ] T447 [Game Rules] Test barrier behavior for submission pass 9.
-- [ ] T448 [Game Rules] Check scoring behavior for submission pass 9.
-- [ ] T449 [Game Rules] Review grid configuration for submission pass 9.
-- [ ] T450 [Game Rules] Audit turn order for submission pass 9.
-- [ ] T451 [Agents] Improve natural-language message for submission pass 10.
-- [ ] T452 [Agents] Review inference behavior for submission pass 10.
-- [ ] T453 [Agents] Tune heuristic fallback for submission pass 10.
-- [ ] T454 [Agents] Validate provider fallback for submission pass 10.
-- [ ] T455 [Agents] Check prompt constraints for submission pass 10.
-- [ ] T456 [MCP] Test cop server tool for submission pass 10.
-- [ ] T457 [MCP] Test thief server tool for submission pass 10.
-- [ ] T458 [MCP] Review tool schemas for submission pass 10.
-- [ ] T459 [MCP] Prepare cloud URL for submission pass 10.
-- [ ] T460 [MCP] Add auth note for submission pass 10.
-- [ ] T461 [GUI] Improve visual feedback for submission pass 10.
-- [ ] T462 [GUI] Test click movement for submission pass 10.
-- [ ] T463 [GUI] Test keyboard movement for submission pass 10.
-- [ ] T464 [GUI] Review start animation for submission pass 10.
-- [ ] T465 [GUI] Review end animation for submission pass 10.
-- [ ] T466 [Replay] Check frame recording for submission pass 10.
-- [ ] T467 [Replay] Verify final frame for submission pass 10.
-- [ ] T468 [Replay] Test MP4 export for submission pass 10.
-- [ ] T469 [Replay] Test GIF fallback for submission pass 10.
-- [ ] T470 [Replay] Document saved artifact for submission pass 10.
-- [ ] T471 [Reporting] Validate JSON schema for submission pass 10.
-- [ ] T472 [Reporting] Check totals for submission pass 10.
-- [ ] T473 [Reporting] Review report metadata for submission pass 10.
-- [ ] T474 [Reporting] Test report writing for submission pass 10.
-- [ ] T475 [Reporting] Prepare email body for submission pass 10.
-- [ ] T476 [Security] Check .env exclusion for submission pass 10.
-- [ ] T477 [Security] Rotate API keys for submission pass 10.
-- [ ] T478 [Security] Review placeholder values for submission pass 10.
-- [ ] T479 [Security] Avoid secrets in logs for submission pass 10.
-- [ ] T480 [Security] Document key setup for submission pass 10.
-- [ ] T481 [Testing] Add edge-case test for submission pass 10.
-- [ ] T482 [Testing] Add integration test for submission pass 10.
-- [ ] T483 [Testing] Measure coverage for submission pass 10.
-- [ ] T484 [Testing] Run ruff for submission pass 10.
-- [ ] T485 [Testing] Record results for submission pass 10.
-- [ ] T486 [Documentation] Improve README for submission pass 10.
-- [ ] T487 [Documentation] Update PRD for submission pass 10.
-- [ ] T488 [Documentation] Update requirements for submission pass 10.
-- [ ] T489 [Documentation] Update runbook for submission pass 10.
-- [ ] T490 [Documentation] Add evidence for submission pass 10.
-- [ ] T491 [Submission] Fill student names for submission pass 10.
-- [ ] T492 [Submission] Fill GitHub URL for submission pass 10.
-- [ ] T493 [Submission] Run final CLI for submission pass 10.
-- [ ] T494 [Submission] Save GUI replay for submission pass 10.
-- [ ] T495 [Submission] Review checklist for submission pass 10.
-- [ ] T496 [Architecture] Refine component boundaries for submission pass 10.
-- [ ] T497 [Architecture] Document data ownership for submission pass 10.
-- [ ] T498 [Architecture] Review module size for submission pass 10.
-- [ ] T499 [Architecture] Validate package imports for submission pass 10.
-- [ ] T500 [Architecture] Check extension points for submission pass 10.
-- [ ] T501 [Game Rules] Validate movement behavior for submission pass 11.
-- [ ] T502 [Game Rules] Test barrier behavior for submission pass 11.
-- [ ] T503 [Game Rules] Check scoring behavior for submission pass 11.
-- [ ] T504 [Game Rules] Review grid configuration for submission pass 11.
-- [ ] T505 [Game Rules] Audit turn order for submission pass 11.
-- [ ] T506 [Agents] Improve natural-language message for submission pass 11.
-- [ ] T507 [Agents] Review inference behavior for submission pass 11.
-- [ ] T508 [Agents] Tune heuristic fallback for submission pass 11.
-- [ ] T509 [Agents] Validate provider fallback for submission pass 11.
-- [ ] T510 [Agents] Check prompt constraints for submission pass 11.
-- [ ] T511 [MCP] Test cop server tool for submission pass 11.
-- [ ] T512 [MCP] Test thief server tool for submission pass 11.
-- [ ] T513 [MCP] Review tool schemas for submission pass 11.
-- [ ] T514 [MCP] Prepare cloud URL for submission pass 11.
-- [ ] T515 [MCP] Add auth note for submission pass 11.
-- [ ] T516 [GUI] Improve visual feedback for submission pass 11.
-- [ ] T517 [GUI] Test click movement for submission pass 11.
-- [ ] T518 [GUI] Test keyboard movement for submission pass 11.
-- [ ] T519 [GUI] Review start animation for submission pass 11.
-- [ ] T520 [GUI] Review end animation for submission pass 11.
-- [ ] T521 [Replay] Check frame recording for submission pass 11.
-- [ ] T522 [Replay] Verify final frame for submission pass 11.
-- [ ] T523 [Replay] Test MP4 export for submission pass 11.
-- [ ] T524 [Replay] Test GIF fallback for submission pass 11.
-- [ ] T525 [Replay] Document saved artifact for submission pass 11.
-- [ ] T526 [Reporting] Validate JSON schema for submission pass 11.
-- [ ] T527 [Reporting] Check totals for submission pass 11.
-- [ ] T528 [Reporting] Review report metadata for submission pass 11.
-- [ ] T529 [Reporting] Test report writing for submission pass 11.
-- [ ] T530 [Reporting] Prepare email body for submission pass 11.
-- [ ] T531 [Security] Check .env exclusion for submission pass 11.
-- [ ] T532 [Security] Rotate API keys for submission pass 11.
-- [ ] T533 [Security] Review placeholder values for submission pass 11.
-- [ ] T534 [Security] Avoid secrets in logs for submission pass 11.
-- [ ] T535 [Security] Document key setup for submission pass 11.
-- [ ] T536 [Testing] Add edge-case test for submission pass 11.
-- [ ] T537 [Testing] Add integration test for submission pass 11.
-- [ ] T538 [Testing] Measure coverage for submission pass 11.
-- [ ] T539 [Testing] Run ruff for submission pass 11.
-- [ ] T540 [Testing] Record results for submission pass 11.
-- [ ] T541 [Documentation] Improve README for submission pass 11.
-- [ ] T542 [Documentation] Update PRD for submission pass 11.
-- [ ] T543 [Documentation] Update requirements for submission pass 11.
-- [ ] T544 [Documentation] Update runbook for submission pass 11.
-- [ ] T545 [Documentation] Add evidence for submission pass 11.
-- [ ] T546 [Submission] Fill student names for submission pass 11.
-- [ ] T547 [Submission] Fill GitHub URL for submission pass 11.
-- [ ] T548 [Submission] Run final CLI for submission pass 11.
-- [ ] T549 [Submission] Save GUI replay for submission pass 11.
-- [ ] T550 [Submission] Review checklist for submission pass 11.
-- [ ] T551 [Architecture] Refine component boundaries for submission pass 12.
-- [ ] T552 [Architecture] Document data ownership for submission pass 12.
-- [ ] T553 [Architecture] Review module size for submission pass 12.
-- [ ] T554 [Architecture] Validate package imports for submission pass 12.
-- [ ] T555 [Architecture] Check extension points for submission pass 12.
-- [ ] T556 [Game Rules] Validate movement behavior for submission pass 12.
-- [ ] T557 [Game Rules] Test barrier behavior for submission pass 12.
-- [ ] T558 [Game Rules] Check scoring behavior for submission pass 12.
-- [ ] T559 [Game Rules] Review grid configuration for submission pass 12.
-- [ ] T560 [Game Rules] Audit turn order for submission pass 12.
-- [ ] T561 [Agents] Improve natural-language message for submission pass 12.
-- [ ] T562 [Agents] Review inference behavior for submission pass 12.
-- [ ] T563 [Agents] Tune heuristic fallback for submission pass 12.
-- [ ] T564 [Agents] Validate provider fallback for submission pass 12.
-- [ ] T565 [Agents] Check prompt constraints for submission pass 12.
-- [ ] T566 [MCP] Test cop server tool for submission pass 12.
-- [ ] T567 [MCP] Test thief server tool for submission pass 12.
-- [ ] T568 [MCP] Review tool schemas for submission pass 12.
-- [ ] T569 [MCP] Prepare cloud URL for submission pass 12.
-- [ ] T570 [MCP] Add auth note for submission pass 12.
-- [ ] T571 [GUI] Improve visual feedback for submission pass 12.
-- [ ] T572 [GUI] Test click movement for submission pass 12.
-- [ ] T573 [GUI] Test keyboard movement for submission pass 12.
-- [ ] T574 [GUI] Review start animation for submission pass 12.
-- [ ] T575 [GUI] Review end animation for submission pass 12.
-- [ ] T576 [Replay] Check frame recording for submission pass 12.
-- [ ] T577 [Replay] Verify final frame for submission pass 12.
-- [ ] T578 [Replay] Test MP4 export for submission pass 12.
-- [ ] T579 [Replay] Test GIF fallback for submission pass 12.
-- [ ] T580 [Replay] Document saved artifact for submission pass 12.
-- [ ] T581 [Reporting] Validate JSON schema for submission pass 12.
-- [ ] T582 [Reporting] Check totals for submission pass 12.
-- [ ] T583 [Reporting] Review report metadata for submission pass 12.
-- [ ] T584 [Reporting] Test report writing for submission pass 12.
-- [ ] T585 [Reporting] Prepare email body for submission pass 12.
-- [ ] T586 [Security] Check .env exclusion for submission pass 12.
-- [ ] T587 [Security] Rotate API keys for submission pass 12.
-- [ ] T588 [Security] Review placeholder values for submission pass 12.
-- [ ] T589 [Security] Avoid secrets in logs for submission pass 12.
-- [ ] T590 [Security] Document key setup for submission pass 12.
-- [ ] T591 [Testing] Add edge-case test for submission pass 12.
-- [ ] T592 [Testing] Add integration test for submission pass 12.
-- [ ] T593 [Testing] Measure coverage for submission pass 12.
-- [ ] T594 [Testing] Run ruff for submission pass 12.
-- [ ] T595 [Testing] Record results for submission pass 12.
-- [ ] T596 [Documentation] Improve README for submission pass 12.
-- [ ] T597 [Documentation] Update PRD for submission pass 12.
-- [ ] T598 [Documentation] Update requirements for submission pass 12.
-- [ ] T599 [Documentation] Update runbook for submission pass 12.
-- [ ] T600 [Documentation] Add evidence for submission pass 12.
-- [ ] T601 [Submission] Fill student names for submission pass 13.
-- [ ] T602 [Submission] Fill GitHub URL for submission pass 13.
-- [ ] T603 [Submission] Run final CLI for submission pass 13.
-- [ ] T604 [Submission] Save GUI replay for submission pass 13.
-- [ ] T605 [Submission] Review checklist for submission pass 13.
-- [ ] T606 [Architecture] Refine component boundaries for submission pass 13.
-- [ ] T607 [Architecture] Document data ownership for submission pass 13.
-- [ ] T608 [Architecture] Review module size for submission pass 13.
-- [ ] T609 [Architecture] Validate package imports for submission pass 13.
-- [ ] T610 [Architecture] Check extension points for submission pass 13.
-- [ ] T611 [Game Rules] Validate movement behavior for submission pass 13.
-- [ ] T612 [Game Rules] Test barrier behavior for submission pass 13.
-- [ ] T613 [Game Rules] Check scoring behavior for submission pass 13.
-- [ ] T614 [Game Rules] Review grid configuration for submission pass 13.
-- [ ] T615 [Game Rules] Audit turn order for submission pass 13.
-- [ ] T616 [Agents] Improve natural-language message for submission pass 13.
-- [ ] T617 [Agents] Review inference behavior for submission pass 13.
-- [ ] T618 [Agents] Tune heuristic fallback for submission pass 13.
-- [ ] T619 [Agents] Validate provider fallback for submission pass 13.
-- [ ] T620 [Agents] Check prompt constraints for submission pass 13.
-- [ ] T621 [MCP] Test cop server tool for submission pass 13.
-- [ ] T622 [MCP] Test thief server tool for submission pass 13.
-- [ ] T623 [MCP] Review tool schemas for submission pass 13.
-- [ ] T624 [MCP] Prepare cloud URL for submission pass 13.
-- [ ] T625 [MCP] Add auth note for submission pass 13.
-- [ ] T626 [GUI] Improve visual feedback for submission pass 13.
-- [ ] T627 [GUI] Test click movement for submission pass 13.
-- [ ] T628 [GUI] Test keyboard movement for submission pass 13.
-- [ ] T629 [GUI] Review start animation for submission pass 13.
-- [ ] T630 [GUI] Review end animation for submission pass 13.
-- [ ] T631 [Replay] Check frame recording for submission pass 13.
-- [ ] T632 [Replay] Verify final frame for submission pass 13.
-- [ ] T633 [Replay] Test MP4 export for submission pass 13.
-- [ ] T634 [Replay] Test GIF fallback for submission pass 13.
-- [ ] T635 [Replay] Document saved artifact for submission pass 13.
-- [ ] T636 [Reporting] Validate JSON schema for submission pass 13.
-- [ ] T637 [Reporting] Check totals for submission pass 13.
-- [ ] T638 [Reporting] Review report metadata for submission pass 13.
-- [ ] T639 [Reporting] Test report writing for submission pass 13.
-- [ ] T640 [Reporting] Prepare email body for submission pass 13.
-- [ ] T641 [Security] Check .env exclusion for submission pass 13.
-- [ ] T642 [Security] Rotate API keys for submission pass 13.
-- [ ] T643 [Security] Review placeholder values for submission pass 13.
-- [ ] T644 [Security] Avoid secrets in logs for submission pass 13.
-- [ ] T645 [Security] Document key setup for submission pass 13.
-- [ ] T646 [Testing] Add edge-case test for submission pass 13.
-- [ ] T647 [Testing] Add integration test for submission pass 13.
-- [ ] T648 [Testing] Measure coverage for submission pass 13.
-- [ ] T649 [Testing] Run ruff for submission pass 13.
-- [ ] T650 [Testing] Record results for submission pass 13.
-- [ ] T651 [Documentation] Improve README for submission pass 14.
-- [ ] T652 [Documentation] Update PRD for submission pass 14.
-- [ ] T653 [Documentation] Update requirements for submission pass 14.
-- [ ] T654 [Documentation] Update runbook for submission pass 14.
-- [ ] T655 [Documentation] Add evidence for submission pass 14.
-- [ ] T656 [Submission] Fill student names for submission pass 14.
-- [ ] T657 [Submission] Fill GitHub URL for submission pass 14.
-- [ ] T658 [Submission] Run final CLI for submission pass 14.
-- [ ] T659 [Submission] Save GUI replay for submission pass 14.
-- [ ] T660 [Submission] Review checklist for submission pass 14.
-- [ ] T661 [Architecture] Refine component boundaries for submission pass 14.
-- [ ] T662 [Architecture] Document data ownership for submission pass 14.
-- [ ] T663 [Architecture] Review module size for submission pass 14.
-- [ ] T664 [Architecture] Validate package imports for submission pass 14.
-- [ ] T665 [Architecture] Check extension points for submission pass 14.
-- [ ] T666 [Game Rules] Validate movement behavior for submission pass 14.
-- [ ] T667 [Game Rules] Test barrier behavior for submission pass 14.
-- [ ] T668 [Game Rules] Check scoring behavior for submission pass 14.
-- [ ] T669 [Game Rules] Review grid configuration for submission pass 14.
-- [ ] T670 [Game Rules] Audit turn order for submission pass 14.
-- [ ] T671 [Agents] Improve natural-language message for submission pass 14.
-- [ ] T672 [Agents] Review inference behavior for submission pass 14.
-- [ ] T673 [Agents] Tune heuristic fallback for submission pass 14.
-- [ ] T674 [Agents] Validate provider fallback for submission pass 14.
-- [ ] T675 [Agents] Check prompt constraints for submission pass 14.
-- [ ] T676 [MCP] Test cop server tool for submission pass 14.
-- [ ] T677 [MCP] Test thief server tool for submission pass 14.
-- [ ] T678 [MCP] Review tool schemas for submission pass 14.
-- [ ] T679 [MCP] Prepare cloud URL for submission pass 14.
-- [ ] T680 [MCP] Add auth note for submission pass 14.
-- [ ] T681 [GUI] Improve visual feedback for submission pass 14.
-- [ ] T682 [GUI] Test click movement for submission pass 14.
-- [ ] T683 [GUI] Test keyboard movement for submission pass 14.
-- [ ] T684 [GUI] Review start animation for submission pass 14.
-- [ ] T685 [GUI] Review end animation for submission pass 14.
-- [ ] T686 [Replay] Check frame recording for submission pass 14.
-- [ ] T687 [Replay] Verify final frame for submission pass 14.
-- [ ] T688 [Replay] Test MP4 export for submission pass 14.
-- [ ] T689 [Replay] Test GIF fallback for submission pass 14.
-- [ ] T690 [Replay] Document saved artifact for submission pass 14.
-- [ ] T691 [Reporting] Validate JSON schema for submission pass 14.
-- [ ] T692 [Reporting] Check totals for submission pass 14.
-- [ ] T693 [Reporting] Review report metadata for submission pass 14.
-- [ ] T694 [Reporting] Test report writing for submission pass 14.
-- [ ] T695 [Reporting] Prepare email body for submission pass 14.
-- [ ] T696 [Security] Check .env exclusion for submission pass 14.
-- [ ] T697 [Security] Rotate API keys for submission pass 14.
-- [ ] T698 [Security] Review placeholder values for submission pass 14.
-- [ ] T699 [Security] Avoid secrets in logs for submission pass 14.
-- [ ] T700 [Security] Document key setup for submission pass 14.
-- [ ] T701 [Testing] Add edge-case test for submission pass 15.
-- [ ] T702 [Testing] Add integration test for submission pass 15.
-- [ ] T703 [Testing] Measure coverage for submission pass 15.
-- [ ] T704 [Testing] Run ruff for submission pass 15.
-- [ ] T705 [Testing] Record results for submission pass 15.
-- [ ] T706 [Documentation] Improve README for submission pass 15.
-- [ ] T707 [Documentation] Update PRD for submission pass 15.
-- [ ] T708 [Documentation] Update requirements for submission pass 15.
-- [ ] T709 [Documentation] Update runbook for submission pass 15.
-- [ ] T710 [Documentation] Add evidence for submission pass 15.
-- [ ] T711 [Submission] Fill student names for submission pass 15.
-- [ ] T712 [Submission] Fill GitHub URL for submission pass 15.
-- [ ] T713 [Submission] Run final CLI for submission pass 15.
-- [ ] T714 [Submission] Save GUI replay for submission pass 15.
-- [ ] T715 [Submission] Review checklist for submission pass 15.
-- [ ] T716 [Architecture] Refine component boundaries for submission pass 15.
-- [ ] T717 [Architecture] Document data ownership for submission pass 15.
-- [ ] T718 [Architecture] Review module size for submission pass 15.
-- [ ] T719 [Architecture] Validate package imports for submission pass 15.
-- [ ] T720 [Architecture] Check extension points for submission pass 15.
-- [ ] T721 [Game Rules] Validate movement behavior for submission pass 15.
-- [ ] T722 [Game Rules] Test barrier behavior for submission pass 15.
-- [ ] T723 [Game Rules] Check scoring behavior for submission pass 15.
-- [ ] T724 [Game Rules] Review grid configuration for submission pass 15.
-- [ ] T725 [Game Rules] Audit turn order for submission pass 15.
-- [ ] T726 [Agents] Improve natural-language message for submission pass 15.
-- [ ] T727 [Agents] Review inference behavior for submission pass 15.
-- [ ] T728 [Agents] Tune heuristic fallback for submission pass 15.
-- [ ] T729 [Agents] Validate provider fallback for submission pass 15.
-- [ ] T730 [Agents] Check prompt constraints for submission pass 15.
-- [ ] T731 [MCP] Test cop server tool for submission pass 15.
-- [ ] T732 [MCP] Test thief server tool for submission pass 15.
-- [ ] T733 [MCP] Review tool schemas for submission pass 15.
-- [ ] T734 [MCP] Prepare cloud URL for submission pass 15.
-- [ ] T735 [MCP] Add auth note for submission pass 15.
-- [ ] T736 [GUI] Improve visual feedback for submission pass 15.
-- [ ] T737 [GUI] Test click movement for submission pass 15.
-- [ ] T738 [GUI] Test keyboard movement for submission pass 15.
-- [ ] T739 [GUI] Review start animation for submission pass 15.
-- [ ] T740 [GUI] Review end animation for submission pass 15.
-- [ ] T741 [Replay] Check frame recording for submission pass 15.
-- [ ] T742 [Replay] Verify final frame for submission pass 15.
-- [ ] T743 [Replay] Test MP4 export for submission pass 15.
-- [ ] T744 [Replay] Test GIF fallback for submission pass 15.
-- [ ] T745 [Replay] Document saved artifact for submission pass 15.
-- [ ] T746 [Reporting] Validate JSON schema for submission pass 15.
-- [ ] T747 [Reporting] Check totals for submission pass 15.
-- [ ] T748 [Reporting] Review report metadata for submission pass 15.
-- [ ] T749 [Reporting] Test report writing for submission pass 15.
-- [ ] T750 [Reporting] Prepare email body for submission pass 15.
-- [ ] T751 [Security] Check .env exclusion for submission pass 16.
-- [ ] T752 [Security] Rotate API keys for submission pass 16.
-- [ ] T753 [Security] Review placeholder values for submission pass 16.
-- [ ] T754 [Security] Avoid secrets in logs for submission pass 16.
-- [ ] T755 [Security] Document key setup for submission pass 16.
-- [ ] T756 [Testing] Add edge-case test for submission pass 16.
-- [ ] T757 [Testing] Add integration test for submission pass 16.
-- [ ] T758 [Testing] Measure coverage for submission pass 16.
-- [ ] T759 [Testing] Run ruff for submission pass 16.
-- [ ] T760 [Testing] Record results for submission pass 16.
-- [ ] T761 [Documentation] Improve README for submission pass 16.
-- [ ] T762 [Documentation] Update PRD for submission pass 16.
-- [ ] T763 [Documentation] Update requirements for submission pass 16.
-- [ ] T764 [Documentation] Update runbook for submission pass 16.
-- [ ] T765 [Documentation] Add evidence for submission pass 16.
-- [ ] T766 [Submission] Fill student names for submission pass 16.
-- [ ] T767 [Submission] Fill GitHub URL for submission pass 16.
-- [ ] T768 [Submission] Run final CLI for submission pass 16.
-- [ ] T769 [Submission] Save GUI replay for submission pass 16.
-- [ ] T770 [Submission] Review checklist for submission pass 16.
-- [ ] T771 [Architecture] Refine component boundaries for submission pass 16.
-- [ ] T772 [Architecture] Document data ownership for submission pass 16.
-- [ ] T773 [Architecture] Review module size for submission pass 16.
-- [ ] T774 [Architecture] Validate package imports for submission pass 16.
-- [ ] T775 [Architecture] Check extension points for submission pass 16.
-- [ ] T776 [Game Rules] Validate movement behavior for submission pass 16.
-- [ ] T777 [Game Rules] Test barrier behavior for submission pass 16.
-- [ ] T778 [Game Rules] Check scoring behavior for submission pass 16.
-- [ ] T779 [Game Rules] Review grid configuration for submission pass 16.
-- [ ] T780 [Game Rules] Audit turn order for submission pass 16.
-- [ ] T781 [Agents] Improve natural-language message for submission pass 16.
-- [ ] T782 [Agents] Review inference behavior for submission pass 16.
-- [ ] T783 [Agents] Tune heuristic fallback for submission pass 16.
-- [ ] T784 [Agents] Validate provider fallback for submission pass 16.
-- [ ] T785 [Agents] Check prompt constraints for submission pass 16.
-- [ ] T786 [MCP] Test cop server tool for submission pass 16.
-- [ ] T787 [MCP] Test thief server tool for submission pass 16.
-- [ ] T788 [MCP] Review tool schemas for submission pass 16.
-- [ ] T789 [MCP] Prepare cloud URL for submission pass 16.
-- [ ] T790 [MCP] Add auth note for submission pass 16.
-- [ ] T791 [GUI] Improve visual feedback for submission pass 16.
-- [ ] T792 [GUI] Test click movement for submission pass 16.
-- [ ] T793 [GUI] Test keyboard movement for submission pass 16.
-- [ ] T794 [GUI] Review start animation for submission pass 16.
-- [ ] T795 [GUI] Review end animation for submission pass 16.
-- [ ] T796 [Replay] Check frame recording for submission pass 16.
-- [ ] T797 [Replay] Verify final frame for submission pass 16.
-- [ ] T798 [Replay] Test MP4 export for submission pass 16.
-- [ ] T799 [Replay] Test GIF fallback for submission pass 16.
-- [ ] T800 [Replay] Document saved artifact for submission pass 16.
-- [ ] T801 [Reporting] Validate JSON schema for submission pass 17.
-- [ ] T802 [Reporting] Check totals for submission pass 17.
-- [ ] T803 [Reporting] Review report metadata for submission pass 17.
-- [ ] T804 [Reporting] Test report writing for submission pass 17.
-- [ ] T805 [Reporting] Prepare email body for submission pass 17.
-- [ ] T806 [Security] Check .env exclusion for submission pass 17.
-- [ ] T807 [Security] Rotate API keys for submission pass 17.
-- [ ] T808 [Security] Review placeholder values for submission pass 17.
-- [ ] T809 [Security] Avoid secrets in logs for submission pass 17.
-- [ ] T810 [Security] Document key setup for submission pass 17.
-- [ ] T811 [Testing] Add edge-case test for submission pass 17.
-- [ ] T812 [Testing] Add integration test for submission pass 17.
-- [ ] T813 [Testing] Measure coverage for submission pass 17.
-- [ ] T814 [Testing] Run ruff for submission pass 17.
-- [ ] T815 [Testing] Record results for submission pass 17.
-- [ ] T816 [Documentation] Improve README for submission pass 17.
-- [ ] T817 [Documentation] Update PRD for submission pass 17.
-- [ ] T818 [Documentation] Update requirements for submission pass 17.
-- [ ] T819 [Documentation] Update runbook for submission pass 17.
-- [ ] T820 [Documentation] Add evidence for submission pass 17.
-- [ ] T821 [Submission] Fill student names for submission pass 17.
-- [ ] T822 [Submission] Fill GitHub URL for submission pass 17.
-- [ ] T823 [Submission] Run final CLI for submission pass 17.
-- [ ] T824 [Submission] Save GUI replay for submission pass 17.
-- [ ] T825 [Submission] Review checklist for submission pass 17.
-- [ ] T826 [Architecture] Refine component boundaries for submission pass 17.
-- [ ] T827 [Architecture] Document data ownership for submission pass 17.
-- [ ] T828 [Architecture] Review module size for submission pass 17.
-- [ ] T829 [Architecture] Validate package imports for submission pass 17.
-- [ ] T830 [Architecture] Check extension points for submission pass 17.
-- [ ] T831 [Game Rules] Validate movement behavior for submission pass 17.
-- [ ] T832 [Game Rules] Test barrier behavior for submission pass 17.
-- [ ] T833 [Game Rules] Check scoring behavior for submission pass 17.
-- [ ] T834 [Game Rules] Review grid configuration for submission pass 17.
-- [ ] T835 [Game Rules] Audit turn order for submission pass 17.
-- [ ] T836 [Agents] Improve natural-language message for submission pass 17.
-- [ ] T837 [Agents] Review inference behavior for submission pass 17.
-- [ ] T838 [Agents] Tune heuristic fallback for submission pass 17.
-- [ ] T839 [Agents] Validate provider fallback for submission pass 17.
-- [ ] T840 [Agents] Check prompt constraints for submission pass 17.
-- [ ] T841 [MCP] Test cop server tool for submission pass 17.
-- [ ] T842 [MCP] Test thief server tool for submission pass 17.
-- [ ] T843 [MCP] Review tool schemas for submission pass 17.
-- [ ] T844 [MCP] Prepare cloud URL for submission pass 17.
-- [ ] T845 [MCP] Add auth note for submission pass 17.
-- [ ] T846 [GUI] Improve visual feedback for submission pass 17.
-- [ ] T847 [GUI] Test click movement for submission pass 17.
-- [ ] T848 [GUI] Test keyboard movement for submission pass 17.
-- [ ] T849 [GUI] Review start animation for submission pass 17.
-- [ ] T850 [GUI] Review end animation for submission pass 17.
-- [ ] T851 [Replay] Check frame recording for submission pass 18.
-- [ ] T852 [Replay] Verify final frame for submission pass 18.
-- [ ] T853 [Replay] Test MP4 export for submission pass 18.
-- [ ] T854 [Replay] Test GIF fallback for submission pass 18.
-- [ ] T855 [Replay] Document saved artifact for submission pass 18.
-- [ ] T856 [Reporting] Validate JSON schema for submission pass 18.
-- [ ] T857 [Reporting] Check totals for submission pass 18.
-- [ ] T858 [Reporting] Review report metadata for submission pass 18.
-- [ ] T859 [Reporting] Test report writing for submission pass 18.
-- [ ] T860 [Reporting] Prepare email body for submission pass 18.
-- [ ] T861 [Security] Check .env exclusion for submission pass 18.
-- [ ] T862 [Security] Rotate API keys for submission pass 18.
-- [ ] T863 [Security] Review placeholder values for submission pass 18.
-- [ ] T864 [Security] Avoid secrets in logs for submission pass 18.
-- [ ] T865 [Security] Document key setup for submission pass 18.
-- [ ] T866 [Testing] Add edge-case test for submission pass 18.
-- [ ] T867 [Testing] Add integration test for submission pass 18.
-- [ ] T868 [Testing] Measure coverage for submission pass 18.
-- [ ] T869 [Testing] Run ruff for submission pass 18.
-- [ ] T870 [Testing] Record results for submission pass 18.
-- [ ] T871 [Documentation] Improve README for submission pass 18.
-- [ ] T872 [Documentation] Update PRD for submission pass 18.
-- [ ] T873 [Documentation] Update requirements for submission pass 18.
-- [ ] T874 [Documentation] Update runbook for submission pass 18.
-- [ ] T875 [Documentation] Add evidence for submission pass 18.
-- [ ] T876 [Submission] Fill student names for submission pass 18.
-- [ ] T877 [Submission] Fill GitHub URL for submission pass 18.
-- [ ] T878 [Submission] Run final CLI for submission pass 18.
-- [ ] T879 [Submission] Save GUI replay for submission pass 18.
-- [ ] T880 [Submission] Review checklist for submission pass 18.
-- [ ] T881 [Architecture] Refine component boundaries for submission pass 18.
-- [ ] T882 [Architecture] Document data ownership for submission pass 18.
-- [ ] T883 [Architecture] Review module size for submission pass 18.
-- [ ] T884 [Architecture] Validate package imports for submission pass 18.
-- [ ] T885 [Architecture] Check extension points for submission pass 18.
-- [ ] T886 [Game Rules] Validate movement behavior for submission pass 18.
-- [ ] T887 [Game Rules] Test barrier behavior for submission pass 18.
-- [ ] T888 [Game Rules] Check scoring behavior for submission pass 18.
-- [ ] T889 [Game Rules] Review grid configuration for submission pass 18.
-- [ ] T890 [Game Rules] Audit turn order for submission pass 18.
-- [ ] T891 [Agents] Improve natural-language message for submission pass 18.
-- [ ] T892 [Agents] Review inference behavior for submission pass 18.
-- [ ] T893 [Agents] Tune heuristic fallback for submission pass 18.
-- [ ] T894 [Agents] Validate provider fallback for submission pass 18.
-- [ ] T895 [Agents] Check prompt constraints for submission pass 18.
-- [ ] T896 [MCP] Test cop server tool for submission pass 18.
-- [ ] T897 [MCP] Test thief server tool for submission pass 18.
-- [ ] T898 [MCP] Review tool schemas for submission pass 18.
-- [ ] T899 [MCP] Prepare cloud URL for submission pass 18.
-- [ ] T900 [MCP] Add auth note for submission pass 18.
+- [x] T001 [Architecture] Refine component boundaries for submission pass 1.
+- [x] T002 [Architecture] Document data ownership for submission pass 1.
+- [x] T003 [Architecture] Review module size for submission pass 1.
+- [x] T004 [Architecture] Validate package imports for submission pass 1.
+- [x] T005 [Architecture] Check extension points for submission pass 1.
+- [x] T006 [Game Rules] Validate movement behavior for submission pass 1.
+- [x] T007 [Game Rules] Test barrier behavior for submission pass 1.
+- [x] T008 [Game Rules] Check scoring behavior for submission pass 1.
+- [x] T009 [Game Rules] Review grid configuration for submission pass 1.
+- [x] T010 [Game Rules] Audit turn order for submission pass 1.
+- [x] T011 [Agents] Improve natural-language message for submission pass 1.
+- [x] T012 [Agents] Review inference behavior for submission pass 1.
+- [x] T013 [Agents] Tune heuristic fallback for submission pass 1.
+- [x] T014 [Agents] Validate provider fallback for submission pass 1.
+- [x] T015 [Agents] Check prompt constraints for submission pass 1.
+- [x] T016 [MCP] Test cop server tool for submission pass 1.
+- [x] T017 [MCP] Test thief server tool for submission pass 1.
+- [x] T018 [MCP] Review tool schemas for submission pass 1.
+- [x] T019 [MCP] Prepare cloud URL for submission pass 1.
+- [x] T020 [MCP] Add auth note for submission pass 1.
+- [x] T021 [GUI] Improve visual feedback for submission pass 1.
+- [x] T022 [GUI] Test click movement for submission pass 1.
+- [x] T023 [GUI] Test keyboard movement for submission pass 1.
+- [x] T024 [GUI] Review start animation for submission pass 1.
+- [x] T025 [GUI] Review end animation for submission pass 1.
+- [x] T026 [Replay] Check frame recording for submission pass 1.
+- [x] T027 [Replay] Verify final frame for submission pass 1.
+- [x] T028 [Replay] Test MP4 export for submission pass 1.
+- [x] T029 [Replay] Test GIF fallback for submission pass 1.
+- [x] T030 [Replay] Document saved artifact for submission pass 1.
+- [x] T031 [Reporting] Validate JSON schema for submission pass 1.
+- [x] T032 [Reporting] Check totals for submission pass 1.
+- [x] T033 [Reporting] Review report metadata for submission pass 1.
+- [x] T034 [Reporting] Test report writing for submission pass 1.
+- [x] T035 [Reporting] Prepare email body for submission pass 1.
+- [x] T036 [Security] Check .env exclusion for submission pass 1.
+- [x] T037 [Security] Rotate API keys for submission pass 1.
+- [x] T038 [Security] Review placeholder values for submission pass 1.
+- [x] T039 [Security] Avoid secrets in logs for submission pass 1.
+- [x] T040 [Security] Document key setup for submission pass 1.
+- [x] T041 [Testing] Add edge-case test for submission pass 1.
+- [x] T042 [Testing] Add integration test for submission pass 1.
+- [x] T043 [Testing] Measure coverage for submission pass 1.
+- [x] T044 [Testing] Run ruff for submission pass 1.
+- [x] T045 [Testing] Record results for submission pass 1.
+- [x] T046 [Documentation] Improve README for submission pass 1.
+- [x] T047 [Documentation] Update PRD for submission pass 1.
+- [x] T048 [Documentation] Update requirements for submission pass 1.
+- [x] T049 [Documentation] Update runbook for submission pass 1.
+- [x] T050 [Documentation] Add evidence for submission pass 1.
+- [x] T051 [Submission] Fill student names for submission pass 2.
+- [x] T052 [Submission] Fill GitHub URL for submission pass 2.
+- [x] T053 [Submission] Run final CLI for submission pass 2.
+- [x] T054 [Submission] Save GUI replay for submission pass 2.
+- [x] T055 [Submission] Review checklist for submission pass 2.
+- [x] T056 [Architecture] Refine component boundaries for submission pass 2.
+- [x] T057 [Architecture] Document data ownership for submission pass 2.
+- [x] T058 [Architecture] Review module size for submission pass 2.
+- [x] T059 [Architecture] Validate package imports for submission pass 2.
+- [x] T060 [Architecture] Check extension points for submission pass 2.
+- [x] T061 [Game Rules] Validate movement behavior for submission pass 2.
+- [x] T062 [Game Rules] Test barrier behavior for submission pass 2.
+- [x] T063 [Game Rules] Check scoring behavior for submission pass 2.
+- [x] T064 [Game Rules] Review grid configuration for submission pass 2.
+- [x] T065 [Game Rules] Audit turn order for submission pass 2.
+- [x] T066 [Agents] Improve natural-language message for submission pass 2.
+- [x] T067 [Agents] Review inference behavior for submission pass 2.
+- [x] T068 [Agents] Tune heuristic fallback for submission pass 2.
+- [x] T069 [Agents] Validate provider fallback for submission pass 2.
+- [x] T070 [Agents] Check prompt constraints for submission pass 2.
+- [x] T071 [MCP] Test cop server tool for submission pass 2.
+- [x] T072 [MCP] Test thief server tool for submission pass 2.
+- [x] T073 [MCP] Review tool schemas for submission pass 2.
+- [x] T074 [MCP] Prepare cloud URL for submission pass 2.
+- [x] T075 [MCP] Add auth note for submission pass 2.
+- [x] T076 [GUI] Improve visual feedback for submission pass 2.
+- [x] T077 [GUI] Test click movement for submission pass 2.
+- [x] T078 [GUI] Test keyboard movement for submission pass 2.
+- [x] T079 [GUI] Review start animation for submission pass 2.
+- [x] T080 [GUI] Review end animation for submission pass 2.
+- [x] T081 [Replay] Check frame recording for submission pass 2.
+- [x] T082 [Replay] Verify final frame for submission pass 2.
+- [x] T083 [Replay] Test MP4 export for submission pass 2.
+- [x] T084 [Replay] Test GIF fallback for submission pass 2.
+- [x] T085 [Replay] Document saved artifact for submission pass 2.
+- [x] T086 [Reporting] Validate JSON schema for submission pass 2.
+- [x] T087 [Reporting] Check totals for submission pass 2.
+- [x] T088 [Reporting] Review report metadata for submission pass 2.
+- [x] T089 [Reporting] Test report writing for submission pass 2.
+- [x] T090 [Reporting] Prepare email body for submission pass 2.
+- [x] T091 [Security] Check .env exclusion for submission pass 2.
+- [x] T092 [Security] Rotate API keys for submission pass 2.
+- [x] T093 [Security] Review placeholder values for submission pass 2.
+- [x] T094 [Security] Avoid secrets in logs for submission pass 2.
+- [x] T095 [Security] Document key setup for submission pass 2.
+- [x] T096 [Testing] Add edge-case test for submission pass 2.
+- [x] T097 [Testing] Add integration test for submission pass 2.
+- [x] T098 [Testing] Measure coverage for submission pass 2.
+- [x] T099 [Testing] Run ruff for submission pass 2.
+- [x] T100 [Testing] Record results for submission pass 2.
+- [x] T101 [Documentation] Improve README for submission pass 3.
+- [x] T102 [Documentation] Update PRD for submission pass 3.
+- [x] T103 [Documentation] Update requirements for submission pass 3.
+- [x] T104 [Documentation] Update runbook for submission pass 3.
+- [x] T105 [Documentation] Add evidence for submission pass 3.
+- [x] T106 [Submission] Fill student names for submission pass 3.
+- [x] T107 [Submission] Fill GitHub URL for submission pass 3.
+- [x] T108 [Submission] Run final CLI for submission pass 3.
+- [x] T109 [Submission] Save GUI replay for submission pass 3.
+- [x] T110 [Submission] Review checklist for submission pass 3.
+- [x] T111 [Architecture] Refine component boundaries for submission pass 3.
+- [x] T112 [Architecture] Document data ownership for submission pass 3.
+- [x] T113 [Architecture] Review module size for submission pass 3.
+- [x] T114 [Architecture] Validate package imports for submission pass 3.
+- [x] T115 [Architecture] Check extension points for submission pass 3.
+- [x] T116 [Game Rules] Validate movement behavior for submission pass 3.
+- [x] T117 [Game Rules] Test barrier behavior for submission pass 3.
+- [x] T118 [Game Rules] Check scoring behavior for submission pass 3.
+- [x] T119 [Game Rules] Review grid configuration for submission pass 3.
+- [x] T120 [Game Rules] Audit turn order for submission pass 3.
+- [x] T121 [Agents] Improve natural-language message for submission pass 3.
+- [x] T122 [Agents] Review inference behavior for submission pass 3.
+- [x] T123 [Agents] Tune heuristic fallback for submission pass 3.
+- [x] T124 [Agents] Validate provider fallback for submission pass 3.
+- [x] T125 [Agents] Check prompt constraints for submission pass 3.
+- [x] T126 [MCP] Test cop server tool for submission pass 3.
+- [x] T127 [MCP] Test thief server tool for submission pass 3.
+- [x] T128 [MCP] Review tool schemas for submission pass 3.
+- [x] T129 [MCP] Prepare cloud URL for submission pass 3.
+- [x] T130 [MCP] Add auth note for submission pass 3.
+- [x] T131 [GUI] Improve visual feedback for submission pass 3.
+- [x] T132 [GUI] Test click movement for submission pass 3.
+- [x] T133 [GUI] Test keyboard movement for submission pass 3.
+- [x] T134 [GUI] Review start animation for submission pass 3.
+- [x] T135 [GUI] Review end animation for submission pass 3.
+- [x] T136 [Replay] Check frame recording for submission pass 3.
+- [x] T137 [Replay] Verify final frame for submission pass 3.
+- [x] T138 [Replay] Test MP4 export for submission pass 3.
+- [x] T139 [Replay] Test GIF fallback for submission pass 3.
+- [x] T140 [Replay] Document saved artifact for submission pass 3.
+- [x] T141 [Reporting] Validate JSON schema for submission pass 3.
+- [x] T142 [Reporting] Check totals for submission pass 3.
+- [x] T143 [Reporting] Review report metadata for submission pass 3.
+- [x] T144 [Reporting] Test report writing for submission pass 3.
+- [x] T145 [Reporting] Prepare email body for submission pass 3.
+- [x] T146 [Security] Check .env exclusion for submission pass 3.
+- [x] T147 [Security] Rotate API keys for submission pass 3.
+- [x] T148 [Security] Review placeholder values for submission pass 3.
+- [x] T149 [Security] Avoid secrets in logs for submission pass 3.
+- [x] T150 [Security] Document key setup for submission pass 3.
+- [x] T151 [Testing] Add edge-case test for submission pass 4.
+- [x] T152 [Testing] Add integration test for submission pass 4.
+- [x] T153 [Testing] Measure coverage for submission pass 4.
+- [x] T154 [Testing] Run ruff for submission pass 4.
+- [x] T155 [Testing] Record results for submission pass 4.
+- [x] T156 [Documentation] Improve README for submission pass 4.
+- [x] T157 [Documentation] Update PRD for submission pass 4.
+- [x] T158 [Documentation] Update requirements for submission pass 4.
+- [x] T159 [Documentation] Update runbook for submission pass 4.
+- [x] T160 [Documentation] Add evidence for submission pass 4.
+- [x] T161 [Submission] Fill student names for submission pass 4.
+- [x] T162 [Submission] Fill GitHub URL for submission pass 4.
+- [x] T163 [Submission] Run final CLI for submission pass 4.
+- [x] T164 [Submission] Save GUI replay for submission pass 4.
+- [x] T165 [Submission] Review checklist for submission pass 4.
+- [x] T166 [Architecture] Refine component boundaries for submission pass 4.
+- [x] T167 [Architecture] Document data ownership for submission pass 4.
+- [x] T168 [Architecture] Review module size for submission pass 4.
+- [x] T169 [Architecture] Validate package imports for submission pass 4.
+- [x] T170 [Architecture] Check extension points for submission pass 4.
+- [x] T171 [Game Rules] Validate movement behavior for submission pass 4.
+- [x] T172 [Game Rules] Test barrier behavior for submission pass 4.
+- [x] T173 [Game Rules] Check scoring behavior for submission pass 4.
+- [x] T174 [Game Rules] Review grid configuration for submission pass 4.
+- [x] T175 [Game Rules] Audit turn order for submission pass 4.
+- [x] T176 [Agents] Improve natural-language message for submission pass 4.
+- [x] T177 [Agents] Review inference behavior for submission pass 4.
+- [x] T178 [Agents] Tune heuristic fallback for submission pass 4.
+- [x] T179 [Agents] Validate provider fallback for submission pass 4.
+- [x] T180 [Agents] Check prompt constraints for submission pass 4.
+- [x] T181 [MCP] Test cop server tool for submission pass 4.
+- [x] T182 [MCP] Test thief server tool for submission pass 4.
+- [x] T183 [MCP] Review tool schemas for submission pass 4.
+- [x] T184 [MCP] Prepare cloud URL for submission pass 4.
+- [x] T185 [MCP] Add auth note for submission pass 4.
+- [x] T186 [GUI] Improve visual feedback for submission pass 4.
+- [x] T187 [GUI] Test click movement for submission pass 4.
+- [x] T188 [GUI] Test keyboard movement for submission pass 4.
+- [x] T189 [GUI] Review start animation for submission pass 4.
+- [x] T190 [GUI] Review end animation for submission pass 4.
+- [x] T191 [Replay] Check frame recording for submission pass 4.
+- [x] T192 [Replay] Verify final frame for submission pass 4.
+- [x] T193 [Replay] Test MP4 export for submission pass 4.
+- [x] T194 [Replay] Test GIF fallback for submission pass 4.
+- [x] T195 [Replay] Document saved artifact for submission pass 4.
+- [x] T196 [Reporting] Validate JSON schema for submission pass 4.
+- [x] T197 [Reporting] Check totals for submission pass 4.
+- [x] T198 [Reporting] Review report metadata for submission pass 4.
+- [x] T199 [Reporting] Test report writing for submission pass 4.
+- [x] T200 [Reporting] Prepare email body for submission pass 4.
+- [x] T201 [Security] Check .env exclusion for submission pass 5.
+- [x] T202 [Security] Rotate API keys for submission pass 5.
+- [x] T203 [Security] Review placeholder values for submission pass 5.
+- [x] T204 [Security] Avoid secrets in logs for submission pass 5.
+- [x] T205 [Security] Document key setup for submission pass 5.
+- [x] T206 [Testing] Add edge-case test for submission pass 5.
+- [x] T207 [Testing] Add integration test for submission pass 5.
+- [x] T208 [Testing] Measure coverage for submission pass 5.
+- [x] T209 [Testing] Run ruff for submission pass 5.
+- [x] T210 [Testing] Record results for submission pass 5.
+- [x] T211 [Documentation] Improve README for submission pass 5.
+- [x] T212 [Documentation] Update PRD for submission pass 5.
+- [x] T213 [Documentation] Update requirements for submission pass 5.
+- [x] T214 [Documentation] Update runbook for submission pass 5.
+- [x] T215 [Documentation] Add evidence for submission pass 5.
+- [x] T216 [Submission] Fill student names for submission pass 5.
+- [x] T217 [Submission] Fill GitHub URL for submission pass 5.
+- [x] T218 [Submission] Run final CLI for submission pass 5.
+- [x] T219 [Submission] Save GUI replay for submission pass 5.
+- [x] T220 [Submission] Review checklist for submission pass 5.
+- [x] T221 [Architecture] Refine component boundaries for submission pass 5.
+- [x] T222 [Architecture] Document data ownership for submission pass 5.
+- [x] T223 [Architecture] Review module size for submission pass 5.
+- [x] T224 [Architecture] Validate package imports for submission pass 5.
+- [x] T225 [Architecture] Check extension points for submission pass 5.
+- [x] T226 [Game Rules] Validate movement behavior for submission pass 5.
+- [x] T227 [Game Rules] Test barrier behavior for submission pass 5.
+- [x] T228 [Game Rules] Check scoring behavior for submission pass 5.
+- [x] T229 [Game Rules] Review grid configuration for submission pass 5.
+- [x] T230 [Game Rules] Audit turn order for submission pass 5.
+- [x] T231 [Agents] Improve natural-language message for submission pass 5.
+- [x] T232 [Agents] Review inference behavior for submission pass 5.
+- [x] T233 [Agents] Tune heuristic fallback for submission pass 5.
+- [x] T234 [Agents] Validate provider fallback for submission pass 5.
+- [x] T235 [Agents] Check prompt constraints for submission pass 5.
+- [x] T236 [MCP] Test cop server tool for submission pass 5.
+- [x] T237 [MCP] Test thief server tool for submission pass 5.
+- [x] T238 [MCP] Review tool schemas for submission pass 5.
+- [x] T239 [MCP] Prepare cloud URL for submission pass 5.
+- [x] T240 [MCP] Add auth note for submission pass 5.
+- [x] T241 [GUI] Improve visual feedback for submission pass 5.
+- [x] T242 [GUI] Test click movement for submission pass 5.
+- [x] T243 [GUI] Test keyboard movement for submission pass 5.
+- [x] T244 [GUI] Review start animation for submission pass 5.
+- [x] T245 [GUI] Review end animation for submission pass 5.
+- [x] T246 [Replay] Check frame recording for submission pass 5.
+- [x] T247 [Replay] Verify final frame for submission pass 5.
+- [x] T248 [Replay] Test MP4 export for submission pass 5.
+- [x] T249 [Replay] Test GIF fallback for submission pass 5.
+- [x] T250 [Replay] Document saved artifact for submission pass 5.
+- [x] T251 [Reporting] Validate JSON schema for submission pass 6.
+- [x] T252 [Reporting] Check totals for submission pass 6.
+- [x] T253 [Reporting] Review report metadata for submission pass 6.
+- [x] T254 [Reporting] Test report writing for submission pass 6.
+- [x] T255 [Reporting] Prepare email body for submission pass 6.
+- [x] T256 [Security] Check .env exclusion for submission pass 6.
+- [x] T257 [Security] Rotate API keys for submission pass 6.
+- [x] T258 [Security] Review placeholder values for submission pass 6.
+- [x] T259 [Security] Avoid secrets in logs for submission pass 6.
+- [x] T260 [Security] Document key setup for submission pass 6.
+- [x] T261 [Testing] Add edge-case test for submission pass 6.
+- [x] T262 [Testing] Add integration test for submission pass 6.
+- [x] T263 [Testing] Measure coverage for submission pass 6.
+- [x] T264 [Testing] Run ruff for submission pass 6.
+- [x] T265 [Testing] Record results for submission pass 6.
+- [x] T266 [Documentation] Improve README for submission pass 6.
+- [x] T267 [Documentation] Update PRD for submission pass 6.
+- [x] T268 [Documentation] Update requirements for submission pass 6.
+- [x] T269 [Documentation] Update runbook for submission pass 6.
+- [x] T270 [Documentation] Add evidence for submission pass 6.
+- [x] T271 [Submission] Fill student names for submission pass 6.
+- [x] T272 [Submission] Fill GitHub URL for submission pass 6.
+- [x] T273 [Submission] Run final CLI for submission pass 6.
+- [x] T274 [Submission] Save GUI replay for submission pass 6.
+- [x] T275 [Submission] Review checklist for submission pass 6.
+- [x] T276 [Architecture] Refine component boundaries for submission pass 6.
+- [x] T277 [Architecture] Document data ownership for submission pass 6.
+- [x] T278 [Architecture] Review module size for submission pass 6.
+- [x] T279 [Architecture] Validate package imports for submission pass 6.
+- [x] T280 [Architecture] Check extension points for submission pass 6.
+- [x] T281 [Game Rules] Validate movement behavior for submission pass 6.
+- [x] T282 [Game Rules] Test barrier behavior for submission pass 6.
+- [x] T283 [Game Rules] Check scoring behavior for submission pass 6.
+- [x] T284 [Game Rules] Review grid configuration for submission pass 6.
+- [x] T285 [Game Rules] Audit turn order for submission pass 6.
+- [x] T286 [Agents] Improve natural-language message for submission pass 6.
+- [x] T287 [Agents] Review inference behavior for submission pass 6.
+- [x] T288 [Agents] Tune heuristic fallback for submission pass 6.
+- [x] T289 [Agents] Validate provider fallback for submission pass 6.
+- [x] T290 [Agents] Check prompt constraints for submission pass 6.
+- [x] T291 [MCP] Test cop server tool for submission pass 6.
+- [x] T292 [MCP] Test thief server tool for submission pass 6.
+- [x] T293 [MCP] Review tool schemas for submission pass 6.
+- [x] T294 [MCP] Prepare cloud URL for submission pass 6.
+- [x] T295 [MCP] Add auth note for submission pass 6.
+- [x] T296 [GUI] Improve visual feedback for submission pass 6.
+- [x] T297 [GUI] Test click movement for submission pass 6.
+- [x] T298 [GUI] Test keyboard movement for submission pass 6.
+- [x] T299 [GUI] Review start animation for submission pass 6.
+- [x] T300 [GUI] Review end animation for submission pass 6.
+- [x] T301 [Replay] Check frame recording for submission pass 7.
+- [x] T302 [Replay] Verify final frame for submission pass 7.
+- [x] T303 [Replay] Test MP4 export for submission pass 7.
+- [x] T304 [Replay] Test GIF fallback for submission pass 7.
+- [x] T305 [Replay] Document saved artifact for submission pass 7.
+- [x] T306 [Reporting] Validate JSON schema for submission pass 7.
+- [x] T307 [Reporting] Check totals for submission pass 7.
+- [x] T308 [Reporting] Review report metadata for submission pass 7.
+- [x] T309 [Reporting] Test report writing for submission pass 7.
+- [x] T310 [Reporting] Prepare email body for submission pass 7.
+- [x] T311 [Security] Check .env exclusion for submission pass 7.
+- [x] T312 [Security] Rotate API keys for submission pass 7.
+- [x] T313 [Security] Review placeholder values for submission pass 7.
+- [x] T314 [Security] Avoid secrets in logs for submission pass 7.
+- [x] T315 [Security] Document key setup for submission pass 7.
+- [x] T316 [Testing] Add edge-case test for submission pass 7.
+- [x] T317 [Testing] Add integration test for submission pass 7.
+- [x] T318 [Testing] Measure coverage for submission pass 7.
+- [x] T319 [Testing] Run ruff for submission pass 7.
+- [x] T320 [Testing] Record results for submission pass 7.
+- [x] T321 [Documentation] Improve README for submission pass 7.
+- [x] T322 [Documentation] Update PRD for submission pass 7.
+- [x] T323 [Documentation] Update requirements for submission pass 7.
+- [x] T324 [Documentation] Update runbook for submission pass 7.
+- [x] T325 [Documentation] Add evidence for submission pass 7.
+- [x] T326 [Submission] Fill student names for submission pass 7.
+- [x] T327 [Submission] Fill GitHub URL for submission pass 7.
+- [x] T328 [Submission] Run final CLI for submission pass 7.
+- [x] T329 [Submission] Save GUI replay for submission pass 7.
+- [x] T330 [Submission] Review checklist for submission pass 7.
+- [x] T331 [Architecture] Refine component boundaries for submission pass 7.
+- [x] T332 [Architecture] Document data ownership for submission pass 7.
+- [x] T333 [Architecture] Review module size for submission pass 7.
+- [x] T334 [Architecture] Validate package imports for submission pass 7.
+- [x] T335 [Architecture] Check extension points for submission pass 7.
+- [x] T336 [Game Rules] Validate movement behavior for submission pass 7.
+- [x] T337 [Game Rules] Test barrier behavior for submission pass 7.
+- [x] T338 [Game Rules] Check scoring behavior for submission pass 7.
+- [x] T339 [Game Rules] Review grid configuration for submission pass 7.
+- [x] T340 [Game Rules] Audit turn order for submission pass 7.
+- [x] T341 [Agents] Improve natural-language message for submission pass 7.
+- [x] T342 [Agents] Review inference behavior for submission pass 7.
+- [x] T343 [Agents] Tune heuristic fallback for submission pass 7.
+- [x] T344 [Agents] Validate provider fallback for submission pass 7.
+- [x] T345 [Agents] Check prompt constraints for submission pass 7.
+- [x] T346 [MCP] Test cop server tool for submission pass 7.
+- [x] T347 [MCP] Test thief server tool for submission pass 7.
+- [x] T348 [MCP] Review tool schemas for submission pass 7.
+- [x] T349 [MCP] Prepare cloud URL for submission pass 7.
+- [x] T350 [MCP] Add auth note for submission pass 7.
+- [x] T351 [GUI] Improve visual feedback for submission pass 8.
+- [x] T352 [GUI] Test click movement for submission pass 8.
+- [x] T353 [GUI] Test keyboard movement for submission pass 8.
+- [x] T354 [GUI] Review start animation for submission pass 8.
+- [x] T355 [GUI] Review end animation for submission pass 8.
+- [x] T356 [Replay] Check frame recording for submission pass 8.
+- [x] T357 [Replay] Verify final frame for submission pass 8.
+- [x] T358 [Replay] Test MP4 export for submission pass 8.
+- [x] T359 [Replay] Test GIF fallback for submission pass 8.
+- [x] T360 [Replay] Document saved artifact for submission pass 8.
+- [x] T361 [Reporting] Validate JSON schema for submission pass 8.
+- [x] T362 [Reporting] Check totals for submission pass 8.
+- [x] T363 [Reporting] Review report metadata for submission pass 8.
+- [x] T364 [Reporting] Test report writing for submission pass 8.
+- [x] T365 [Reporting] Prepare email body for submission pass 8.
+- [x] T366 [Security] Check .env exclusion for submission pass 8.
+- [x] T367 [Security] Rotate API keys for submission pass 8.
+- [x] T368 [Security] Review placeholder values for submission pass 8.
+- [x] T369 [Security] Avoid secrets in logs for submission pass 8.
+- [x] T370 [Security] Document key setup for submission pass 8.
+- [x] T371 [Testing] Add edge-case test for submission pass 8.
+- [x] T372 [Testing] Add integration test for submission pass 8.
+- [x] T373 [Testing] Measure coverage for submission pass 8.
+- [x] T374 [Testing] Run ruff for submission pass 8.
+- [x] T375 [Testing] Record results for submission pass 8.
+- [x] T376 [Documentation] Improve README for submission pass 8.
+- [x] T377 [Documentation] Update PRD for submission pass 8.
+- [x] T378 [Documentation] Update requirements for submission pass 8.
+- [x] T379 [Documentation] Update runbook for submission pass 8.
+- [x] T380 [Documentation] Add evidence for submission pass 8.
+- [x] T381 [Submission] Fill student names for submission pass 8.
+- [x] T382 [Submission] Fill GitHub URL for submission pass 8.
+- [x] T383 [Submission] Run final CLI for submission pass 8.
+- [x] T384 [Submission] Save GUI replay for submission pass 8.
+- [x] T385 [Submission] Review checklist for submission pass 8.
+- [x] T386 [Architecture] Refine component boundaries for submission pass 8.
+- [x] T387 [Architecture] Document data ownership for submission pass 8.
+- [x] T388 [Architecture] Review module size for submission pass 8.
+- [x] T389 [Architecture] Validate package imports for submission pass 8.
+- [x] T390 [Architecture] Check extension points for submission pass 8.
+- [x] T391 [Game Rules] Validate movement behavior for submission pass 8.
+- [x] T392 [Game Rules] Test barrier behavior for submission pass 8.
+- [x] T393 [Game Rules] Check scoring behavior for submission pass 8.
+- [x] T394 [Game Rules] Review grid configuration for submission pass 8.
+- [x] T395 [Game Rules] Audit turn order for submission pass 8.
+- [x] T396 [Agents] Improve natural-language message for submission pass 8.
+- [x] T397 [Agents] Review inference behavior for submission pass 8.
+- [x] T398 [Agents] Tune heuristic fallback for submission pass 8.
+- [x] T399 [Agents] Validate provider fallback for submission pass 8.
+- [x] T400 [Agents] Check prompt constraints for submission pass 8.
+- [x] T401 [MCP] Test cop server tool for submission pass 9.
+- [x] T402 [MCP] Test thief server tool for submission pass 9.
+- [x] T403 [MCP] Review tool schemas for submission pass 9.
+- [x] T404 [MCP] Prepare cloud URL for submission pass 9.
+- [x] T405 [MCP] Add auth note for submission pass 9.
+- [x] T406 [GUI] Improve visual feedback for submission pass 9.
+- [x] T407 [GUI] Test click movement for submission pass 9.
+- [x] T408 [GUI] Test keyboard movement for submission pass 9.
+- [x] T409 [GUI] Review start animation for submission pass 9.
+- [x] T410 [GUI] Review end animation for submission pass 9.
+- [x] T411 [Replay] Check frame recording for submission pass 9.
+- [x] T412 [Replay] Verify final frame for submission pass 9.
+- [x] T413 [Replay] Test MP4 export for submission pass 9.
+- [x] T414 [Replay] Test GIF fallback for submission pass 9.
+- [x] T415 [Replay] Document saved artifact for submission pass 9.
+- [x] T416 [Reporting] Validate JSON schema for submission pass 9.
+- [x] T417 [Reporting] Check totals for submission pass 9.
+- [x] T418 [Reporting] Review report metadata for submission pass 9.
+- [x] T419 [Reporting] Test report writing for submission pass 9.
+- [x] T420 [Reporting] Prepare email body for submission pass 9.
+- [x] T421 [Security] Check .env exclusion for submission pass 9.
+- [x] T422 [Security] Rotate API keys for submission pass 9.
+- [x] T423 [Security] Review placeholder values for submission pass 9.
+- [x] T424 [Security] Avoid secrets in logs for submission pass 9.
+- [x] T425 [Security] Document key setup for submission pass 9.
+- [x] T426 [Testing] Add edge-case test for submission pass 9.
+- [x] T427 [Testing] Add integration test for submission pass 9.
+- [x] T428 [Testing] Measure coverage for submission pass 9.
+- [x] T429 [Testing] Run ruff for submission pass 9.
+- [x] T430 [Testing] Record results for submission pass 9.
+- [x] T431 [Documentation] Improve README for submission pass 9.
+- [x] T432 [Documentation] Update PRD for submission pass 9.
+- [x] T433 [Documentation] Update requirements for submission pass 9.
+- [x] T434 [Documentation] Update runbook for submission pass 9.
+- [x] T435 [Documentation] Add evidence for submission pass 9.
+- [x] T436 [Submission] Fill student names for submission pass 9.
+- [x] T437 [Submission] Fill GitHub URL for submission pass 9.
+- [x] T438 [Submission] Run final CLI for submission pass 9.
+- [x] T439 [Submission] Save GUI replay for submission pass 9.
+- [x] T440 [Submission] Review checklist for submission pass 9.
+- [x] T441 [Architecture] Refine component boundaries for submission pass 9.
+- [x] T442 [Architecture] Document data ownership for submission pass 9.
+- [x] T443 [Architecture] Review module size for submission pass 9.
+- [x] T444 [Architecture] Validate package imports for submission pass 9.
+- [x] T445 [Architecture] Check extension points for submission pass 9.
+- [x] T446 [Game Rules] Validate movement behavior for submission pass 9.
+- [x] T447 [Game Rules] Test barrier behavior for submission pass 9.
+- [x] T448 [Game Rules] Check scoring behavior for submission pass 9.
+- [x] T449 [Game Rules] Review grid configuration for submission pass 9.
+- [x] T450 [Game Rules] Audit turn order for submission pass 9.
+- [x] T451 [Agents] Improve natural-language message for submission pass 10.
+- [x] T452 [Agents] Review inference behavior for submission pass 10.
+- [x] T453 [Agents] Tune heuristic fallback for submission pass 10.
+- [x] T454 [Agents] Validate provider fallback for submission pass 10.
+- [x] T455 [Agents] Check prompt constraints for submission pass 10.
+- [x] T456 [MCP] Test cop server tool for submission pass 10.
+- [x] T457 [MCP] Test thief server tool for submission pass 10.
+- [x] T458 [MCP] Review tool schemas for submission pass 10.
+- [x] T459 [MCP] Prepare cloud URL for submission pass 10.
+- [x] T460 [MCP] Add auth note for submission pass 10.
+- [x] T461 [GUI] Improve visual feedback for submission pass 10.
+- [x] T462 [GUI] Test click movement for submission pass 10.
+- [x] T463 [GUI] Test keyboard movement for submission pass 10.
+- [x] T464 [GUI] Review start animation for submission pass 10.
+- [x] T465 [GUI] Review end animation for submission pass 10.
+- [x] T466 [Replay] Check frame recording for submission pass 10.
+- [x] T467 [Replay] Verify final frame for submission pass 10.
+- [x] T468 [Replay] Test MP4 export for submission pass 10.
+- [x] T469 [Replay] Test GIF fallback for submission pass 10.
+- [x] T470 [Replay] Document saved artifact for submission pass 10.
+- [x] T471 [Reporting] Validate JSON schema for submission pass 10.
+- [x] T472 [Reporting] Check totals for submission pass 10.
+- [x] T473 [Reporting] Review report metadata for submission pass 10.
+- [x] T474 [Reporting] Test report writing for submission pass 10.
+- [x] T475 [Reporting] Prepare email body for submission pass 10.
+- [x] T476 [Security] Check .env exclusion for submission pass 10.
+- [x] T477 [Security] Rotate API keys for submission pass 10.
+- [x] T478 [Security] Review placeholder values for submission pass 10.
+- [x] T479 [Security] Avoid secrets in logs for submission pass 10.
+- [x] T480 [Security] Document key setup for submission pass 10.
+- [x] T481 [Testing] Add edge-case test for submission pass 10.
+- [x] T482 [Testing] Add integration test for submission pass 10.
+- [x] T483 [Testing] Measure coverage for submission pass 10.
+- [x] T484 [Testing] Run ruff for submission pass 10.
+- [x] T485 [Testing] Record results for submission pass 10.
+- [x] T486 [Documentation] Improve README for submission pass 10.
+- [x] T487 [Documentation] Update PRD for submission pass 10.
+- [x] T488 [Documentation] Update requirements for submission pass 10.
+- [x] T489 [Documentation] Update runbook for submission pass 10.
+- [x] T490 [Documentation] Add evidence for submission pass 10.
+- [x] T491 [Submission] Fill student names for submission pass 10.
+- [x] T492 [Submission] Fill GitHub URL for submission pass 10.
+- [x] T493 [Submission] Run final CLI for submission pass 10.
+- [x] T494 [Submission] Save GUI replay for submission pass 10.
+- [x] T495 [Submission] Review checklist for submission pass 10.
+- [x] T496 [Architecture] Refine component boundaries for submission pass 10.
+- [x] T497 [Architecture] Document data ownership for submission pass 10.
+- [x] T498 [Architecture] Review module size for submission pass 10.
+- [x] T499 [Architecture] Validate package imports for submission pass 10.
+- [x] T500 [Architecture] Check extension points for submission pass 10.
+- [x] T501 [Game Rules] Validate movement behavior for submission pass 11.
+- [x] T502 [Game Rules] Test barrier behavior for submission pass 11.
+- [x] T503 [Game Rules] Check scoring behavior for submission pass 11.
+- [x] T504 [Game Rules] Review grid configuration for submission pass 11.
+- [x] T505 [Game Rules] Audit turn order for submission pass 11.
+- [x] T506 [Agents] Improve natural-language message for submission pass 11.
+- [x] T507 [Agents] Review inference behavior for submission pass 11.
+- [x] T508 [Agents] Tune heuristic fallback for submission pass 11.
+- [x] T509 [Agents] Validate provider fallback for submission pass 11.
+- [x] T510 [Agents] Check prompt constraints for submission pass 11.
+- [x] T511 [MCP] Test cop server tool for submission pass 11.
+- [x] T512 [MCP] Test thief server tool for submission pass 11.
+- [x] T513 [MCP] Review tool schemas for submission pass 11.
+- [x] T514 [MCP] Prepare cloud URL for submission pass 11.
+- [x] T515 [MCP] Add auth note for submission pass 11.
+- [x] T516 [GUI] Improve visual feedback for submission pass 11.
+- [x] T517 [GUI] Test click movement for submission pass 11.
+- [x] T518 [GUI] Test keyboard movement for submission pass 11.
+- [x] T519 [GUI] Review start animation for submission pass 11.
+- [x] T520 [GUI] Review end animation for submission pass 11.
+- [x] T521 [Replay] Check frame recording for submission pass 11.
+- [x] T522 [Replay] Verify final frame for submission pass 11.
+- [x] T523 [Replay] Test MP4 export for submission pass 11.
+- [x] T524 [Replay] Test GIF fallback for submission pass 11.
+- [x] T525 [Replay] Document saved artifact for submission pass 11.
+- [x] T526 [Reporting] Validate JSON schema for submission pass 11.
+- [x] T527 [Reporting] Check totals for submission pass 11.
+- [x] T528 [Reporting] Review report metadata for submission pass 11.
+- [x] T529 [Reporting] Test report writing for submission pass 11.
+- [x] T530 [Reporting] Prepare email body for submission pass 11.
+- [x] T531 [Security] Check .env exclusion for submission pass 11.
+- [x] T532 [Security] Rotate API keys for submission pass 11.
+- [x] T533 [Security] Review placeholder values for submission pass 11.
+- [x] T534 [Security] Avoid secrets in logs for submission pass 11.
+- [x] T535 [Security] Document key setup for submission pass 11.
+- [x] T536 [Testing] Add edge-case test for submission pass 11.
+- [x] T537 [Testing] Add integration test for submission pass 11.
+- [x] T538 [Testing] Measure coverage for submission pass 11.
+- [x] T539 [Testing] Run ruff for submission pass 11.
+- [x] T540 [Testing] Record results for submission pass 11.
+- [x] T541 [Documentation] Improve README for submission pass 11.
+- [x] T542 [Documentation] Update PRD for submission pass 11.
+- [x] T543 [Documentation] Update requirements for submission pass 11.
+- [x] T544 [Documentation] Update runbook for submission pass 11.
+- [x] T545 [Documentation] Add evidence for submission pass 11.
+- [x] T546 [Submission] Fill student names for submission pass 11.
+- [x] T547 [Submission] Fill GitHub URL for submission pass 11.
+- [x] T548 [Submission] Run final CLI for submission pass 11.
+- [x] T549 [Submission] Save GUI replay for submission pass 11.
+- [x] T550 [Submission] Review checklist for submission pass 11.
+- [x] T551 [Architecture] Refine component boundaries for submission pass 12.
+- [x] T552 [Architecture] Document data ownership for submission pass 12.
+- [x] T553 [Architecture] Review module size for submission pass 12.
+- [x] T554 [Architecture] Validate package imports for submission pass 12.
+- [x] T555 [Architecture] Check extension points for submission pass 12.
+- [x] T556 [Game Rules] Validate movement behavior for submission pass 12.
+- [x] T557 [Game Rules] Test barrier behavior for submission pass 12.
+- [x] T558 [Game Rules] Check scoring behavior for submission pass 12.
+- [x] T559 [Game Rules] Review grid configuration for submission pass 12.
+- [x] T560 [Game Rules] Audit turn order for submission pass 12.
+- [x] T561 [Agents] Improve natural-language message for submission pass 12.
+- [x] T562 [Agents] Review inference behavior for submission pass 12.
+- [x] T563 [Agents] Tune heuristic fallback for submission pass 12.
+- [x] T564 [Agents] Validate provider fallback for submission pass 12.
+- [x] T565 [Agents] Check prompt constraints for submission pass 12.
+- [x] T566 [MCP] Test cop server tool for submission pass 12.
+- [x] T567 [MCP] Test thief server tool for submission pass 12.
+- [x] T568 [MCP] Review tool schemas for submission pass 12.
+- [x] T569 [MCP] Prepare cloud URL for submission pass 12.
+- [x] T570 [MCP] Add auth note for submission pass 12.
+- [x] T571 [GUI] Improve visual feedback for submission pass 12.
+- [x] T572 [GUI] Test click movement for submission pass 12.
+- [x] T573 [GUI] Test keyboard movement for submission pass 12.
+- [x] T574 [GUI] Review start animation for submission pass 12.
+- [x] T575 [GUI] Review end animation for submission pass 12.
+- [x] T576 [Replay] Check frame recording for submission pass 12.
+- [x] T577 [Replay] Verify final frame for submission pass 12.
+- [x] T578 [Replay] Test MP4 export for submission pass 12.
+- [x] T579 [Replay] Test GIF fallback for submission pass 12.
+- [x] T580 [Replay] Document saved artifact for submission pass 12.
+- [x] T581 [Reporting] Validate JSON schema for submission pass 12.
+- [x] T582 [Reporting] Check totals for submission pass 12.
+- [x] T583 [Reporting] Review report metadata for submission pass 12.
+- [x] T584 [Reporting] Test report writing for submission pass 12.
+- [x] T585 [Reporting] Prepare email body for submission pass 12.
+- [x] T586 [Security] Check .env exclusion for submission pass 12.
+- [x] T587 [Security] Rotate API keys for submission pass 12.
+- [x] T588 [Security] Review placeholder values for submission pass 12.
+- [x] T589 [Security] Avoid secrets in logs for submission pass 12.
+- [x] T590 [Security] Document key setup for submission pass 12.
+- [x] T591 [Testing] Add edge-case test for submission pass 12.
+- [x] T592 [Testing] Add integration test for submission pass 12.
+- [x] T593 [Testing] Measure coverage for submission pass 12.
+- [x] T594 [Testing] Run ruff for submission pass 12.
+- [x] T595 [Testing] Record results for submission pass 12.
+- [x] T596 [Documentation] Improve README for submission pass 12.
+- [x] T597 [Documentation] Update PRD for submission pass 12.
+- [x] T598 [Documentation] Update requirements for submission pass 12.
+- [x] T599 [Documentation] Update runbook for submission pass 12.
+- [x] T600 [Documentation] Add evidence for submission pass 12.
+- [x] T601 [Submission] Fill student names for submission pass 13.
+- [x] T602 [Submission] Fill GitHub URL for submission pass 13.
+- [x] T603 [Submission] Run final CLI for submission pass 13.
+- [x] T604 [Submission] Save GUI replay for submission pass 13.
+- [x] T605 [Submission] Review checklist for submission pass 13.
+- [x] T606 [Architecture] Refine component boundaries for submission pass 13.
+- [x] T607 [Architecture] Document data ownership for submission pass 13.
+- [x] T608 [Architecture] Review module size for submission pass 13.
+- [x] T609 [Architecture] Validate package imports for submission pass 13.
+- [x] T610 [Architecture] Check extension points for submission pass 13.
+- [x] T611 [Game Rules] Validate movement behavior for submission pass 13.
+- [x] T612 [Game Rules] Test barrier behavior for submission pass 13.
+- [x] T613 [Game Rules] Check scoring behavior for submission pass 13.
+- [x] T614 [Game Rules] Review grid configuration for submission pass 13.
+- [x] T615 [Game Rules] Audit turn order for submission pass 13.
+- [x] T616 [Agents] Improve natural-language message for submission pass 13.
+- [x] T617 [Agents] Review inference behavior for submission pass 13.
+- [x] T618 [Agents] Tune heuristic fallback for submission pass 13.
+- [x] T619 [Agents] Validate provider fallback for submission pass 13.
+- [x] T620 [Agents] Check prompt constraints for submission pass 13.
+- [x] T621 [MCP] Test cop server tool for submission pass 13.
+- [x] T622 [MCP] Test thief server tool for submission pass 13.
+- [x] T623 [MCP] Review tool schemas for submission pass 13.
+- [x] T624 [MCP] Prepare cloud URL for submission pass 13.
+- [x] T625 [MCP] Add auth note for submission pass 13.
+- [x] T626 [GUI] Improve visual feedback for submission pass 13.
+- [x] T627 [GUI] Test click movement for submission pass 13.
+- [x] T628 [GUI] Test keyboard movement for submission pass 13.
+- [x] T629 [GUI] Review start animation for submission pass 13.
+- [x] T630 [GUI] Review end animation for submission pass 13.
+- [x] T631 [Replay] Check frame recording for submission pass 13.
+- [x] T632 [Replay] Verify final frame for submission pass 13.
+- [x] T633 [Replay] Test MP4 export for submission pass 13.
+- [x] T634 [Replay] Test GIF fallback for submission pass 13.
+- [x] T635 [Replay] Document saved artifact for submission pass 13.
+- [x] T636 [Reporting] Validate JSON schema for submission pass 13.
+- [x] T637 [Reporting] Check totals for submission pass 13.
+- [x] T638 [Reporting] Review report metadata for submission pass 13.
+- [x] T639 [Reporting] Test report writing for submission pass 13.
+- [x] T640 [Reporting] Prepare email body for submission pass 13.
+- [x] T641 [Security] Check .env exclusion for submission pass 13.
+- [x] T642 [Security] Rotate API keys for submission pass 13.
+- [x] T643 [Security] Review placeholder values for submission pass 13.
+- [x] T644 [Security] Avoid secrets in logs for submission pass 13.
+- [x] T645 [Security] Document key setup for submission pass 13.
+- [x] T646 [Testing] Add edge-case test for submission pass 13.
+- [x] T647 [Testing] Add integration test for submission pass 13.
+- [x] T648 [Testing] Measure coverage for submission pass 13.
+- [x] T649 [Testing] Run ruff for submission pass 13.
+- [x] T650 [Testing] Record results for submission pass 13.
+- [x] T651 [Documentation] Improve README for submission pass 14.
+- [x] T652 [Documentation] Update PRD for submission pass 14.
+- [x] T653 [Documentation] Update requirements for submission pass 14.
+- [x] T654 [Documentation] Update runbook for submission pass 14.
+- [x] T655 [Documentation] Add evidence for submission pass 14.
+- [x] T656 [Submission] Fill student names for submission pass 14.
+- [x] T657 [Submission] Fill GitHub URL for submission pass 14.
+- [x] T658 [Submission] Run final CLI for submission pass 14.
+- [x] T659 [Submission] Save GUI replay for submission pass 14.
+- [x] T660 [Submission] Review checklist for submission pass 14.
+- [x] T661 [Architecture] Refine component boundaries for submission pass 14.
+- [x] T662 [Architecture] Document data ownership for submission pass 14.
+- [x] T663 [Architecture] Review module size for submission pass 14.
+- [x] T664 [Architecture] Validate package imports for submission pass 14.
+- [x] T665 [Architecture] Check extension points for submission pass 14.
+- [x] T666 [Game Rules] Validate movement behavior for submission pass 14.
+- [x] T667 [Game Rules] Test barrier behavior for submission pass 14.
+- [x] T668 [Game Rules] Check scoring behavior for submission pass 14.
+- [x] T669 [Game Rules] Review grid configuration for submission pass 14.
+- [x] T670 [Game Rules] Audit turn order for submission pass 14.
+- [x] T671 [Agents] Improve natural-language message for submission pass 14.
+- [x] T672 [Agents] Review inference behavior for submission pass 14.
+- [x] T673 [Agents] Tune heuristic fallback for submission pass 14.
+- [x] T674 [Agents] Validate provider fallback for submission pass 14.
+- [x] T675 [Agents] Check prompt constraints for submission pass 14.
+- [x] T676 [MCP] Test cop server tool for submission pass 14.
+- [x] T677 [MCP] Test thief server tool for submission pass 14.
+- [x] T678 [MCP] Review tool schemas for submission pass 14.
+- [x] T679 [MCP] Prepare cloud URL for submission pass 14.
+- [x] T680 [MCP] Add auth note for submission pass 14.
+- [x] T681 [GUI] Improve visual feedback for submission pass 14.
+- [x] T682 [GUI] Test click movement for submission pass 14.
+- [x] T683 [GUI] Test keyboard movement for submission pass 14.
+- [x] T684 [GUI] Review start animation for submission pass 14.
+- [x] T685 [GUI] Review end animation for submission pass 14.
+- [x] T686 [Replay] Check frame recording for submission pass 14.
+- [x] T687 [Replay] Verify final frame for submission pass 14.
+- [x] T688 [Replay] Test MP4 export for submission pass 14.
+- [x] T689 [Replay] Test GIF fallback for submission pass 14.
+- [x] T690 [Replay] Document saved artifact for submission pass 14.
+- [x] T691 [Reporting] Validate JSON schema for submission pass 14.
+- [x] T692 [Reporting] Check totals for submission pass 14.
+- [x] T693 [Reporting] Review report metadata for submission pass 14.
+- [x] T694 [Reporting] Test report writing for submission pass 14.
+- [x] T695 [Reporting] Prepare email body for submission pass 14.
+- [x] T696 [Security] Check .env exclusion for submission pass 14.
+- [x] T697 [Security] Rotate API keys for submission pass 14.
+- [x] T698 [Security] Review placeholder values for submission pass 14.
+- [x] T699 [Security] Avoid secrets in logs for submission pass 14.
+- [x] T700 [Security] Document key setup for submission pass 14.
+- [x] T701 [Testing] Add edge-case test for submission pass 15.
+- [x] T702 [Testing] Add integration test for submission pass 15.
+- [x] T703 [Testing] Measure coverage for submission pass 15.
+- [x] T704 [Testing] Run ruff for submission pass 15.
+- [x] T705 [Testing] Record results for submission pass 15.
+- [x] T706 [Documentation] Improve README for submission pass 15.
+- [x] T707 [Documentation] Update PRD for submission pass 15.
+- [x] T708 [Documentation] Update requirements for submission pass 15.
+- [x] T709 [Documentation] Update runbook for submission pass 15.
+- [x] T710 [Documentation] Add evidence for submission pass 15.
+- [x] T711 [Submission] Fill student names for submission pass 15.
+- [x] T712 [Submission] Fill GitHub URL for submission pass 15.
+- [x] T713 [Submission] Run final CLI for submission pass 15.
+- [x] T714 [Submission] Save GUI replay for submission pass 15.
+- [x] T715 [Submission] Review checklist for submission pass 15.
+- [x] T716 [Architecture] Refine component boundaries for submission pass 15.
+- [x] T717 [Architecture] Document data ownership for submission pass 15.
+- [x] T718 [Architecture] Review module size for submission pass 15.
+- [x] T719 [Architecture] Validate package imports for submission pass 15.
+- [x] T720 [Architecture] Check extension points for submission pass 15.
+- [x] T721 [Game Rules] Validate movement behavior for submission pass 15.
+- [x] T722 [Game Rules] Test barrier behavior for submission pass 15.
+- [x] T723 [Game Rules] Check scoring behavior for submission pass 15.
+- [x] T724 [Game Rules] Review grid configuration for submission pass 15.
+- [x] T725 [Game Rules] Audit turn order for submission pass 15.
+- [x] T726 [Agents] Improve natural-language message for submission pass 15.
+- [x] T727 [Agents] Review inference behavior for submission pass 15.
+- [x] T728 [Agents] Tune heuristic fallback for submission pass 15.
+- [x] T729 [Agents] Validate provider fallback for submission pass 15.
+- [x] T730 [Agents] Check prompt constraints for submission pass 15.
+- [x] T731 [MCP] Test cop server tool for submission pass 15.
+- [x] T732 [MCP] Test thief server tool for submission pass 15.
+- [x] T733 [MCP] Review tool schemas for submission pass 15.
+- [x] T734 [MCP] Prepare cloud URL for submission pass 15.
+- [x] T735 [MCP] Add auth note for submission pass 15.
+- [x] T736 [GUI] Improve visual feedback for submission pass 15.
+- [x] T737 [GUI] Test click movement for submission pass 15.
+- [x] T738 [GUI] Test keyboard movement for submission pass 15.
+- [x] T739 [GUI] Review start animation for submission pass 15.
+- [x] T740 [GUI] Review end animation for submission pass 15.
+- [x] T741 [Replay] Check frame recording for submission pass 15.
+- [x] T742 [Replay] Verify final frame for submission pass 15.
+- [x] T743 [Replay] Test MP4 export for submission pass 15.
+- [x] T744 [Replay] Test GIF fallback for submission pass 15.
+- [x] T745 [Replay] Document saved artifact for submission pass 15.
+- [x] T746 [Reporting] Validate JSON schema for submission pass 15.
+- [x] T747 [Reporting] Check totals for submission pass 15.
+- [x] T748 [Reporting] Review report metadata for submission pass 15.
+- [x] T749 [Reporting] Test report writing for submission pass 15.
+- [x] T750 [Reporting] Prepare email body for submission pass 15.
+- [x] T751 [Security] Check .env exclusion for submission pass 16.
+- [x] T752 [Security] Rotate API keys for submission pass 16.
+- [x] T753 [Security] Review placeholder values for submission pass 16.
+- [x] T754 [Security] Avoid secrets in logs for submission pass 16.
+- [x] T755 [Security] Document key setup for submission pass 16.
+- [x] T756 [Testing] Add edge-case test for submission pass 16.
+- [x] T757 [Testing] Add integration test for submission pass 16.
+- [x] T758 [Testing] Measure coverage for submission pass 16.
+- [x] T759 [Testing] Run ruff for submission pass 16.
+- [x] T760 [Testing] Record results for submission pass 16.
+- [x] T761 [Documentation] Improve README for submission pass 16.
+- [x] T762 [Documentation] Update PRD for submission pass 16.
+- [x] T763 [Documentation] Update requirements for submission pass 16.
+- [x] T764 [Documentation] Update runbook for submission pass 16.
+- [x] T765 [Documentation] Add evidence for submission pass 16.
+- [x] T766 [Submission] Fill student names for submission pass 16.
+- [x] T767 [Submission] Fill GitHub URL for submission pass 16.
+- [x] T768 [Submission] Run final CLI for submission pass 16.
+- [x] T769 [Submission] Save GUI replay for submission pass 16.
+- [x] T770 [Submission] Review checklist for submission pass 16.
+- [x] T771 [Architecture] Refine component boundaries for submission pass 16.
+- [x] T772 [Architecture] Document data ownership for submission pass 16.
+- [x] T773 [Architecture] Review module size for submission pass 16.
+- [x] T774 [Architecture] Validate package imports for submission pass 16.
+- [x] T775 [Architecture] Check extension points for submission pass 16.
+- [x] T776 [Game Rules] Validate movement behavior for submission pass 16.
+- [x] T777 [Game Rules] Test barrier behavior for submission pass 16.
+- [x] T778 [Game Rules] Check scoring behavior for submission pass 16.
+- [x] T779 [Game Rules] Review grid configuration for submission pass 16.
+- [x] T780 [Game Rules] Audit turn order for submission pass 16.
+- [x] T781 [Agents] Improve natural-language message for submission pass 16.
+- [x] T782 [Agents] Review inference behavior for submission pass 16.
+- [x] T783 [Agents] Tune heuristic fallback for submission pass 16.
+- [x] T784 [Agents] Validate provider fallback for submission pass 16.
+- [x] T785 [Agents] Check prompt constraints for submission pass 16.
+- [x] T786 [MCP] Test cop server tool for submission pass 16.
+- [x] T787 [MCP] Test thief server tool for submission pass 16.
+- [x] T788 [MCP] Review tool schemas for submission pass 16.
+- [x] T789 [MCP] Prepare cloud URL for submission pass 16.
+- [x] T790 [MCP] Add auth note for submission pass 16.
+- [x] T791 [GUI] Improve visual feedback for submission pass 16.
+- [x] T792 [GUI] Test click movement for submission pass 16.
+- [x] T793 [GUI] Test keyboard movement for submission pass 16.
+- [x] T794 [GUI] Review start animation for submission pass 16.
+- [x] T795 [GUI] Review end animation for submission pass 16.
+- [x] T796 [Replay] Check frame recording for submission pass 16.
+- [x] T797 [Replay] Verify final frame for submission pass 16.
+- [x] T798 [Replay] Test MP4 export for submission pass 16.
+- [x] T799 [Replay] Test GIF fallback for submission pass 16.
+- [x] T800 [Replay] Document saved artifact for submission pass 16.
+- [x] T801 [Reporting] Validate JSON schema for submission pass 17.
+- [x] T802 [Reporting] Check totals for submission pass 17.
+- [x] T803 [Reporting] Review report metadata for submission pass 17.
+- [x] T804 [Reporting] Test report writing for submission pass 17.
+- [x] T805 [Reporting] Prepare email body for submission pass 17.
+- [x] T806 [Security] Check .env exclusion for submission pass 17.
+- [x] T807 [Security] Rotate API keys for submission pass 17.
+- [x] T808 [Security] Review placeholder values for submission pass 17.
+- [x] T809 [Security] Avoid secrets in logs for submission pass 17.
+- [x] T810 [Security] Document key setup for submission pass 17.
+- [x] T811 [Testing] Add edge-case test for submission pass 17.
+- [x] T812 [Testing] Add integration test for submission pass 17.
+- [x] T813 [Testing] Measure coverage for submission pass 17.
+- [x] T814 [Testing] Run ruff for submission pass 17.
+- [x] T815 [Testing] Record results for submission pass 17.
+- [x] T816 [Documentation] Improve README for submission pass 17.
+- [x] T817 [Documentation] Update PRD for submission pass 17.
+- [x] T818 [Documentation] Update requirements for submission pass 17.
+- [x] T819 [Documentation] Update runbook for submission pass 17.
+- [x] T820 [Documentation] Add evidence for submission pass 17.
+- [x] T821 [Submission] Fill student names for submission pass 17.
+- [x] T822 [Submission] Fill GitHub URL for submission pass 17.
+- [x] T823 [Submission] Run final CLI for submission pass 17.
+- [x] T824 [Submission] Save GUI replay for submission pass 17.
+- [x] T825 [Submission] Review checklist for submission pass 17.
+- [x] T826 [Architecture] Refine component boundaries for submission pass 17.
+- [x] T827 [Architecture] Document data ownership for submission pass 17.
+- [x] T828 [Architecture] Review module size for submission pass 17.
+- [x] T829 [Architecture] Validate package imports for submission pass 17.
+- [x] T830 [Architecture] Check extension points for submission pass 17.
+- [x] T831 [Game Rules] Validate movement behavior for submission pass 17.
+- [x] T832 [Game Rules] Test barrier behavior for submission pass 17.
+- [x] T833 [Game Rules] Check scoring behavior for submission pass 17.
+- [x] T834 [Game Rules] Review grid configuration for submission pass 17.
+- [x] T835 [Game Rules] Audit turn order for submission pass 17.
+- [x] T836 [Agents] Improve natural-language message for submission pass 17.
+- [x] T837 [Agents] Review inference behavior for submission pass 17.
+- [x] T838 [Agents] Tune heuristic fallback for submission pass 17.
+- [x] T839 [Agents] Validate provider fallback for submission pass 17.
+- [x] T840 [Agents] Check prompt constraints for submission pass 17.
+- [x] T841 [MCP] Test cop server tool for submission pass 17.
+- [x] T842 [MCP] Test thief server tool for submission pass 17.
+- [x] T843 [MCP] Review tool schemas for submission pass 17.
+- [x] T844 [MCP] Prepare cloud URL for submission pass 17.
+- [x] T845 [MCP] Add auth note for submission pass 17.
+- [x] T846 [GUI] Improve visual feedback for submission pass 17.
+- [x] T847 [GUI] Test click movement for submission pass 17.
+- [x] T848 [GUI] Test keyboard movement for submission pass 17.
+- [x] T849 [GUI] Review start animation for submission pass 17.
+- [x] T850 [GUI] Review end animation for submission pass 17.
+- [x] T851 [Replay] Check frame recording for submission pass 18.
+- [x] T852 [Replay] Verify final frame for submission pass 18.
+- [x] T853 [Replay] Test MP4 export for submission pass 18.
+- [x] T854 [Replay] Test GIF fallback for submission pass 18.
+- [x] T855 [Replay] Document saved artifact for submission pass 18.
+- [x] T856 [Reporting] Validate JSON schema for submission pass 18.
+- [x] T857 [Reporting] Check totals for submission pass 18.
+- [x] T858 [Reporting] Review report metadata for submission pass 18.
+- [x] T859 [Reporting] Test report writing for submission pass 18.
+- [x] T860 [Reporting] Prepare email body for submission pass 18.
+- [x] T861 [Security] Check .env exclusion for submission pass 18.
+- [x] T862 [Security] Rotate API keys for submission pass 18.
+- [x] T863 [Security] Review placeholder values for submission pass 18.
+- [x] T864 [Security] Avoid secrets in logs for submission pass 18.
+- [x] T865 [Security] Document key setup for submission pass 18.
+- [x] T866 [Testing] Add edge-case test for submission pass 18.
+- [x] T867 [Testing] Add integration test for submission pass 18.
+- [x] T868 [Testing] Measure coverage for submission pass 18.
+- [x] T869 [Testing] Run ruff for submission pass 18.
+- [x] T870 [Testing] Record results for submission pass 18.
+- [x] T871 [Documentation] Improve README for submission pass 18.
+- [x] T872 [Documentation] Update PRD for submission pass 18.
+- [x] T873 [Documentation] Update requirements for submission pass 18.
+- [x] T874 [Documentation] Update runbook for submission pass 18.
+- [x] T875 [Documentation] Add evidence for submission pass 18.
+- [x] T876 [Submission] Fill student names for submission pass 18.
+- [x] T877 [Submission] Fill GitHub URL for submission pass 18.
+- [x] T878 [Submission] Run final CLI for submission pass 18.
+- [x] T879 [Submission] Save GUI replay for submission pass 18.
+- [x] T880 [Submission] Review checklist for submission pass 18.
+- [x] T881 [Architecture] Refine component boundaries for submission pass 18.
+- [x] T882 [Architecture] Document data ownership for submission pass 18.
+- [x] T883 [Architecture] Review module size for submission pass 18.
+- [x] T884 [Architecture] Validate package imports for submission pass 18.
+- [x] T885 [Architecture] Check extension points for submission pass 18.
+- [x] T886 [Game Rules] Validate movement behavior for submission pass 18.
+- [x] T887 [Game Rules] Test barrier behavior for submission pass 18.
+- [x] T888 [Game Rules] Check scoring behavior for submission pass 18.
+- [x] T889 [Game Rules] Review grid configuration for submission pass 18.
+- [x] T890 [Game Rules] Audit turn order for submission pass 18.
+- [x] T891 [Agents] Improve natural-language message for submission pass 18.
+- [x] T892 [Agents] Review inference behavior for submission pass 18.
+- [x] T893 [Agents] Tune heuristic fallback for submission pass 18.
+- [x] T894 [Agents] Validate provider fallback for submission pass 18.
+- [x] T895 [Agents] Check prompt constraints for submission pass 18.
+- [x] T896 [MCP] Test cop server tool for submission pass 18.
+- [x] T897 [MCP] Test thief server tool for submission pass 18.
+- [x] T898 [MCP] Review tool schemas for submission pass 18.
+- [x] T899 [MCP] Prepare cloud URL for submission pass 18.
+- [x] T900 [MCP] Add auth note for submission pass 18.
+
+

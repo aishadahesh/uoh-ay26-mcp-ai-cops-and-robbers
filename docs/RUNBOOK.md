@@ -28,6 +28,32 @@ If no API key is configured, the agents use the deterministic fallback policy.
 The current verified report contains 6 sub-games and no final `stay` moves. Re-running this command
 updates the report with a fresh timestamp.
 
+Latest verified local run:
+
+```text
+generated_at: 2026-06-26T01:46:06.327007+03:00
+totals: cop=120, thief=30
+```
+
+## Bonus Series
+
+```powershell
+python -m cops_robbers_ai.cli --config config.json --bonus-config bonus_config.json --print-report
+```
+
+This runs the six-game inter-group bonus series and writes `reports/bonus_game_report.json`.
+With the current Gmail OAuth tokens in place, the same command sends the updated JSON attachment
+from both group accounts.
+
+Latest verified bonus run:
+
+```text
+generated_at: 2026-06-26T01:38:11.804738+03:00
+score: uoh-ay26=85, yanell11=45
+win count: uoh-ay26=5, yanell11=1
+bonus claim: uoh-ay26=10, yanell11=7
+```
+
 ## Playable GUI
 
 ```powershell
@@ -59,10 +85,14 @@ $env:PYTHONPATH="src"; python -m cops_robbers_ai.cop_server
 $env:PYTHONPATH="src"; python -m cops_robbers_ai.thief_server
 ```
 
-The local orchestrator uses the same agent interface in-process for repeatable tests. The server
-modules are ready for the course MCP deployment step.
+The local orchestrator uses the same agent interface in-process for repeatable tests. The bonus
+orchestrator connects to the deployed MCP URLs in `bonus_config.json`.
 
 ## Gmail Report
 
 Set `email.enabled` to `true` in `config.json`, place Google OAuth `credentials.json` in the repo
 root, and run the local series. The email body is exactly the JSON report, as required.
+
+For the bonus flow, email is configured in `bonus_config.json`. It attaches only
+`bonus_game_report.json` and sends one email from `aishadahesh11@gmail.com` and one from
+`yanalserhan3@gmail.com`.

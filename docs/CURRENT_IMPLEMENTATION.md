@@ -1,14 +1,14 @@
 # Current Implementation Snapshot
 
-This document describes the current non-bonus ShadowGrid implementation as verified on
-2026-06-24.
+This document describes the current ShadowGrid implementation as verified on 2026-06-26.
 
 ## Executive Summary
 
-ShadowGrid is now a working local assignment submission package. It includes the core game engine,
+ShadowGrid is now a working assignment and bonus submission package. It includes the core game engine,
 two agent roles, natural-language message passing, partial observability, separate MCP server entry
 points, Gemini/OpenAI provider support, deterministic fallback agents, a playable GUI, video replay
-export, movement JSON export, and the required six-sub-game InternalGameJSON report.
+export, movement JSON export, the required six-sub-game InternalGameJSON report, and the six-game
+inter-group remote MCP bonus report.
 
 The implementation is designed to be demonstrable even without API keys. When API keys are absent
 or a provider call fails, the deterministic strategy keeps the game moving and preserves the
@@ -22,19 +22,23 @@ Commands verified from the repository root:
 .\.venv\Scripts\python.exe -m pytest
 .\.venv\Scripts\python.exe -m ruff check src tests
 .\.venv\Scripts\python.exe -m cops_robbers_ai.cli --print-report
+.\.venv\Scripts\python.exe -m cops_robbers_ai.cli --bonus-config bonus_config.json --print-report
 ```
 
 Verification result:
 
 | Check | Result |
 | --- | --- |
-| Unit tests | 8 passed |
+| Unit tests | 13 passed |
 | Ruff lint | All checks passed |
 | CLI report generation | Completed |
 | Generated sub-games | 6 |
 | Invalid `stay` actions in report | 0 |
 | Robber barrier actions in report | 0 |
-| Max observed sub-game length | 8 turns in the latest CLI run |
+| Max observed local sub-game length | 10 turns in the latest CLI run |
+| Bonus series | 6 inter-group games completed |
+| Bonus score | `uoh-ay26=85`, `yanell11=45` |
+| Python file size check | every `.py` file is at or below 150 lines |
 
 ## Implemented Flow
 
@@ -76,24 +80,21 @@ The GUI is the demonstration surface. It includes:
 
 Each saved GUI replay can be paired with its `*_movements.json` file in `reports/`.
 
-## MCP Scope
+## MCP And Bonus Scope
 
 The project includes separate MCP server modules:
 
 - `cops_robbers_ai.cop_server`
 - `cops_robbers_ai.thief_server`
 
-They expose shared FastMCP tools for reset, message receiving, and action choice. The current
-submission is local-first, matching the non-bonus stage. Public deployment URLs and token
-authentication remain a later deployment task.
+They expose shared FastMCP tools for reset, message receiving, state synchronization, and action
+choice. The bonus runner connects to both groups' deployed MCP endpoints, runs three games in each
+role pairing, writes `reports/bonus_game_report.json`, and sends the agreed JSON attachment from
+both configured Gmail accounts.
 
 ## Deferred Items
 
-- Public cloud MCP deployment.
-- Token-authenticated public endpoints.
-- Automatic Gmail sending with real OAuth credentials.
-- Bonus inter-group competition.
 - Q-learning or other advanced learned policy.
 
-These are intentionally documented as future work so the local non-bonus implementation remains
-stable, reproducible, and easy to evaluate.
+Q-learning is intentionally documented as future work because the submitted strategy is heuristic
+and LLM-backed rather than a trained Q-table policy.

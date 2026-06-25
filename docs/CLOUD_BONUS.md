@@ -181,6 +181,34 @@ The runner writes:
 reports/bonus_game_report.json
 ```
 
+If `bonus_config.json` contains `email.enabled=true`, the runner also sends the finished JSON report
+as an attachment from both group Gmail accounts. Use separate OAuth token files for the two senders:
+
+```json
+"email": {
+  "enabled": true,
+  "to": "rmisegal+uoh26b@gmail.com",
+  "subject": "Assignment 06 Bonus - Agreed MCP Cops and Robbers JSON Report",
+  "credentials_path": "credentials.json",
+  "senders": [
+    {
+      "group": "uoh-ay26",
+      "address": "aishadahesh11@gmail.com",
+      "token_path": "token_group_1_aisha.json"
+    },
+    {
+      "group": "yanell11",
+      "address": "yanalserhan3@gmail.com",
+      "token_path": "token_group_2_yanal.json"
+    }
+  ]
+}
+```
+
+`credentials.json` is the Google OAuth client file. Gmail sets the real sender according to the
+approved token file, so authenticate `token_group_1_aisha.json` with
+`aishadahesh11@gmail.com` and `token_group_2_yanal.json` with `yanalserhan3@gmail.com`.
+
 ## Report Fields
 
 The bonus report includes the four public MCP URLs required by the PDF:

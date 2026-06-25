@@ -13,6 +13,7 @@ This review is based on the reference PDFs in `ref/`.
 - GUI demonstration.
 - Optional Gemini/OpenAI API-backed agents.
 - Optional Gmail JSON sender.
+- Bonus Gmail attachment sender from both group accounts.
 - `.env.example` and `.gitignore` for secrets.
 - README and `reports/README.md` now list the actual saved MP4 and movement JSON evidence files.
 - Shared action legality policy for CLI/MCP paths:
@@ -20,12 +21,18 @@ This review is based on the reference PDFs in `ref/`.
   - thief barrier attempts are replaced with a legal movement;
   - illegal off-board or blocked moves are replaced with a legal role-aware move.
 
-## Verified On 2026-06-24
+## Verified On 2026-06-26
 
 - Re-read `ref/ex06-Dual AI agent race via MCP servers.pdf`.
-- Ran `python -m pytest`: 8 tests passed.
+- Verified the README requirements on PDF pages 13-14: GitHub source, `README.md`, formal
+  Dec-POMDP tuple, orchestration challenge analysis, visualization, Q-table/strategy discussion,
+  CLI logs, and MCP evidence.
+- Verified the bonus requirements on PDF pages 14-15: two groups, 6 games, role swap after the
+  first 3 games, matching JSON agreement, and winner/loser bonus scoring.
+- Ran `python -m pytest`: 13 tests passed.
 - Ran `ruff check src tests`: all checks passed.
 - Ran `python -m cops_robbers_ai.cli --print-report`.
+- Ran `python -m cops_robbers_ai.cli --bonus-config bonus_config.json --print-report`.
 - Confirmed the generated `reports/internal_game_report.json` contains:
   - 6 sub-games;
   - thief-first alternating turns;
@@ -33,19 +40,25 @@ This review is based on the reference PDFs in `ref/`.
   - no thief barrier moves;
   - no sub-game above the 25 move-pair limit;
   - assignment-shaped `InternalGameJSON` metadata and totals.
+- Confirmed the generated `reports/bonus_game_report.json` contains:
+  - 6 inter-group remote MCP sub-games;
+  - 3 games with `uoh-ay26` cop vs `yanell11` thief;
+  - 3 games with `yanell11` cop vs `uoh-ay26` thief;
+  - final win count `uoh-ay26=5`, `yanell11=1`;
+  - final score totals `uoh-ay26=85`, `yanell11=45`;
+  - agreed bonus claim `uoh-ay26=10`, `yanell11=7`;
+  - `mutual_agreement=true`.
+- Confirmed every `.py` file in `src/` is at or below 150 lines.
+- Confirmed `mcp_common.py` was split into smaller focused modules:
+  `mcp_common.py`, `mcp_agent_state.py`, and `mcp_auth.py`.
 
 ## Partially Implemented
 
-- MCP servers are present and runnable locally, but cloud deployment URLs remain placeholders.
-- Gmail sender is implemented but disabled until OAuth credentials are configured.
 - Video evidence can be generated from GUI games, but screenshots are not committed by default.
 - Tests exist for core logic, but coverage target is not yet measured at 85%.
 
 ## Deferred By User Request
 
-- Bonus inter-group competition.
-- Public cloud deployment.
-- Token-authenticated public MCP endpoints.
 - Q-learning.
 
 ## Important Reference Notes
@@ -62,8 +75,8 @@ This review is based on the reference PDFs in `ref/`.
 ## Recommended Final Submission Steps
 
 1. Fill `students` and `github_repo` in `config.json`.
-2. Add real deployed MCP URLs if cloud deployment is required by the evaluator.
+2. Confirm the four bonus MCP URLs and two group tokens in `bonus_config.json`.
 3. Run `.\scripts\run_local.ps1`.
-4. Play one GUI game and click `Save Game`.
-5. Confirm `reports/internal_game_report.json` and replay file exist.
-6. Optionally enable Gmail and send the JSON report.
+4. Run `python -m cops_robbers_ai.cli --bonus-config bonus_config.json --print-report`.
+5. Play one GUI game and click `Save Game`.
+6. Confirm `reports/internal_game_report.json`, `reports/bonus_game_report.json`, and replay files exist.
